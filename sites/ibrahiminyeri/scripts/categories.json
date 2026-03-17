@@ -1,0 +1,22 @@
+{
+  "yemek-tarifleri":        { "id": "279143c2-030d-438d-a9c7-24cab6e296f3", "label": "Yemek Tarifleri" },
+  "seyahat":                { "id": "e14e3e25-079e-437c-9943-fb4f0d35eccb", "label": "Seyahat" },
+  "tarif-1":                { "id": "22142f80-654f-4565-b2a6-8b275e0e2c71", "label": "Tarif" },
+  "gezgin":                 { "id": "3e1faef0-8ddf-4c02-a620-47d0aa10d730", "label": "Gezgin" },
+  "güzergah":               { "id": "5c3853b4-1fdc-4c1a-8e65-64ae5c80d7aa", "label": "Güzergah" },
+  "kahvaltı":               { "id": "7453136c-c3cb-45e2-a989-41560fac489a", "label": "Kahvaltı" },
+  "mevsimsel":              { "id": "95361e00-3f6c-41e9-b81c-c564b8f3d9b4", "label": "Mevsimsel" },
+  "ana-yemek-tarifleri":    { "id": "4ac4e08d-6b91-4178-b85a-e48e2541af8a", "label": "Ana Yemek Tarifleri" },
+  "kahvalti-tarifleri":     { "id": "7f9b63d5-ad00-44be-9735-fc8a4f26d01e", "label": "Kahvaltı Tarifleri" },
+  "mangal-tarifleri":       { "id": "047d174f-a25f-430d-b358-bb8610e7b773", "label": "Mangal Tarifleri" },
+  "corba-tarifleri":        { "id": "31c3bef4-ae20-4bd4-acdc-5c1b31e91dc3", "label": "Çorba Tarifleri" },
+  "tatli-tarifleri":        { "id": "5712ab86-3805-4640-ae16-3a552b39f647", "label": "Tatlı Tarifleri" },
+  "diger-yemek-tarifleri":  { "id": "5c07312c-9d29-46f7-8fc0-dfa88ad07f0f", "label": "Diğer Yemek Tarifleri" },
+  "menude":                 { "id": "5c78e02b-9258-44e4-8981-d6426e8a0da3", "label": "Menüde" },
+  "4-ordu-gunleri-ankara":  { "id": "8e720505-92d2-41a2-b9d0-f0900359a2e5", "label": "4. Ordu Günleri Ankara" },
+  "bolu-da":                { "id": "b74d3e4c-186b-4fca-ab2a-273dff8e88bb", "label": "Bolu'da" },
+  "duzce-de":               { "id": "830bdda3-b144-4de9-b167-c1bcabfc0f3f", "label": "Düzce'de" },
+  "misafirlerimiz":         { "id": "d6d62787-f95a-4c3b-8fb2-c91a7ad4b0fb", "label": "Misafirlerimiz" },
+  "et-mangal":              { "id": "d0846e6a-0212-49b2-acb3-a0149e6a414a", "label": "Et Mangal" },
+  "ramazan":                { "id": "53ee0d25-02ed-4911-803b-a0b7ba9b641d", "label": "Ramazan" }
+}

@@ -1,0 +1,16 @@
+# Hassas bilgiler — asla commit edilmez
+.env
+wix-credentials.json
+
+# Node
+node_modules/
+
+# Üretilen kapak görselleri
+sites/*/covers/
+
+# Test dosyaları
+sites/*/scripts/test-*.jpg
+sites/*/scripts/test-*.webp
+sites/*/scripts/cover-*.webp
+sites/*/scripts/cover-*.jpg
+sites/*/scripts/text-test.png

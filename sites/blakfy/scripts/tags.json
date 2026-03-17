@@ -1,0 +1,194 @@
+{
+  "seo": {
+    "id": "6cd27973-5590-41ad-ab2a-feee340e9459",
+    "label": "SEO"
+  },
+  "dijital-pazarlama": {
+    "id": "664228c7-5da5-48dc-8baa-812b065d070b",
+    "label": "Dijital Pazarlama"
+  },
+  "wix": {
+    "id": "fe68d7db-60ba-4b6b-865a-4db24659b4ae",
+    "label": "Wix"
+  },
+  "yerel-seo": {
+    "id": "280b3473-ad52-426e-b248-48a716b9b597",
+    "label": "Yerel SEO"
+  },
+  "web-tasarim": {
+    "id": "3846d217-192d-422a-b3dc-0eeea2953930",
+    "label": "Web Tasarım"
+  },
+  "kobi": {
+    "id": "d76f0654-9058-47f1-877b-9137058bc2f4",
+    "label": "KOBİ"
+  },
+  "e-ticaret": {
+    "id": "49b94784-ad59-47cd-9d87-6e3cac8743fc",
+    "label": "E-Ticaret"
+  },
+  "chatgpt": {
+    "id": "2f7c08fb-100b-4d25-8cfa-27d7767e389b",
+    "label": "ChatGPT"
+  },
+  "mobil-uyumluluk": {
+    "id": "4f98eb24-97e9-4049-970b-0cecb16fee05",
+    "label": "Mobil Uyumluluk"
+  },
+  "sayfa-hizi": {
+    "id": "cc7be236-7111-4d03-b45c-b7bb86a8d44d",
+    "label": "Sayfa Hızı"
+  },
+  "google-ads": {
+    "id": "16925680-dadb-4509-ba22-c65205b16e10",
+    "label": "Google Ads"
+  },
+  "icerik-pazarlama": {
+    "id": "ad32e249-fe0b-4460-8405-fdf8acdeeeb2",
+    "label": "İçerik Pazarlama"
+  },
+  "yapay-zeka": {
+    "id": "937b6dba-e1f5-46e6-84c6-74ff5a101b6f",
+    "label": "Yapay Zeka"
+  },
+  "anahtar-kelime": {
+    "id": "e869d67a-2639-471a-b20f-dedc89a71851",
+    "label": "Anahtar Kelime"
+  },
+  "hosting": {
+    "id": "d279fada-4df9-4bae-9f7d-115450500dfd",
+    "label": "Hosting"
+  },
+  "backlink": {
+    "id": "b49f95f9-4e70-4b35-952c-4861e4635b8c",
+    "label": "Backlink"
+  },
+  "core-web-vitals": {
+    "id": "f56007b8-7d29-4798-88e7-f277959a6941",
+    "label": "Core Web Vitals"
+  },
+  "girisimci": {
+    "id": "3a0dc2ee-b1d2-4ab2-8e5c-8e13a6fb5484",
+    "label": "Girişimci"
+  },
+  "javascript": {
+    "id": "50df53e3-8412-42a6-bdf2-3ab4bfa186b9",
+    "label": "JavaScript"
+  },
+  "domain": {
+    "id": "1a305e97-c7dc-4110-9d27-4c88721b7abd",
+    "label": "Domain"
+  },
+  "sosyal-medya": {
+    "id": "cd9342f9-ba34-4957-8188-bdf1c2d0e257",
+    "label": "Sosyal Medya"
+  },
+  "freelancer": {
+    "id": "d0a0aa53-2735-4244-9844-8cde5e2208e1",
+    "label": "Freelancer"
+  },
+  "ticimax": {
+    "id": "5dcc7d68-bdee-4de8-909a-83601edf3239",
+    "label": "Ticimax"
+  },
+  "wordpress": {
+    "id": "50a39560-3e80-404a-80ef-a458c10fe9eb",
+    "label": "WordPress"
+  },
+  "google-analytics": {
+    "id": "adf2290c-1a08-4b12-8b50-86180d409459",
+    "label": "Google Analytics"
+  },
+  "shopify": {
+    "id": "bb2d5ee1-a1bb-4e7a-bc43-af234c566bd0",
+    "label": "Shopify"
+  },
+  "figma": {
+    "id": "6bef322d-c122-457d-a6e2-bb3829fe6da9",
+    "label": "Figma"
+  },
+  "google-search-console": {
+    "id": "e66cdbd4-f224-44ba-9533-211495a8b386",
+    "label": "Google Search Console"
+  },
+  "ideasoft": {
+    "id": "2df49af1-da87-412e-874b-bf719609986b",
+    "label": "IdeaSoft"
+  },
+  "woocommerce": {
+    "id": "219bcfb3-1c13-4e9e-a97d-870a8f61cd0f",
+    "label": "WooCommerce"
+  },
+  "opencart": {
+    "id": "a7d03c96-1270-47f5-97d7-0b37b6b35aed",
+    "label": "OpenCart"
+  },
+  "e-posta-pazarlama": {
+    "id": "a4951057-478a-4d38-8bed-397d497cdddf",
+    "label": "E-posta Pazarlama"
+  },
+  "trendyol": {
+    "id": "375059fb-7877-455c-badf-164b7ce0fa86",
+    "label": "Trendyol"
+  },
+  "hepsiburada": {
+    "id": "cd545213-a1ca-4516-9540-d6a82ad95138",
+    "label": "Hepsiburada"
+  },
+  "semrush": {
+    "id": "6b0e0aea-55bb-4126-88c0-a7fa2da57b49",
+    "label": "SEMrush"
+  },
+  "ahrefs": {
+    "id": "69d124a6-9e04-47f2-999c-37f5384fe3fa",
+    "label": "Ahrefs"
+  },
+  "google-tag-manager": {
+    "id": "1e3d026f-4d11-4820-8a16-8c153374ea58",
+    "label": "Google Tag Manager"
+  },
+  "instagram": {
+    "id": "06bade2b-f5be-4992-b113-72353d4ee294",
+    "label": "Instagram"
+  },
+  "tiktok": {
+    "id": "6c8d93ae-639e-483b-acde-887441f95239",
+    "label": "TikTok"
+  },
+  "youtube": {
+    "id": "3d1a68ba-c509-4009-927b-86db0086c8b7",
+    "label": "YouTube"
+  },
+  "linkedin": {
+    "id": "bbec14c4-a792-4908-8635-98d1578c618d",
+    "label": "LinkedIn"
+  },
+  "affiliate": {
+    "id": "ed0aa151-b055-4bd9-a61b-ddcba0247795",
+    "label": "Affiliate"
+  },
+  "influencer": {
+    "id": "08042371-442f-4b58-922c-d59ea5264a2b",
+    "label": "Influencer"
+  },
+  "b2b": {
+    "id": "190cc6a0-d1c2-4793-a2ab-2a8d87692f1e",
+    "label": "B2B"
+  },
+  "google-business-profile": {
+    "id": "538fec5b-3c38-49c8-8e36-c476f332f640",
+    "label": "Google Business Profile"
+  },
+  "facebook-ads": {
+    "id": "d5160df7-a6c5-4321-9da2-419e6e2ea9e5",
+    "label": "Facebook Ads"
+  },
+  "screaming-frog": {
+    "id": "0728bc76-64f6-4e4f-8d47-dc430dc84f8a",
+    "label": "Screaming Frog"
+  },
+  "n11": {
+    "id": "f05dcbf9-6da5-44b0-9589-a119922bff64",
+    "label": "N11"
+  }
+}

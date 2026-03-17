@@ -1,0 +1,20 @@
+{
+  "teknik-seo":       { "id": "8feb39cf-8c50-4011-8012-cfc9af79d0b8", "label": "Teknik SEO" },
+  "wix":              { "id": "ad9a311e-af85-4818-87e3-88019c60972f", "label": "Wix" },
+  "domain":           { "id": "d62fe0ca-8254-413e-aec6-c4cfa4da206d", "label": "Domain" },
+  "google-araclari":  { "id": "c00b7ccd-628d-4369-a2b0-3506dd54596c", "label": "Google Araçları" },
+  "icerik-pazarlama": { "id": "5adbd459-52e1-441f-a5e0-28014343f780", "label": "İçerik Pazarlama" },
+  "sosyal-medya":     { "id": "d07b2767-7e92-41ba-ba9b-d57ac25fd027", "label": "Sosyal Medya" },
+  "e-ticaret":        { "id": "82fb6ce8-2867-4497-ad4c-3e048b33d93a", "label": "E-Ticaret" },
+  "seo":              { "id": "4198fb0e-3b2d-4f00-a95a-5ad4acab91e3", "label": "SEO" },
+  "backlink":         { "id": "9ad4b03c-fa0b-45c1-9f6e-a7601791af57", "label": "Backlink" },
+  "sanal-pos":        { "id": "fff3e3e4-a4a1-4cf6-86c3-2c850079c91e", "label": "Sanal POS" },
+  "google-ads":       { "id": "904e7f54-70c3-4df4-bbb7-76bb292b864f", "label": "Google Ads" },
+  "yapay-zeka":       { "id": "443472b5-8f17-4254-81ea-e460cc37138a", "label": "Yapay Zeka" },
+  "web-tasarim":      { "id": "ad679ed9-1a11-4582-a437-2455904ec7bc", "label": "Web Tasarım" },
+  "javascript":       { "id": "0285f050-6c04-45be-a6d2-77ad8fb0870e", "label": "JavaScript" },
+  "dijital-pazarlama":{ "id": "c0872aeb-2ccf-437f-bc6b-9b24da1c0ed4", "label": "Dijital Pazarlama" },
+  "ileri-seviye-seo": { "id": "b8c19d4b-69fd-4fad-b5c7-a2749b9429da", "label": "İleri Seviye SEO" },
+  "yerel-seo":        { "id": "d064b4e2-b623-466b-8e93-8b2dff703e15", "label": "Yerel SEO" },
+  "temel-seo":        { "id": "d625bb77-67e0-4c5f-b3ce-617a8d673bdc", "label": "Temel SEO" }
+}

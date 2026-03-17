@@ -1,0 +1,6 @@
+{
+  "_aciklama": "Bu dosyayı Wix API'den çek: POST /blog/v3/categories/query",
+  "_ornek": {
+    "slug-buraya": { "id": "wix-id-buraya", "label": "Kategori Adı" }
+  }
+}
