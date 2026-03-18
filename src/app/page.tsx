@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { Plus } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
-import { Building2 } from 'lucide-react'
 import { DashboardContent } from '@/components/dashboard/dashboard-content'
+import { DashboardActions } from '@/components/dashboard/dashboard-actions'
 
 function DashboardSkeleton() {
   return (
@@ -55,12 +55,7 @@ export default function DashboardPage() {
           <h1 className="text-2xl font-bold">Dashboard</h1>
           <p className="text-sm text-muted-foreground">VixSEO Yönetim Paneli</p>
         </div>
-        <Link href="/settings">
-          <Button>
-            <Plus className="mr-2 h-4 w-4" />
-            Yeni İşletme
-          </Button>
-        </Link>
+        <DashboardActions />
       </div>
 
       {/* Dynamic — Suspense ile sarılı */}

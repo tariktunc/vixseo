@@ -3,6 +3,7 @@ import { db } from '@/lib/db'
 import { scPages, scQueries, businesses } from '@/db/schema'
 import { eq } from 'drizzle-orm'
 import { SC_CACHE_HOURS } from '@/lib/constants'
+import { requireBusinessAccess } from '@/lib/auth'
 
 export async function GET(
   _request: Request,
@@ -10,6 +11,9 @@ export async function GET(
 ) {
   try {
     const { business } = await params
+
+    const guard = await requireBusinessAccess(business)
+    if (guard) return guard
 
     // İşletmeyi bul
     const [biz] = await db

@@ -2,9 +2,12 @@ import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { businesses } from '@/db/schema'
 import { eq } from 'drizzle-orm'
+import { requirePermission, getSessionAuth, canAccessBusiness } from '@/lib/auth'
 
 export async function GET() {
   try {
+    const { role, metadata } = await getSessionAuth()
+
     const all = await db.select().from(businesses).orderBy(businesses.name)
 
     // Her işletme için env key durumunu kontrol et
@@ -15,6 +18,14 @@ export async function GET() {
       adsKeyConfigured: !!process.env.GOOGLE_ADS_DEVELOPER_TOKEN,
     }))
 
+    // Viewer → sadece kendi işletmeleri
+    if (role === 'viewer') {
+      const filtered = withStatus.filter((b) =>
+        canAccessBusiness(metadata, b.name)
+      )
+      return NextResponse.json(filtered)
+    }
+
     return NextResponse.json(withStatus)
   } catch {
     return NextResponse.json({ error: 'İşletmeler yüklenemedi' }, { status: 500 })
@@ -22,6 +33,9 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const guard = await requirePermission('admin:businesses')
+  if (guard) return guard
+
   try {
     const body = await request.json()
     const { name, domain, siteId, memberId, language, searchConsoleUrl } = body
@@ -49,6 +63,9 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const guard = await requirePermission('admin:businesses')
+  if (guard) return guard
+
   try {
     const { searchParams } = new URL(request.url)
     const id = searchParams.get('id')

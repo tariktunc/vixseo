@@ -11,11 +11,13 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { useBusinesses } from '@/hooks/use-businesses'
+import { useHasPermission } from '@/hooks/use-permissions'
 
 export function BusinessSwitcher() {
   const router = useRouter()
   const pathname = usePathname()
   const { data: businesses, isLoading } = useBusinesses()
+  const canManageBusinesses = useHasPermission('admin:businesses')
 
   // Aktif işletmeyi path'ten çıkar
   const segments = pathname.split('/')
@@ -55,11 +57,15 @@ export function BusinessSwitcher() {
             {b.domain}
           </DropdownMenuItem>
         ))}
-        <DropdownMenuSeparator />
-        <DropdownMenuItem onClick={() => router.push('/settings')}>
-          <Plus className="mr-2 h-4 w-4" />
-          Yeni İşletme Ekle
-        </DropdownMenuItem>
+        {canManageBusinesses && (
+          <>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={() => router.push('/settings')}>
+              <Plus className="mr-2 h-4 w-4" />
+              Yeni İşletme Ekle
+            </DropdownMenuItem>
+          </>
+        )}
       </DropdownMenuContent>
     </DropdownMenu>
   )

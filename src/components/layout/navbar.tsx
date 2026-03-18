@@ -10,10 +10,12 @@ import { BusinessSwitcher } from './business-switcher'
 import { Button } from '@/components/ui/button'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
+import { useHasPermission } from '@/hooks/use-permissions'
 
 export function Navbar() {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
+  const canSettings = useHasPermission('admin:settings')
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -58,17 +60,19 @@ export function Navbar() {
             >
               Dashboard
             </Link>
-            <Link
-              href="/settings"
-              className={cn(
-                'rounded-md px-3 py-1.5 text-sm transition-colors',
-                pathname === '/settings'
-                  ? 'bg-secondary text-foreground font-medium'
-                  : 'text-muted-foreground hover:text-foreground'
-              )}
-            >
-              <Settings className="h-4 w-4" />
-            </Link>
+            {canSettings && (
+              <Link
+                href="/settings"
+                className={cn(
+                  'rounded-md px-3 py-1.5 text-sm transition-colors',
+                  pathname.startsWith('/settings')
+                    ? 'bg-secondary text-foreground font-medium'
+                    : 'text-muted-foreground hover:text-foreground'
+                )}
+              >
+                <Settings className="h-4 w-4" />
+              </Link>
+            )}
           </Show>
           <ThemeToggle />
           <Show when="signed-out">
@@ -104,13 +108,15 @@ export function Navbar() {
           >
             Dashboard
           </Link>
-          <Link
-            href="/settings"
-            onClick={() => setMobileOpen(false)}
-            className="block rounded-md px-3 py-2 text-sm hover:bg-secondary"
-          >
-            Ayarlar
-          </Link>
+          {canSettings && (
+            <Link
+              href="/settings"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-md px-3 py-2 text-sm hover:bg-secondary"
+            >
+              Ayarlar
+            </Link>
+          )}
         </div>
       )}
     </nav>
