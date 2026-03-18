@@ -1,4 +1,4 @@
-import { pgTable, uuid, text, varchar, integer, real, timestamp, boolean } from 'drizzle-orm/pg-core'
+import { pgTable, uuid, text, varchar, integer, real, timestamp, boolean, jsonb, numeric } from 'drizzle-orm/pg-core'
 
 // ── İşletmeler ──────────────────────────────────────────────
 export const businesses = pgTable('businesses', {
@@ -89,4 +89,41 @@ export const auditResults = pgTable('audit_results', {
   severity: varchar('severity', { length: 20 }),
   detail: text('detail'),
   auditedAt: timestamp('audited_at').defaultNow(),
+})
+
+// ── Agent Tasks ─────────────────────────────────────────────
+export const agentTasks = pgTable('agent_tasks', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  businessId: uuid('business_id').references(() => businesses.id, { onDelete: 'cascade' }).notNull(),
+  type: varchar('type', { length: 20 }).notNull(), // blog_single | blog_batch
+  input: jsonb('input').notNull(), // { topics: string[] }
+  status: varchar('status', { length: 20 }).default('pending').notNull(),
+  currentStep: varchar('current_step', { length: 50 }),
+  iterationCount: integer('iteration_count').default(0).notNull(),
+  maxIterations: integer('max_iterations').default(3).notNull(),
+  output: text('output'),
+  reviewNotes: text('review_notes'),
+  totalInputTokens: integer('total_input_tokens').default(0).notNull(),
+  totalOutputTokens: integer('total_output_tokens').default(0).notNull(),
+  estimatedCostUsd: numeric('estimated_cost_usd', { precision: 10, scale: 6 }),
+  createdAt: timestamp('created_at').defaultNow(),
+  startedAt: timestamp('started_at'),
+  completedAt: timestamp('completed_at'),
+})
+
+// ── Agent Runs (her LLM çağrısı logu) ──────────────────────
+export const agentRuns = pgTable('agent_runs', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  taskId: uuid('task_id').references(() => agentTasks.id, { onDelete: 'cascade' }).notNull(),
+  agentRole: varchar('agent_role', { length: 20 }).notNull(),
+  stepIndex: integer('step_index').default(0).notNull(),
+  systemPrompt: text('system_prompt'),
+  userMessage: text('user_message'),
+  assistantResponse: text('assistant_response'),
+  inputTokens: integer('input_tokens').default(0).notNull(),
+  outputTokens: integer('output_tokens').default(0).notNull(),
+  status: varchar('status', { length: 20 }).default('success').notNull(),
+  errorMessage: text('error_message'),
+  durationMs: integer('duration_ms').default(0).notNull(),
+  createdAt: timestamp('created_at').defaultNow(),
 })

@@ -16,6 +16,7 @@ export type Permission =
   | 'write:categories'
   | 'write:redirects'
   | 'write:audit'
+  | 'write:agents'
   // Admin
   | 'admin:businesses'
   | 'admin:users'
@@ -56,6 +57,7 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
     'write:categories',
     'write:redirects',
     'write:audit',
+    'write:agents',
   ],
   admin: [
     'read:own_business',
@@ -70,6 +72,7 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
     'write:categories',
     'write:redirects',
     'write:audit',
+    'write:agents',
     'admin:businesses',
     'admin:users',
     'admin:settings',
