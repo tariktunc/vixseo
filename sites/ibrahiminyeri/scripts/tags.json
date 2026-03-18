@@ -1,202 +1,157 @@
 {
-  "i̇brahiminyeri": {
-    "id": "577f479b-c337-4a2e-90da-ca3217f96edc",
-    "label": "İbrahiminyeri"
-  },
-  "et-mangal-1": {
+  "et-mangal": {
     "id": "2ad320ad-a2d1-4133-b6bd-469f7a705f74",
-    "label": "et mangal"
+    "label": "Et Mangal",
+    "note": "Wix slug: et-mangal-1 → Panel'den et-mangal yapılacak (KRİTİK)"
   },
-  "bolu-dağı-et-mangal-1": {
+  "bolu-dagi-et-mangal": {
     "id": "f663d3d0-eb4b-4e0b-8245-1bab82bba5f4",
-    "label": "Bolu Dağı et mangal"
+    "label": "Bolu Dağı Et Mangal",
+    "note": "Wix slug: bolu-dağı-et-mangal-1 → Panel'den bolu-dagi-et-mangal yapılacak (KRİTİK)"
   },
-  "bolu-dağı": {
+  "bolu-dagi": {
     "id": "00a1119e-d315-4fef-9605-4275810403d8",
-    "label": "Bolu Dağı"
+    "label": "Bolu Dağı",
+    "note": "Wix slug: bolu-dağı → Panel'den bolu-dagi yapılacak (KRİTİK)"
   },
-  "kuzu-mangal-1": {
+  "kuzu-mangal": {
     "id": "e6788b52-bfc4-43ed-b1c4-f9072178b97a",
-    "label": "kuzu mangal"
+    "label": "Kuzu Mangal",
+    "note": "Wix slug: kuzu-mangal-1 → Panel'den kuzu-mangal yapılacak"
   },
   "yemek-tarifleri": {
     "id": "3ffdc5ca-9bb0-4665-9003-46cf37baa5cb",
     "label": "Yemek Tarifleri"
   },
-  "meşe-közü": {
+  "mese-kozu": {
     "id": "5ba1b44c-3488-44d4-8af8-8501b812e570",
-    "label": "meşe közü"
+    "label": "Meşe Közü",
+    "note": "Wix slug: meşe-közü → Panel'den mese-kozu yapılacak"
   },
-  "bolu-da-ne-yenir": {
+  "boluda-ne-yenir": {
     "id": "87f2ed55-cde2-4f64-9b17-7577fc471521",
     "label": "Bolu'da Ne Yenir"
   },
   "et-mangal-mola": {
     "id": "428e6e78-6463-4d65-8fe6-ccd4abdc3f92",
-    "label": "et mangal mola"
+    "label": "Et Mangal Mola"
   },
-  "düzce-de-ne-yenir": {
+  "duzcede-ne-yenir": {
     "id": "82f02c3f-d004-4208-901c-e685e94d6e21",
-    "label": "Düzce'de Ne Yenir"
+    "label": "Düzce'de Ne Yenir",
+    "note": "Wix slug: düzce-de-ne-yenir → Panel'den duzce-de-ne-yenir yapılacak"
   },
-  "bakacak-köfte": {
+  "bakacak-kofte": {
     "id": "a5f961c7-4f2e-4345-9deb-67a43c48473f",
-    "label": "Bakacak Köfte"
+    "label": "Bakacak Köfte",
+    "note": "Wix slug: bakacak-köfte → Panel'den bakacak-kofte yapılacak"
   },
-  "bolu-yemek": {
-    "id": "d5661d16-39cd-40e0-b60b-21886450b58b",
-    "label": "Bolu Yemek"
-  },
-  "düzce-yemek": {
-    "id": "9bef872a-dd52-41ce-a397-19aa4031da5f",
-    "label": "Düzce Yemek"
-  },
-  "köy-kahvaltısı": {
+  "koy-kahvaltisi": {
     "id": "d3284900-bfe4-4bfd-8172-9c7dcf94695c",
-    "label": "Köy Kahvaltısı"
+    "label": "Köy Kahvaltısı",
+    "note": "Wix slug: köy-kahvaltısı → Panel'den koy-kahvaltisi yapılacak"
   },
-  "yöresel-kahvaltı": {
+  "yoresel-kahvalti": {
     "id": "041bd467-c40f-44a1-bbf8-545b68939033",
-    "label": "Yöresel Kahvaltı"
+    "label": "Yöresel Kahvaltı",
+    "note": "Wix slug: yöresel-kahvaltı → Panel'den yoresel-kahvalti yapılacak"
   },
-  "bolu-dağı-kahvaltı-mekanları": {
+  "bolu-dagi-kahvalti-mekanlari": {
     "id": "2a7c7ba3-57b7-44b0-9fe1-b1404d1232fb",
-    "label": "Bolu Dağı Kahvaltı Mekanları"
+    "label": "Bolu Dağı Kahvaltı Mekanları",
+    "note": "Wix slug: bolu-dağı-kahvaltı-mekanları → Panel'den bolu-dagi-kahvalti-mekanlari yapılacak"
   },
-  "abant-kahvaltı-mekanları": {
+  "abant-kahvalti-mekanlari": {
     "id": "c42b0519-fe4f-448e-aea7-7c12bf1d336f",
-    "label": "Abant Kahvaltı Mekanları"
+    "label": "Abant Kahvaltı Mekanları",
+    "note": "Wix slug: abant-kahvaltı-mekanları → Panel'den abant-kahvalti-mekanlari yapılacak"
   },
-  "yedigöller-kahvaltı-mekanları": {
+  "yedigoller-kahvalti-mekanlari": {
     "id": "fdf51d75-8c27-47c0-88a1-2cab95fe186d",
-    "label": "Yedigöller Kahvaltı Mekanları"
+    "label": "Yedigöller Kahvaltı Mekanları",
+    "note": "Wix slug: yedigöller-kahvaltı-mekanları → Panel'den yedigoller-kahvalti-mekanlari yapılacak"
   },
-  "serpme-kahvaltı": {
+  "serpme-kahvalti": {
     "id": "c78c473c-c8d2-442e-ad59-de5db964167a",
-    "label": "Serpme Kahvaltı"
+    "label": "Serpme Kahvaltı",
+    "note": "Wix slug: serpme-kahvaltı → Panel'den serpme-kahvalti yapılacak"
   },
-  "bolu-da-kahvaltı": {
+  "boluda-kahvalti": {
     "id": "f44dd888-c866-4e88-ae66-aa9fbeb2188f",
-    "label": "Bolu'da Kahvaltı"
+    "label": "Bolu'da Kahvaltı",
+    "note": "Wix slug: bolu-da-kahvaltı → Panel'den bolu-da-kahvalti yapılacak"
   },
-  "düzce-de-kahvaltı": {
+  "duzcede-kahvalti": {
     "id": "aa2be25b-a7a6-4675-b114-9bd9e1b57238",
-    "label": "Düzce'de Kahvaltı"
+    "label": "Düzce'de Kahvaltı",
+    "note": "Wix slug: düzce-de-kahvaltı → Panel'den duzce-de-kahvalti yapılacak"
   },
-  "kuzu-pirzola-1": {
+  "kuzu-pirzola": {
     "id": "362e4b94-53da-4fd3-91af-633985ec31f5",
-    "label": "kuzu pirzola"
+    "label": "Kuzu Pirzola",
+    "note": "Wix slug: kuzu-pirzola-1 → Panel'den kuzu-pirzola yapılacak"
   },
   "et-mangal-rehberi": {
     "id": "a6c2c85c-096b-4019-b489-0e1b07d491d3",
-    "label": "et mangal rehberi"
+    "label": "Et Mangal Rehberi"
   },
   "d100": {
     "id": "68fc6432-9f76-4c51-8730-a28b0a6a5036",
     "label": "D100"
   },
-  "bolu-et-mangal-2": {
-    "id": "0a5e5a82-6bbf-42c7-a3ac-fee8276b758c",
-    "label": "bolu et mangal"
-  },
-  "bolu-dağı-mola-1": {
-    "id": "5f08e9f7-1935-46ae-a54b-c72dea39e7f7",
-    "label": "bolu dağı mola"
-  },
-  "mola-noktaları": {
+  "mola-noktalari": {
     "id": "8093a07b-e58a-4bae-99a3-52736bd13065",
-    "label": "mola noktaları"
-  },
-  "sahanda-yumurta": {
-    "id": "a9b761e1-8d29-4e86-a8b0-986aafa3d87a",
-    "label": "Sahanda yumurta"
-  },
-  "köy-yumurtası": {
-    "id": "7110e838-dc0e-4b4e-b5f1-99d4c2048698",
-    "label": "Köy Yumurtası"
-  },
-  "gezen-tavuk-yumurtası": {
-    "id": "e263364b-7fed-40f9-a2c1-a917e2cc8efa",
-    "label": "Gezen Tavuk Yumurtası"
-  },
-  "yumurta-nasıl-pişer": {
-    "id": "182e221c-b22a-4b98-bd3e-3311c7f352ba",
-    "label": "Yumurta Nasıl Pişer"
-  },
-  "tereyağında-yumurta": {
-    "id": "f6c3dfc4-b33a-40e9-8023-4174a895f4c7",
-    "label": "Tereyağında Yumurta"
-  },
-  "yumurta-tarifi": {
-    "id": "dc528ca2-6fe0-4249-be59-e634b9166f84",
-    "label": "Yumurta Tarifi"
-  },
-  "taze-yumurta": {
-    "id": "88f2c0ad-eb08-4411-a35d-75495de6e1b2",
-    "label": "Taze Yumurta"
-  },
-  "bolu-mangal": {
-    "id": "2947729e-3aee-469e-b795-cecb86905ecc",
-    "label": "bolu mangal"
-  },
-  "doğa-yürüyüşü": {
-    "id": "85075b77-3f8b-4ada-811a-4f4435de9472",
-    "label": "doğa yürüyüşü"
+    "label": "Mola Noktaları",
+    "note": "Wix slug: mola-noktaları → Panel'den mola-noktalari yapılacak"
   },
   "mangal-tarifleri": {
     "id": "2e21aa3e-5d53-42a2-8a09-449d660d4602",
-    "label": "mangal tarifleri"
+    "label": "Mangal Tarifleri"
   },
   "bolu-gezi": {
     "id": "f031303b-e5d8-4ed4-929a-620d07896633",
-    "label": "Bolu gezi"
+    "label": "Bolu Gezi"
   },
   "kuzu-eti": {
     "id": "c6b57446-32a3-4751-b535-3a9d393ed7e4",
     "label": "Kuzu Eti"
   },
-  "kıvırcık-kuzu": {
+  "kiviricik-kuzu": {
     "id": "87d0e46c-0069-4ba0-bda4-37d95949f160",
-    "label": "Kıvırcık Kuzu"
+    "label": "Kıvırcık Kuzu",
+    "note": "Wix slug: kıvırcık-kuzu → Panel'den kiviricik-kuzu yapılacak"
   },
-  "közde-et-mangal": {
+  "kozde-et-mangal": {
     "id": "4d58cf68-43ca-43fe-810b-78a01eb35e2b",
-    "label": "Közde Et Mangal"
-  },
-  "düzce-turizm": {
-    "id": "eb5f8583-c498-4959-825e-21544469611a",
-    "label": "Düzce turizm"
+    "label": "Közde Et Mangal",
+    "note": "Wix slug: közde-et-mangal → Panel'den kozde-et-mangal yapılacak"
   },
   "bolu-restoran": {
     "id": "26cf1b15-7e96-472f-b50c-9d33c3f78684",
-    "label": "bolu restoran"
+    "label": "Bolu Restoran"
   },
   "bolu-gezilecek-yerler": {
     "id": "441d700b-d2c8-4b59-8be2-ff33ccaafe8e",
-    "label": "bolu gezilecek yerler"
+    "label": "Bolu Gezilecek Yerler"
   },
-  "uzun-yol": {
-    "id": "ac6febde-b9bb-4d76-9d62-7d79b3592ee2",
-    "label": "uzun yol"
-  },
-  "gezi-rehberi": {
-    "id": "357b608d-0acc-4d71-bde9-edfa17f0a849",
-    "label": "gezi rehberi"
-  },
-  "mangal-teknikleri": {
-    "id": "34654baf-f2d6-4297-816a-c1802d39f888",
-    "label": "mangal teknikleri"
-  },
-  "meşe-kömürü": {
+  "mese-komuru": {
     "id": "8b0e31e4-6998-4b27-8ca0-2b0346656e8e",
-    "label": "meşe kömürü"
+    "label": "Meşe Kömürü",
+    "note": "Wix slug: meşe-kömürü → Panel'den mese-komuru yapılacak"
   },
-  "yol-üzeri-restoran": {
+  "yol-uzeri-restoran": {
     "id": "c354edff-4833-495e-8889-52f2b563c6e8",
-    "label": "yol üzeri restoran"
+    "label": "Yol Üzeri Restoran",
+    "note": "Wix slug: yol-üzeri-restoran → Panel'den yol-uzeri-restoran yapılacak"
   },
-  "mola-noktası": {
-    "id": "f3008896-6094-4d47-a2b9-ccf7a56b9d5c",
-    "label": "mola noktası"
+  "duzce-gezi": {
+    "id": "929cd08b-e573-4f14-a015-66084b98cdf8",
+    "label": "Düzce Gezi",
+    "note": "Wix slug: düzce-gezi → Panel'den duzce-gezi yapılacak"
+  },
+  "gunubirlik-gezi": {
+    "id": "f4e476f8-e69e-4ee2-8cd8-e00f0076fbf2",
+    "label": "Günübirlik Gezi",
+    "note": "Wix slug: günübirlik-gezi → Panel'den gunubirlik-gezi yapılacak"
   }
 }

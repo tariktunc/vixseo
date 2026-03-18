@@ -1,0 +1,6453 @@
+{
+  "pulledAt": "2026-03-18T12:36:54.328Z",
+  "siteUrl": "https://www.blakfy.com/",
+  "period": {
+    "start": "2025-12-18",
+    "end": "2026-03-17"
+  },
+  "totals": {
+    "pages": 385,
+    "totalClicks": 263,
+    "totalImpressions": 22200,
+    "avgPosition": 12.9
+  },
+  "pages": [
+    {
+      "keys": [
+        "https://www.blakfy.com/"
+      ],
+      "page": "https://www.blakfy.com/",
+      "query": null,
+      "clicks": 47,
+      "impressions": 393,
+      "ctr": 11.96,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/nas%C4%B1l-i-%C3%A7erik-%C3%BCretebilirim-sosyal-medyada-i-%C3%A7erik-%C3%BCretmenin-s%C4%B1rlar%C4%B1-ve-yol-haritas%C4%B1"
+      ],
+      "page": "https://www.blakfy.com/post/nas%C4%B1l-i-%C3%A7erik-%C3%BCretebilirim-sosyal-medyada-i-%C3%A7erik-%C3%BCretmenin-s%C4%B1rlar%C4%B1-ve-yol-haritas%C4%B1",
+      "query": null,
+      "clicks": 23,
+      "impressions": 273,
+      "ctr": 8.42,
+      "position": 18.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ikas-magazam-var-satis-gelmiyor"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ikas-magazam-var-satis-gelmiyor",
+      "query": null,
+      "clicks": 20,
+      "impressions": 432,
+      "ctr": 4.63,
+      "position": 7.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/sunucu-gunlukleri"
+      ],
+      "page": "https://www.blakfy.com/post/sunucu-gunlukleri",
+      "query": null,
+      "clicks": 18,
+      "impressions": 29,
+      "ctr": 62.07,
+      "position": 3.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/e-ticaret-sitesi-tasarimi"
+      ],
+      "page": "https://www.blakfy.com/e-ticaret-sitesi-tasarimi",
+      "query": null,
+      "clicks": 11,
+      "impressions": 196,
+      "ctr": 5.61,
+      "position": 6.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/kurumsal-web-tasarim"
+      ],
+      "page": "https://www.blakfy.com/kurumsal-web-tasarim",
+      "query": null,
+      "clicks": 10,
+      "impressions": 259,
+      "ctr": 3.86,
+      "position": 26.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/hakkimizda-yazisi-nasil-yazilir"
+      ],
+      "page": "https://www.blakfy.com/post/hakkimizda-yazisi-nasil-yazilir",
+      "query": null,
+      "clicks": 9,
+      "impressions": 808,
+      "ctr": 1.11,
+      "position": 12.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ikas-ucretsiz-e-ticaret-nasil-kurulur"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ikas-ucretsiz-e-ticaret-nasil-kurulur",
+      "query": null,
+      "clicks": 8,
+      "impressions": 2022,
+      "ctr": 0.4,
+      "position": 9.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/nasil-icerik-uretebilirim-sosyal-medya-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/nasil-icerik-uretebilirim-sosyal-medya-rehberi",
+      "query": null,
+      "clicks": 8,
+      "impressions": 27,
+      "ctr": 29.63,
+      "position": 9.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wikipedia-sayfasi-olusturma-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/wikipedia-sayfasi-olusturma-rehberi",
+      "query": null,
+      "clicks": 8,
+      "impressions": 222,
+      "ctr": 3.6,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/post/wix-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 7,
+      "impressions": 49,
+      "ctr": 14.29,
+      "position": 4.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/seo-hizmetleri/backlink-olusturma"
+      ],
+      "page": "https://www.blakfy.com/seo-hizmetleri/backlink-olusturma",
+      "query": null,
+      "clicks": 6,
+      "impressions": 230,
+      "ctr": 2.61,
+      "position": 22.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog"
+      ],
+      "page": "https://www.blakfy.com/blog",
+      "query": null,
+      "clicks": 4,
+      "impressions": 80,
+      "ctr": 5,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/google-benim-isletmem"
+      ],
+      "page": "https://www.blakfy.com/google-benim-isletmem",
+      "query": null,
+      "clicks": 4,
+      "impressions": 120,
+      "ctr": 3.33,
+      "position": 31.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-nedir-nasil-kullanilir"
+      ],
+      "page": "https://www.blakfy.com/post/wix-nedir-nasil-kullanilir",
+      "query": null,
+      "clicks": 4,
+      "impressions": 1645,
+      "ctr": 0.24,
+      "position": 10.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/seo-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/seo-hizmetleri",
+      "query": null,
+      "clicks": 4,
+      "impressions": 359,
+      "ctr": 1.11,
+      "position": 30.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/sanal-pos-entegrasyonu-yapmak-icin-teknik-adimlar"
+      ],
+      "page": "https://www.blakfy.com/post/sanal-pos-entegrasyonu-yapmak-icin-teknik-adimlar",
+      "query": null,
+      "clicks": 3,
+      "impressions": 531,
+      "ctr": 0.56,
+      "position": 11.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/sifirdan-marka-olusturma-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/sifirdan-marka-olusturma-rehberi",
+      "query": null,
+      "clicks": 3,
+      "impressions": 199,
+      "ctr": 1.51,
+      "position": 16.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/velo-wix-ile-kodlama-sitenize-%C3%B6zel-veritaban%C4%B1-ve-dinamik-form-olu%C5%9Fturma"
+      ],
+      "page": "https://www.blakfy.com/post/velo-wix-ile-kodlama-sitenize-%C3%B6zel-veritaban%C4%B1-ve-dinamik-form-olu%C5%9Fturma",
+      "query": null,
+      "clicks": 3,
+      "impressions": 34,
+      "ctr": 8.82,
+      "position": 9.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/van-google-ads-kampanya-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/van-google-ads-kampanya-yonetimi",
+      "query": null,
+      "clicks": 2,
+      "impressions": 66,
+      "ctr": 3.03,
+      "position": 7.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-finansbank-3d-secure-ayarlari"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-finansbank-3d-secure-ayarlari",
+      "query": null,
+      "clicks": 2,
+      "impressions": 372,
+      "ctr": 0.54,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-finansbank-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-finansbank-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 2,
+      "impressions": 151,
+      "ctr": 1.32,
+      "position": 13.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-halkbank-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-halkbank-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 100,
+      "position": 2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-is-bankasi-odeme-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-is-bankasi-odeme-entegrasyonu",
+      "query": null,
+      "clicks": 2,
+      "impressions": 446,
+      "ctr": 0.45,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-vakifbank-3d-secure-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-vakifbank-3d-secure-entegrasyonu",
+      "query": null,
+      "clicks": 2,
+      "impressions": 43,
+      "ctr": 4.65,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/yapi-kredi-posu-wix-uzerine-kurma"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/yapi-kredi-posu-wix-uzerine-kurma",
+      "query": null,
+      "clicks": 2,
+      "impressions": 458,
+      "ctr": 0.44,
+      "position": 10.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/kariyer"
+      ],
+      "page": "https://www.blakfy.com/kariyer",
+      "query": null,
+      "clicks": 2,
+      "impressions": 54,
+      "ctr": 3.7,
+      "position": 10.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/portfolyo-cv-web-siteleri"
+      ],
+      "page": "https://www.blakfy.com/portfolyo-cv-web-siteleri",
+      "query": null,
+      "clicks": 2,
+      "impressions": 32,
+      "ctr": 6.25,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/backlink-paketleri-fiyatlari-2025"
+      ],
+      "page": "https://www.blakfy.com/post/backlink-paketleri-fiyatlari-2025",
+      "query": null,
+      "clicks": 2,
+      "impressions": 591,
+      "ctr": 0.34,
+      "position": 13.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/blakfy-nedir-1"
+      ],
+      "page": "https://www.blakfy.com/post/blakfy-nedir-1",
+      "query": null,
+      "clicks": 2,
+      "impressions": 33,
+      "ctr": 6.06,
+      "position": 4.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/ic-linkleme-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/ic-linkleme-nedir",
+      "query": null,
+      "clicks": 2,
+      "impressions": 75,
+      "ctr": 2.67,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/site-trafigini-arttirmak"
+      ],
+      "page": "https://www.blakfy.com/post/site-trafigini-arttirmak",
+      "query": null,
+      "clicks": 2,
+      "impressions": 51,
+      "ctr": 3.92,
+      "position": 21.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yapilandirilmis-veri-dogrulama"
+      ],
+      "page": "https://www.blakfy.com/post/yapilandirilmis-veri-dogrulama",
+      "query": null,
+      "clicks": 2,
+      "impressions": 94,
+      "ctr": 2.13,
+      "position": 13.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/wix"
+      ],
+      "page": "https://www.blakfy.com/wix",
+      "query": null,
+      "clicks": 2,
+      "impressions": 76,
+      "ctr": 2.63,
+      "position": 8.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/category/tum-urunler"
+      ],
+      "page": "https://www.blakfy.com/category/tum-urunler",
+      "query": null,
+      "clicks": 1,
+      "impressions": 52,
+      "ctr": 1.92,
+      "position": 3.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/garanti-bbva-sanal-pos-wix-kurulumu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/garanti-bbva-sanal-pos-wix-kurulumu",
+      "query": null,
+      "clicks": 1,
+      "impressions": 20,
+      "ctr": 5,
+      "position": 8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-yapi-kredi-sanal-pos-ayarlari"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-yapi-kredi-sanal-pos-ayarlari",
+      "query": null,
+      "clicks": 1,
+      "impressions": 40,
+      "ctr": 2.5,
+      "position": 9.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/backlink-paketi-fiyatlari"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/backlink-paketi-fiyatlari",
+      "query": null,
+      "clicks": 1,
+      "impressions": 72,
+      "ctr": 1.39,
+      "position": 13.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ethical-healthcare-marketing"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ethical-healthcare-marketing",
+      "query": null,
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 25,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/halkbank-sanal-pos-wix-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/halkbank-sanal-pos-wix-baglantisi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 14
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-denizbank-pos-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-denizbank-pos-baglantisi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 93,
+      "ctr": 1.08,
+      "position": 8.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-is-bankasi-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-is-bankasi-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 1,
+      "impressions": 148,
+      "ctr": 0.68,
+      "position": 9.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/portfolyo-web-sitesi"
+      ],
+      "page": "https://www.blakfy.com/portfolyo-web-sitesi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 38,
+      "ctr": 2.63,
+      "position": 14.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/blakfy-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/blakfy-nedir",
+      "query": null,
+      "clicks": 1,
+      "impressions": 77,
+      "ctr": 1.3,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/blog-nasil-acilir"
+      ],
+      "page": "https://www.blakfy.com/post/blog-nasil-acilir",
+      "query": null,
+      "clicks": 1,
+      "impressions": 176,
+      "ctr": 0.57,
+      "position": 24.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/blog-nasil-yazilir-etkili-icerik-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/blog-nasil-yazilir-etkili-icerik-rehberi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 466,
+      "ctr": 0.21,
+      "position": 13.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/coklu-lokasyonlu-yerel-seo-cerceve"
+      ],
+      "page": "https://www.blakfy.com/post/coklu-lokasyonlu-yerel-seo-cerceve",
+      "query": null,
+      "clicks": 1,
+      "impressions": 21,
+      "ctr": 4.76,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/e-ticaret-seo-stratejileri-ve-fiyatlari-2025"
+      ],
+      "page": "https://www.blakfy.com/post/e-ticaret-seo-stratejileri-ve-fiyatlari-2025",
+      "query": null,
+      "clicks": 1,
+      "impressions": 26,
+      "ctr": 3.85,
+      "position": 10.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-%C4%B1n-arama-sonu%C3%A7lar%C4%B1nda-yeni-d%C3%B6nem-tek-otoriteden-%C3%A7ok-sesli-i-%C3%A7eri%C4%9Fe-ge%C3%A7i%C5%9F"
+      ],
+      "page": "https://www.blakfy.com/post/google-%C4%B1n-arama-sonu%C3%A7lar%C4%B1nda-yeni-d%C3%B6nem-tek-otoriteden-%C3%A7ok-sesli-i-%C3%A7eri%C4%9Fe-ge%C3%A7i%C5%9F",
+      "query": null,
+      "clicks": 1,
+      "impressions": 29,
+      "ctr": 3.45,
+      "position": 8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/haber-bulusmasi-i%C3%A7in-seo-dan-cikarilacak-dersler"
+      ],
+      "page": "https://www.blakfy.com/post/haber-bulusmasi-i%C3%A7in-seo-dan-cikarilacak-dersler",
+      "query": null,
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 6.25,
+      "position": 15.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/kendi-sitenizi-olusturmak"
+      ],
+      "page": "https://www.blakfy.com/post/kendi-sitenizi-olusturmak",
+      "query": null,
+      "clicks": 1,
+      "impressions": 14,
+      "ctr": 7.14,
+      "position": 7.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-paketleri-fiyatlari-2025-1"
+      ],
+      "page": "https://www.blakfy.com/post/seo-paketleri-fiyatlari-2025-1",
+      "query": null,
+      "clicks": 1,
+      "impressions": 68,
+      "ctr": 1.47,
+      "position": 20.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-paketleri-ve-fiyatlari-2025"
+      ],
+      "page": "https://www.blakfy.com/post/seo-paketleri-ve-fiyatlari-2025",
+      "query": null,
+      "clicks": 1,
+      "impressions": 438,
+      "ctr": 0.23,
+      "position": 33.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-site-tasima-islemlerinin-temelleri"
+      ],
+      "page": "https://www.blakfy.com/post/seo-site-tasima-islemlerinin-temelleri",
+      "query": null,
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 6.67,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-teklifi-olusturun"
+      ],
+      "page": "https://www.blakfy.com/post/seo-teklifi-olusturun",
+      "query": null,
+      "clicks": 1,
+      "impressions": 11,
+      "ctr": 9.09,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-uzmanlari-icin-chatgpt-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/seo-uzmanlari-icin-chatgpt-rehberi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 31,
+      "ctr": 3.23,
+      "position": 8.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-uzmanlari-icin-kariyer-gelistirme"
+      ],
+      "page": "https://www.blakfy.com/post/seo-uzmanlari-icin-kariyer-gelistirme",
+      "query": null,
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 20,
+      "position": 9.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/teknik-seo-onerilerinin-uygulanmasi"
+      ],
+      "page": "https://www.blakfy.com/post/teknik-seo-onerilerinin-uygulanmasi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 12.5,
+      "position": 15.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/velo-wix-veritabani-dinamik-form-olusturma"
+      ],
+      "page": "https://www.blakfy.com/post/velo-wix-veritabani-dinamik-form-olusturma",
+      "query": null,
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 6.25,
+      "position": 11.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-seo-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/wix-seo-nasil-yapilir",
+      "query": null,
+      "clicks": 1,
+      "impressions": 125,
+      "ctr": 0.8,
+      "position": 8.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-sitem-neden-yavas"
+      ],
+      "page": "https://www.blakfy.com/post/wix-sitem-neden-yavas",
+      "query": null,
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 2.22,
+      "position": 6.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/zaman-yonetimi-icin-en-iyi-uygulamalar"
+      ],
+      "page": "https://www.blakfy.com/post/zaman-yonetimi-icin-en-iyi-uygulamalar",
+      "query": null,
+      "clicks": 1,
+      "impressions": 246,
+      "ctr": 0.41,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/isletme-mobil-uygulama-paketi"
+      ],
+      "page": "https://www.blakfy.com/product-page/isletme-mobil-uygulama-paketi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 12,
+      "ctr": 8.33,
+      "position": 7.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/iptal-ve-iade-politikasi"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/iptal-ve-iade-politikasi",
+      "query": null,
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 33.33,
+      "position": 2.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/kullanim-kosullari"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/kullanim-kosullari",
+      "query": null,
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 6.67,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/sirket-iletisim-bilgileri"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/sirket-iletisim-bilgileri",
+      "query": null,
+      "clicks": 1,
+      "impressions": 110,
+      "ctr": 0.91,
+      "position": 2.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/web-tasarim"
+      ],
+      "page": "https://www.blakfy.com/web-tasarim",
+      "query": null,
+      "clicks": 1,
+      "impressions": 78,
+      "ctr": 1.28,
+      "position": 14.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/ar/kurumsal-web-tasarim"
+      ],
+      "page": "https://www.blakfy.com/ar/kurumsal-web-tasarim",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/ar/sozlesmeler/gizlilik-politikasi"
+      ],
+      "page": "https://www.blakfy.com/ar/sozlesmeler/gizlilik-politikasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog/archive/2025/10"
+      ],
+      "page": "https://www.blakfy.com/blog/archive/2025/10",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog/archive/2025/11"
+      ],
+      "page": "https://www.blakfy.com/blog/archive/2025/11",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog/archive/2025/12"
+      ],
+      "page": "https://www.blakfy.com/blog/archive/2025/12",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog/categories/dijital-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/blog/categories/dijital-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog/categories/i-leri-seviye-seo"
+      ],
+      "page": "https://www.blakfy.com/blog/categories/i-leri-seviye-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 27.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/blog/categories/web-tasar%C4%B1m"
+      ],
+      "page": "https://www.blakfy.com/blog/categories/web-tasar%C4%B1m",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 1.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/category/link-kazanma-danismanligi"
+      ],
+      "page": "https://www.blakfy.com/category/link-kazanma-danismanligi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 30.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/category/seo-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/category/seo-hizmetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/category/web-tasar%C4%B1m-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/category/web-tasar%C4%B1m-hizmetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 31.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/de/guncel-haberler/seo-%26-dijital-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/de/guncel-haberler/seo-%26-dijital-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/de/post/webdesign-preise-2025-was-h%C3%A4ngt-wovon-ab"
+      ],
+      "page": "https://www.blakfy.com/de/post/webdesign-preise-2025-was-h%C3%A4ngt-wovon-ab",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/destek-talep-formu"
+      ],
+      "page": "https://www.blakfy.com/destek-talep-formu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 9.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/dijital-pazarlama-danismanligi"
+      ],
+      "page": "https://www.blakfy.com/dijital-pazarlama-danismanligi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 319,
+      "ctr": 0,
+      "position": 31.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/egitimler"
+      ],
+      "page": "https://www.blakfy.com/egitimler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 9.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en"
+      ],
+      "page": "https://www.blakfy.com/en",
+      "query": null,
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 4.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/google-benim-isletmem"
+      ],
+      "page": "https://www.blakfy.com/en/google-benim-isletmem",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/2025-google-ads-stratejileri-yeni-nesil-reklam-yaklasimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/2025-google-ads-stratejileri-yeni-nesil-reklam-yaklasimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/agri-google-ads-kampanya-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/agri-google-ads-kampanya-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/akbank-sanal-pos-wixe-nasil-baglanir"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/akbank-sanal-pos-wixe-nasil-baglanir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/aksaray-klinik-saglik-pazarlamasi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/aksaray-klinik-saglik-pazarlamasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/ankara-dijital-pazarlama-ajansi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/ankara-dijital-pazarlama-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/antalya-saglik-sektoru-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/antalya-saglik-sektoru-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/aydin-klinik-tanitim-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/aydin-klinik-tanitim-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/bilecik-seo-odakli-klinik-tanitimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/bilecik-seo-odakli-klinik-tanitimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 99,
+      "ctr": 0,
+      "position": 5.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/bitlis-google-ads-optimizasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/bitlis-google-ads-optimizasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/burdur-klinik-dijital-gorunurluk-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/burdur-klinik-dijital-gorunurluk-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/bursa-google-ads-ve-seo-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/bursa-google-ads-ve-seo-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 6.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/canakkale-dijital-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/canakkale-dijital-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/cankiri-yerel-dijital-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/cankiri-yerel-dijital-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/chatbots-in-healthcare-2025"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/chatbots-in-healthcare-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/conversion-tracking-medical-ads"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/conversion-tracking-medical-ads",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 21.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/corum-klinik-seo-ve-reklam-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/corum-klinik-seo-ve-reklam-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/dijital-pazarlamada-ads-reklamlarinin-2025teki-rolu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/dijital-pazarlamada-ads-reklamlarinin-2025teki-rolu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 4.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/diyarbakir-dijital-pazarlama-ajansi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/diyarbakir-dijital-pazarlama-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/erzincan-seo-odakli-dijital-hizmetler"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/erzincan-seo-odakli-dijital-hizmetler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/eskisehir-klinik-pazarlama-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/eskisehir-klinik-pazarlama-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/ethical-healthcare-marketing"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/ethical-healthcare-marketing",
+      "query": null,
+      "clicks": 0,
+      "impressions": 231,
+      "ctr": 0,
+      "position": 49.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/getboundingclientrect-kullanim-kariyer-yonetimi-rehberi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/getboundingclientrect-kullanim-kariyer-yonetimi-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/getboundingclientrect-nedir-nasil-kullanilir"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/getboundingclientrect-nedir-nasil-kullanilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 951,
+      "ctr": 0,
+      "position": 15.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/google-ads-healthcare-2025"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/google-ads-healthcare-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 10.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/google-ads-vs-meta-ads-clinics"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/google-ads-vs-meta-ads-clinics",
+      "query": null,
+      "clicks": 0,
+      "impressions": 269,
+      "ctr": 0,
+      "position": 15.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/google-yeni-arama-guncellemesi-yapay-zeka-icerik-denetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/google-yeni-arama-guncellemesi-yapay-zeka-icerik-denetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/hakkari-yerel-seo-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/hakkari-yerel-seo-hizmetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 1.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/halkbank-sanal-pos-wix-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/halkbank-sanal-pos-wix-baglantisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 16.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/is-bankasi-sanal-pos-wix-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/is-bankasi-sanal-pos-wix-baglantisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 9.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/kahramanmaras-dijital-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/kahramanmaras-dijital-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/karaman-dijital-saglik-pazarlamasi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/karaman-dijital-saglik-pazarlamasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/kastamonu-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/kastamonu-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/kirikkale-seo-ve-google-ads"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/kirikkale-seo-ve-google-ads",
+      "query": null,
+      "clicks": 0,
+      "impressions": 58,
+      "ctr": 0,
+      "position": 3.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/klinikler-icin-online-itibar-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/klinikler-icin-online-itibar-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/konya-saglik-sektoru-dijital-pazarlamasi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/konya-saglik-sektoru-dijital-pazarlamasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/kuveyt-turk-pos-wixe-nasil-baglanir"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/kuveyt-turk-pos-wixe-nasil-baglanir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 3.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/local-seo-private-clinics-2025"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/local-seo-private-clinics-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 7.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/mardin-klinik-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/mardin-klinik-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/nevsehir-dijital-pazarlama-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/nevsehir-dijital-pazarlama-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/online-reputation-management-clinics"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/online-reputation-management-clinics",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/osmaniye-dijital-saglik-reklamciligi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/osmaniye-dijital-saglik-reklamciligi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/ozel-klinikler-icin-local-seo-2025"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/ozel-klinikler-icin-local-seo-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/saglik-reklamlarinda-donusum-takibi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/saglik-reklamlarinda-donusum-takibi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 13.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/sakarya-dijital-klinik-tanitimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/sakarya-dijital-klinik-tanitimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/samsun-seo-ve-dijital-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/samsun-seo-ve-dijital-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 52,
+      "ctr": 0,
+      "position": 6.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/sivas-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/sivas-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/tekirdag-dijital-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/tekirdag-dijital-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/trabzon-google-ads-ve-dijital-hizmetler"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/trabzon-google-ads-ve-dijital-hizmetler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/turkiye-2026-savunma-teknolojileri-yapay-zeka-kuantum"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/turkiye-2026-savunma-teknolojileri-yapay-zeka-kuantum",
+      "query": null,
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/usak-dijital-reklam-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/usak-dijital-reklam-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 3.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/vakifbank-posu-wixe-nasil-eklenir"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/vakifbank-posu-wixe-nasil-eklenir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 6.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/video-marketing-for-medical-clinics"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/video-marketing-for-medical-clinics",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 14.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-ai-icerik-otomasyon-araclari-2025"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-ai-icerik-otomasyon-araclari-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-akbank-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-akbank-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 6.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-akbank-sanal-pos-kurulumu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-akbank-sanal-pos-kurulumu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-denizbank-pos-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-denizbank-pos-baglantisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 5.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-finansbank-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-finansbank-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-garanti-pos-baglantisi-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-garanti-pos-baglantisi-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-garanti-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-garanti-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-halkbank-pos-kurulumu-adimlari"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-halkbank-pos-kurulumu-adimlari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 7.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-is-bankasi-odeme-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-is-bankasi-odeme-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-is-bankasi-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-is-bankasi-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 7.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-kuveyt-turk-odeme-sistemi-kurulumu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-kuveyt-turk-odeme-sistemi-kurulumu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-kuveyt-turk-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-kuveyt-turk-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 7.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-seo-turkiye-google-siralama"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-seo-turkiye-google-siralama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-turk-bankasi-sanal-pos-entegresyonu-basladi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-turk-bankasi-sanal-pos-entegresyonu-basladi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 7.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-vakifbank-3d-secure-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-vakifbank-3d-secure-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-vakifbank-sanal-pos-kurulumu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-vakifbank-sanal-pos-kurulumu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 171,
+      "ctr": 0,
+      "position": 5.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-yapi-kredi-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-yapi-kredi-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-ziraat-3d-secure-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-ziraat-3d-secure-baglantisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/wix-ziraat-bankasi-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/wix-ziraat-bankasi-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/yalova-seo-ve-dijital-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/yalova-seo-ve-dijital-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 8.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/yapi-kredi-pos-wix-uzerine-kurma"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/yapi-kredi-pos-wix-uzerine-kurma",
+      "query": null,
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/yerel-seo-sehir-bazli-dijital-reklam-donemi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/yerel-seo-sehir-bazli-dijital-reklam-donemi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 80,
+      "ctr": 0,
+      "position": 8.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/yozgat-klinik-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/yozgat-klinik-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/ziraat-pos-wix-kurulumu"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/ziraat-pos-wix-kurulumu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 4.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/guncel-haberler/zonguldak-dijital-saglik-pazarlamasi"
+      ],
+      "page": "https://www.blakfy.com/en/guncel-haberler/zonguldak-dijital-saglik-pazarlamasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/portfolyo-web-sitesi"
+      ],
+      "page": "https://www.blakfy.com/en/portfolyo-web-sitesi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/post/the-most-effective-way-to-attract-new-patients-to-medical-clinics-with-google-ads-in-2025"
+      ],
+      "page": "https://www.blakfy.com/en/post/the-most-effective-way-to-attract-new-patients-to-medical-clinics-with-google-ads-in-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 54,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/product-page/eticaret-web-sitesi"
+      ],
+      "page": "https://www.blakfy.com/en/product-page/eticaret-web-sitesi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/referral"
+      ],
+      "page": "https://www.blakfy.com/en/referral",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/seo-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/en/seo-hizmetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 26.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/seo-hizmetleri/backlink-olusturma"
+      ],
+      "page": "https://www.blakfy.com/en/seo-hizmetleri/backlink-olusturma",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/sozlesmeler/aydinlatma-metni"
+      ],
+      "page": "https://www.blakfy.com/en/sozlesmeler/aydinlatma-metni",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/sozlesmeler/iptal-ve-iade-politikasi"
+      ],
+      "page": "https://www.blakfy.com/en/sozlesmeler/iptal-ve-iade-politikasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 7.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/sozlesmeler/sirket-iletisim-bilgileri"
+      ],
+      "page": "https://www.blakfy.com/en/sozlesmeler/sirket-iletisim-bilgileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/sss"
+      ],
+      "page": "https://www.blakfy.com/en/sss",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/tasarim-sablonlari"
+      ],
+      "page": "https://www.blakfy.com/en/tasarim-sablonlari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/en/teknoloji-haberleri"
+      ],
+      "page": "https://www.blakfy.com/en/teknoloji-haberleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/2025-google-ads-stratejileri-yeni-nesil-reklam-yaklasimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/2025-google-ads-stratejileri-yeni-nesil-reklam-yaklasimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 62,
+      "ctr": 0,
+      "position": 11.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/adana-dijital-pazarlama-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/adana-dijital-pazarlama-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 12.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/adiyaman-seo-ve-reklam-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/adiyaman-seo-ve-reklam-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/afyonkarahisar-dijital-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/afyonkarahisar-dijital-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 35.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ai-marketing-for-medical-clinics"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ai-marketing-for-medical-clinics",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/akbank-sanal-pos-wixe-nasil-baglanir"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/akbank-sanal-pos-wixe-nasil-baglanir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/amasya-yerel-seo-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/amasya-yerel-seo-hizmetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ankara-dijital-pazarlama-ajansi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ankara-dijital-pazarlama-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 82,
+      "ctr": 0,
+      "position": 21.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/antalya-saglik-sektoru-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/antalya-saglik-sektoru-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 88,
+      "ctr": 0,
+      "position": 19.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/artvin-google-ads-optimizasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/artvin-google-ads-optimizasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/balikesir-yerel-dijital-reklam-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/balikesir-yerel-dijital-reklam-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/bayburt-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/bayburt-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/bilecik-seo-odakli-klinik-tanitimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/bilecik-seo-odakli-klinik-tanitimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/bitlis-google-ads-optimizasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/bitlis-google-ads-optimizasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/burdur-klinik-dijital-gorunurluk-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/burdur-klinik-dijital-gorunurluk-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/bursa-google-ads-ve-seo-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/bursa-google-ads-ve-seo-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 33.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/cankiri-yerel-dijital-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/cankiri-yerel-dijital-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/chatbots-in-healthcare-2025"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/chatbots-in-healthcare-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/cloudflare-coktu-102-dakika-kuresel-kesinti-bitti-18-kasim-2025"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/cloudflare-coktu-102-dakika-kuresel-kesinti-bitti-18-kasim-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 58,
+      "ctr": 0,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/cloudflare-coktu-kuresel-kesinti-18-kasim-2025"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/cloudflare-coktu-kuresel-kesinti-18-kasim-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 123,
+      "ctr": 0,
+      "position": 11.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/conversion-tracking-medical-ads"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/conversion-tracking-medical-ads",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/denizli-google-ads-kampanyalari"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/denizli-google-ads-kampanyalari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 19.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/dijital-hasta-deneyiminin-gelecegi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/dijital-hasta-deneyiminin-gelecegi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 15.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/diyarbakir-dijital-pazarlama-ajansi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/diyarbakir-dijital-pazarlama-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 13.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/e-ticaret-ux-donusum-taktikleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/e-ticaret-ux-donusum-taktikleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/elazig-dijital-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/elazig-dijital-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/erzurum-google-ads-saglik-kampanyalari"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/erzurum-google-ads-saglik-kampanyalari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 14.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/gaziantep-dijital-pazarlama-ve-seo"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/gaziantep-dijital-pazarlama-ve-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/getboundingclientrect-nedir-nasil-kullanilir"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/getboundingclientrect-nedir-nasil-kullanilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/giresun-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/giresun-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/google-ads-healthcare-2025"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/google-ads-healthcare-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/google-ads-saglik-sektoru-2025"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/google-ads-saglik-sektoru-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/google-ads-vs-meta-ads-clinics"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/google-ads-vs-meta-ads-clinics",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 14.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/google-arama-guncellemeleri-seo-ai"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/google-arama-guncellemeleri-seo-ai",
+      "query": null,
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 10.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/google-yeni-arama-guncellemesi-yapay-zeka-icerik-denetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/google-yeni-arama-guncellemesi-yapay-zeka-icerik-denetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/hakkari-yerel-seo-hizmetleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/hakkari-yerel-seo-hizmetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ikas-seo-nedir-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ikas-seo-nedir-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 65,
+      "ctr": 0,
+      "position": 9.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/is-bankasi-sanal-pos-wix-baglantisi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/is-bankasi-sanal-pos-wix-baglantisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 8.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/isparta-google-ads-kampanyalari"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/isparta-google-ads-kampanyalari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/izmir-klinik-seo-ve-google-ads"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/izmir-klinik-seo-ve-google-ads",
+      "query": null,
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 32.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kahramanmaras-dijital-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kahramanmaras-dijital-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kastamonu-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kastamonu-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kayseri-dijital-reklam-ajansi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kayseri-dijital-reklam-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kilis-klinik-seo-optimizasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kilis-klinik-seo-optimizasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kirikkale-seo-ve-google-ads"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kirikkale-seo-ve-google-ads",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kirsehir-yerel-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kirsehir-yerel-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 10.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/klinikler-icin-online-itibar-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/klinikler-icin-online-itibar-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/klinikler-icin-video-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/klinikler-icin-video-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 24.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/kocaeli-google-ads-ve-dijital-yonetim"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/kocaeli-google-ads-ve-dijital-yonetim",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 14.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/llms-txt-nedir-yapay-zeka-icin-yeni-robots-txt"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/llms-txt-nedir-yapay-zeka-icin-yeni-robots-txt",
+      "query": null,
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 8.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/malatya-seo-ve-hasta-kazanim-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/malatya-seo-ve-hasta-kazanim-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/manisa-dijital-pazarlama-ajansi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/manisa-dijital-pazarlama-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/mardin-klinik-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/mardin-klinik-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 12.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/nevsehir-dijital-pazarlama-cozumleri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/nevsehir-dijital-pazarlama-cozumleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/ordu-seo-ve-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/ordu-seo-ve-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/osmaniye-dijital-saglik-reklamciligi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/osmaniye-dijital-saglik-reklamciligi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/rize-google-ads-kampanyalari"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/rize-google-ads-kampanyalari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 6.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/saglik-sektorunde-etik-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/saglik-sektorunde-etik-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 4.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/samsun-seo-ve-dijital-reklam-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/samsun-seo-ve-dijital-reklam-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/seo-guven-problemi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/seo-guven-problemi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/seo-yatirim-geri-donusu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/seo-yatirim-geri-donusu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/sinop-dijital-reklam-ajansi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/sinop-dijital-reklam-ajansi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/sivas-google-ads-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/sivas-google-ads-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/tekirdag-dijital-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/tekirdag-dijital-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/tokat-seo-odakli-klinik-tanitimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/tokat-seo-odakli-klinik-tanitimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/trabzon-google-ads-ve-dijital-hizmetler"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/trabzon-google-ads-ve-dijital-hizmetler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 7.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-akbank-sanal-pos-entegrasyonu"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-akbank-sanal-pos-entegrasyonu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/wix-turk-bankasi-sanal-pos-entegrasyonlari-resmen-basladi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/wix-turk-bankasi-sanal-pos-entegrasyonlari-resmen-basladi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 5.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/yapay-zeka-destekli-klinik-pazarlama"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/yapay-zeka-destekli-klinik-pazarlama",
+      "query": null,
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 17.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/yapay-zeka-reklam-optimizasyonu-donusum-artisi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/yapay-zeka-reklam-optimizasyonu-donusum-artisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/yerel-seo-sehir-bazli-dijital-reklam-donemi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/yerel-seo-sehir-bazli-dijital-reklam-donemi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 60,
+      "ctr": 0,
+      "position": 30.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/guncel-haberler/yozgat-klinik-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/guncel-haberler/yozgat-klinik-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/members-area/tarik-tunc/profile"
+      ],
+      "page": "https://www.blakfy.com/members-area/tarik-tunc/profile",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/paketlerimiz"
+      ],
+      "page": "https://www.blakfy.com/paketlerimiz",
+      "query": null,
+      "clicks": 0,
+      "impressions": 157,
+      "ctr": 0,
+      "position": 2.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/2025-en-iyi-google-ads-ppc-araclari"
+      ],
+      "page": "https://www.blakfy.com/post/2025-en-iyi-google-ads-ppc-araclari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/2025-web-tasarim-fiyatlari"
+      ],
+      "page": "https://www.blakfy.com/post/2025-web-tasarim-fiyatlari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/301-yonlendirme"
+      ],
+      "page": "https://www.blakfy.com/post/301-yonlendirme",
+      "query": null,
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 30.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/apple-maps-isletme-ekleme"
+      ],
+      "page": "https://www.blakfy.com/post/apple-maps-isletme-ekleme",
+      "query": null,
+      "clicks": 0,
+      "impressions": 140,
+      "ctr": 0,
+      "position": 10.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/b2b-seo-chatgpt-inceleme"
+      ],
+      "page": "https://www.blakfy.com/post/b2b-seo-chatgpt-inceleme",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 19.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/backlink-nedir-seo-etkisi-2025"
+      ],
+      "page": "https://www.blakfy.com/post/backlink-nedir-seo-etkisi-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/baslik-etiketi-yeniden-yazma-seo"
+      ],
+      "page": "https://www.blakfy.com/post/baslik-etiketi-yeniden-yazma-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 7.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/bing-seo-rehberi-2025"
+      ],
+      "page": "https://www.blakfy.com/post/bing-seo-rehberi-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 10.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/blakfy-mi-blakify-mi"
+      ],
+      "page": "https://www.blakfy.com/post/blakfy-mi-blakify-mi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/breadcrumb-seo-navigasyon-icerik-hiyerarsisi"
+      ],
+      "page": "https://www.blakfy.com/post/breadcrumb-seo-navigasyon-icerik-hiyerarsisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/c2b-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/c2b-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/chatgpt-seo-komutlari"
+      ],
+      "page": "https://www.blakfy.com/post/chatgpt-seo-komutlari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/chatgpt-ve-google-colab-ile-olu%C5%9Fturabilece%C4%9Finiz-6-seo-arac%C4%B1"
+      ],
+      "page": "https://www.blakfy.com/post/chatgpt-ve-google-colab-ile-olu%C5%9Fturabilece%C4%9Finiz-6-seo-arac%C4%B1",
+      "query": null,
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/dijital-pazarlama-stratejileri"
+      ],
+      "page": "https://www.blakfy.com/post/dijital-pazarlama-stratejileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 10.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/domain-maliyeti-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/domain-maliyeti-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 8.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/domain-nedir-alan-adi-nasil-alinir"
+      ],
+      "page": "https://www.blakfy.com/post/domain-nedir-alan-adi-nasil-alinir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 187,
+      "ctr": 0,
+      "position": 38.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/domain-secimi"
+      ],
+      "page": "https://www.blakfy.com/post/domain-secimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 13.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/domain-secimi-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/domain-secimi-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 8.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/dropshipping-nedir-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/dropshipping-nedir-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 261,
+      "ctr": 0,
+      "position": 52.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/e-ticaret-icin-yapay-zeka-icerik"
+      ],
+      "page": "https://www.blakfy.com/post/e-ticaret-icin-yapay-zeka-icerik",
+      "query": null,
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 13.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/e-ticaret-kategori-sayfasi-yap%C4%B1iandirilmis-verileri"
+      ],
+      "page": "https://www.blakfy.com/post/e-ticaret-kategori-sayfasi-yap%C4%B1iandirilmis-verileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/e-ticaret-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/e-ticaret-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 28.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/e-ticaret-teknik-seo"
+      ],
+      "page": "https://www.blakfy.com/post/e-ticaret-teknik-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/emlakcilar-icin-seo"
+      ],
+      "page": "https://www.blakfy.com/post/emlakcilar-icin-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 13.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/en-cok-aranan-kisiler"
+      ],
+      "page": "https://www.blakfy.com/post/en-cok-aranan-kisiler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 10.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/eo-nedir-arama-motoru-optimizasyonu-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/eo-nedir-arama-motoru-optimizasyonu-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 54.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/etkilesimden-inp-kadar-gecen-sure-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/etkilesimden-inp-kadar-gecen-sure-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/etkili-seo-temelleri-ilk-90-gun"
+      ],
+      "page": "https://www.blakfy.com/post/etkili-seo-temelleri-ilk-90-gun",
+      "query": null,
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/fonksiyonel-programlama-declarative-vs-imperative"
+      ],
+      "page": "https://www.blakfy.com/post/fonksiyonel-programlama-declarative-vs-imperative",
+      "query": null,
+      "clicks": 0,
+      "impressions": 236,
+      "ctr": 0,
+      "position": 8.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/g%C3%B6rsel-optimizasyonu-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/g%C3%B6rsel-optimizasyonu-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/g%C3%BCleg%C3%BCle-amp"
+      ],
+      "page": "https://www.blakfy.com/post/g%C3%BCleg%C3%BCle-amp",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-ads-b%C3%BCt%C3%A7e-y%C3%B6netimi-ve-%C3%B6deme-s%C3%BCreci-kapsaml%C4%B1-bir-k%C4%B1lavuz"
+      ],
+      "page": "https://www.blakfy.com/post/google-ads-b%C3%BCt%C3%A7e-y%C3%B6netimi-ve-%C3%B6deme-s%C3%BCreci-kapsaml%C4%B1-bir-k%C4%B1lavuz",
+      "query": null,
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 42.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-ads-butce-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/post/google-ads-butce-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 35.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-ads-butce-yonetimi-odeme-sureci"
+      ],
+      "page": "https://www.blakfy.com/post/google-ads-butce-yonetimi-odeme-sureci",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-algoritma-g%C3%BCncellemeleri-analizi"
+      ],
+      "page": "https://www.blakfy.com/post/google-algoritma-g%C3%BCncellemeleri-analizi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 12.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-algoritma-guncellemeleri-analizi"
+      ],
+      "page": "https://www.blakfy.com/post/google-algoritma-guncellemeleri-analizi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 18.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-analytics-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/google-analytics-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-arama-sonuclar%C4%B1nda-yeni-donem"
+      ],
+      "page": "https://www.blakfy.com/post/google-arama-sonuclar%C4%B1nda-yeni-donem",
+      "query": null,
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-arama-sonuclarinda-yeni-donem-cok-sesli-icerik"
+      ],
+      "page": "https://www.blakfy.com/post/google-arama-sonuclarinda-yeni-donem-cok-sesli-icerik",
+      "query": null,
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-core-update-2025"
+      ],
+      "page": "https://www.blakfy.com/post/google-core-update-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-i%C5%9Fletme-profilinizi-olusturun"
+      ],
+      "page": "https://www.blakfy.com/post/google-i%C5%9Fletme-profilinizi-olusturun",
+      "query": null,
+      "clicks": 0,
+      "impressions": 164,
+      "ctr": 0,
+      "position": 27.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-in-cekirdek-g%C3%BCncellemeleri-mart-2024"
+      ],
+      "page": "https://www.blakfy.com/post/google-in-cekirdek-g%C3%BCncellemeleri-mart-2024",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-in-sge-gorusleri-seofomo"
+      ],
+      "page": "https://www.blakfy.com/post/google-in-sge-gorusleri-seofomo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-isletme-profili-gonderileri-olusturmaya-baslamay%C4%B1n"
+      ],
+      "page": "https://www.blakfy.com/post/google-isletme-profili-gonderileri-olusturmaya-baslamay%C4%B1n",
+      "query": null,
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 6.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-seo-araci-guncellemesi-siralama-takip-araclari-nasil-uyarlaniyor"
+      ],
+      "page": "https://www.blakfy.com/post/google-seo-araci-guncellemesi-siralama-takip-araclari-nasil-uyarlaniyor",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/google-yorumlari-neden-%C3%B6nemlidir-yerel-isletmeler"
+      ],
+      "page": "https://www.blakfy.com/post/google-yorumlari-neden-%C3%B6nemlidir-yerel-isletmeler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 66,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/gorsel-optimizasyonu-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/gorsel-optimizasyonu-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 20.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/gpb-kategorinizi-nasil-secersiniz"
+      ],
+      "page": "https://www.blakfy.com/post/gpb-kategorinizi-nasil-secersiniz",
+      "query": null,
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/gule-gule-amp"
+      ],
+      "page": "https://www.blakfy.com/post/gule-gule-amp",
+      "query": null,
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 9.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/haber-bulusmasi-icin-seo-dan-cikarilacak-dersler"
+      ],
+      "page": "https://www.blakfy.com/post/haber-bulusmasi-icin-seo-dan-cikarilacak-dersler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 23.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/html-id-global-degisken"
+      ],
+      "page": "https://www.blakfy.com/post/html-id-global-degisken",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/is-fikirleri"
+      ],
+      "page": "https://www.blakfy.com/post/is-fikirleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 74,
+      "ctr": 0,
+      "position": 8.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/isinizi-nasil-kurarsiniz-adim-adim"
+      ],
+      "page": "https://www.blakfy.com/post/isinizi-nasil-kurarsiniz-adim-adim",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/isinizi-telefondan-yonetin"
+      ],
+      "page": "https://www.blakfy.com/post/isinizi-telefondan-yonetin",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/javascript-null-undefined-farki"
+      ],
+      "page": "https://www.blakfy.com/post/javascript-null-undefined-farki",
+      "query": null,
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 14.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/kurucular-neden-ilk-siteleri-icin-webflow-wix-veya-wordpressi-seciyor"
+      ],
+      "page": "https://www.blakfy.com/post/kurucular-neden-ilk-siteleri-icin-webflow-wix-veya-wordpressi-seciyor",
+      "query": null,
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/kurumsal-web-tasarim-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/kurumsal-web-tasarim-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/mangools-ile-i%CC%87%C3%A7erikleri-daha-h%C4%B1zl%C4%B1-s%C4%B1ralamak-yeni-ba%C5%9Flayanlar-i%CC%87%C3%A7in-seo-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/mangools-ile-i%CC%87%C3%A7erikleri-daha-h%C4%B1zl%C4%B1-s%C4%B1ralamak-yeni-ba%C5%9Flayanlar-i%CC%87%C3%A7in-seo-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/mangools-kullanim-rehberi-yeni-baslayanlar"
+      ],
+      "page": "https://www.blakfy.com/post/mangools-kullanim-rehberi-yeni-baslayanlar",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/markalasma-cikarimlari-nyc-dijital-pazarlama-bulusmasi"
+      ],
+      "page": "https://www.blakfy.com/post/markalasma-cikarimlari-nyc-dijital-pazarlama-bulusmasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 32.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/markan%C4%B1z-i-%C3%A7in-wikipedia-sayfas%C4%B1-nas%C4%B1l-olu%C5%9Fturulur"
+      ],
+      "page": "https://www.blakfy.com/post/markan%C4%B1z-i-%C3%A7in-wikipedia-sayfas%C4%B1-nas%C4%B1l-olu%C5%9Fturulur",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/neden-surekli-yeni-framework-cikiyor"
+      ],
+      "page": "https://www.blakfy.com/post/neden-surekli-yeni-framework-cikiyor",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/oz-gecmis-nasil-yazilir"
+      ],
+      "page": "https://www.blakfy.com/post/oz-gecmis-nasil-yazilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 359,
+      "ctr": 0,
+      "position": 34.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/para-kazanma-yolu"
+      ],
+      "page": "https://www.blakfy.com/post/para-kazanma-yolu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 212,
+      "ctr": 0,
+      "position": 9.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/podcast-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/podcast-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 14.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/portfolyo-nasil-hazirlanir"
+      ],
+      "page": "https://www.blakfy.com/post/portfolyo-nasil-hazirlanir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 110,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/profesyonel-web-sitesi-nasil-olusturulur"
+      ],
+      "page": "https://www.blakfy.com/post/profesyonel-web-sitesi-nasil-olusturulur",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 33.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/programatik-seo-ile-i-%C3%A7erik-geni%C5%9Fletme-python-ve-velo-kullan%C4%B1m-k%C4%B1lavuzu"
+      ],
+      "page": "https://www.blakfy.com/post/programatik-seo-ile-i-%C3%A7erik-geni%C5%9Fletme-python-ve-velo-kullan%C4%B1m-k%C4%B1lavuzu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 137,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/react-useeffect-hook-kullanimi"
+      ],
+      "page": "https://www.blakfy.com/post/react-useeffect-hook-kullanimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 19.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/react-usestate-hook-kullanimi"
+      ],
+      "page": "https://www.blakfy.com/post/react-usestate-hook-kullanimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 18.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/reactjs-te-usestate-kullan%C4%B1rken-dikkat-edilmesi-gerekenler"
+      ],
+      "page": "https://www.blakfy.com/post/reactjs-te-usestate-kullan%C4%B1rken-dikkat-edilmesi-gerekenler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 9.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/robots-txt-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/robots-txt-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 42.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/scikit-learn-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/scikit-learn-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-baslik-h1-en-iyi-uygulamalar"
+      ],
+      "page": "https://www.blakfy.com/post/seo-baslik-h1-en-iyi-uygulamalar",
+      "query": null,
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 6.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-fiyatlari-fiyatlandirma-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/seo-fiyatlari-fiyatlandirma-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-i%C3%A7in-vekt%C3%B6r-g%C3%B6mme-nedir-mike-king-den-i-%C3%A7g%C3%B6r%C3%BCler"
+      ],
+      "page": "https://www.blakfy.com/post/seo-i%C3%A7in-vekt%C3%B6r-g%C3%B6mme-nedir-mike-king-den-i-%C3%A7g%C3%B6r%C3%BCler",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 26.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-icin-vektor-gomme"
+      ],
+      "page": "https://www.blakfy.com/post/seo-icin-vektor-gomme",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-nedir-1"
+      ],
+      "page": "https://www.blakfy.com/post/seo-nedir-1",
+      "query": null,
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 30.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-nedir-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/seo-nedir-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-oldu-mu-japon-kobiler-yapay-zeka-arama-stratejisi"
+      ],
+      "page": "https://www.blakfy.com/post/seo-oldu-mu-japon-kobiler-yapay-zeka-arama-stratejisi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-paketleri-fiyatlari-2025"
+      ],
+      "page": "https://www.blakfy.com/post/seo-paketleri-fiyatlari-2025",
+      "query": null,
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 86.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-stratejileri-2024"
+      ],
+      "page": "https://www.blakfy.com/post/seo-stratejileri-2024",
+      "query": null,
+      "clicks": 0,
+      "impressions": 116,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-temelleri-anahtar-kelime-sayfa-ici-disi-seo"
+      ],
+      "page": "https://www.blakfy.com/post/seo-temelleri-anahtar-kelime-sayfa-ici-disi-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 48.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-trendleri-2025-turkiye"
+      ],
+      "page": "https://www.blakfy.com/post/seo-trendleri-2025-turkiye",
+      "query": null,
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-uzmanlari-i%C3%A7in-kariyer-gelistirme"
+      ],
+      "page": "https://www.blakfy.com/post/seo-uzmanlari-i%C3%A7in-kariyer-gelistirme",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/seo-yeni-baslayanlar"
+      ],
+      "page": "https://www.blakfy.com/post/seo-yeni-baslayanlar",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/serp-nedir-ve-ozellikleri"
+      ],
+      "page": "https://www.blakfy.com/post/serp-nedir-ve-ozellikleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/site-hizi-optimizasyonu-ve-iyilestirme"
+      ],
+      "page": "https://www.blakfy.com/post/site-hizi-optimizasyonu-ve-iyilestirme",
+      "query": null,
+      "clicks": 0,
+      "impressions": 93,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/site-ici-seo-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/site-ici-seo-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 94,
+      "ctr": 0,
+      "position": 31.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/siteye-randevu-alma-sistemi"
+      ],
+      "page": "https://www.blakfy.com/post/siteye-randevu-alma-sistemi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 10.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/table-of-contents-seo"
+      ],
+      "page": "https://www.blakfy.com/post/table-of-contents-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/tam-zamanli-iste-ders-calisma-teknikleri"
+      ],
+      "page": "https://www.blakfy.com/post/tam-zamanli-iste-ders-calisma-teknikleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/temel-web-vitals-ger%C3%A7ek-kullan%C4%B1c%C4%B1-metrikleri-ve-laboratuvar-verisi-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rmas%C4%B1"
+      ],
+      "page": "https://www.blakfy.com/post/temel-web-vitals-ger%C3%A7ek-kullan%C4%B1c%C4%B1-metrikleri-ve-laboratuvar-verisi-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rmas%C4%B1",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 17.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/temel-web-vitals-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/temel-web-vitals-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/turkiyede-seo"
+      ],
+      "page": "https://www.blakfy.com/post/turkiyede-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 16.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/urun-gelistirme-icin-seo-verileri"
+      ],
+      "page": "https://www.blakfy.com/post/urun-gelistirme-icin-seo-verileri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 9.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/ux-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/ux-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 102,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/web-sitesi-nasil-kurulur"
+      ],
+      "page": "https://www.blakfy.com/post/web-sitesi-nasil-kurulur",
+      "query": null,
+      "clicks": 0,
+      "impressions": 85,
+      "ctr": 0,
+      "position": 24.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/web-sitesi-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/web-sitesi-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 145,
+      "ctr": 0,
+      "position": 33.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/web-sitesi-tasarimi-nasil-yapilir"
+      ],
+      "page": "https://www.blakfy.com/post/web-sitesi-tasarimi-nasil-yapilir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 104,
+      "ctr": 0,
+      "position": 13.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/webinar-nedir"
+      ],
+      "page": "https://www.blakfy.com/post/webinar-nedir",
+      "query": null,
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 28.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-erisebilirlik-sihirbazi"
+      ],
+      "page": "https://www.blakfy.com/post/wix-erisebilirlik-sihirbazi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-gorsellerinizi-nas%C4%B1l-optimize-edersiniz"
+      ],
+      "page": "https://www.blakfy.com/post/wix-gorsellerinizi-nas%C4%B1l-optimize-edersiniz",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-kurumsal-seo-puanlama-sistemi"
+      ],
+      "page": "https://www.blakfy.com/post/wix-kurumsal-seo-puanlama-sistemi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 12.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/wix-site-inspection-araci-kullanimi"
+      ],
+      "page": "https://www.blakfy.com/post/wix-site-inspection-araci-kullanimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 21.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yapay-zeka-ve-seo-aramanin-gelecegi"
+      ],
+      "page": "https://www.blakfy.com/post/yapay-zeka-ve-seo-aramanin-gelecegi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yapayzeka-yerellestirme-cokdilli-seo"
+      ],
+      "page": "https://www.blakfy.com/post/yapayzeka-yerellestirme-cokdilli-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 8.1
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yemek-%C5%9Firketleri-i%C3%A7in-seo"
+      ],
+      "page": "https://www.blakfy.com/post/yemek-%C5%9Firketleri-i%C3%A7in-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-isletme-dusuk-kodlu-seo"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-isletme-dusuk-kodlu-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-isletmeler-icin-mevsimsel-seo"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-isletmeler-icin-mevsimsel-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-101-ba%C5%9Flang%C4%B1%C3%A7-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-101-ba%C5%9Flang%C4%B1%C3%A7-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-101-baslang%C4%B1c-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-101-baslang%C4%B1c-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 35.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-anahtar-kelime-arastirmasi"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-anahtar-kelime-arastirmasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 25.8
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-baglanti-kurma-faaliyetleri"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-baglanti-kurma-faaliyetleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-baslik-etiketi"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-baslik-etiketi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-ile-baslayin"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-ile-baslayin",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 11.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/yerel-seo-kariyer-rehberi"
+      ],
+      "page": "https://www.blakfy.com/post/yerel-seo-kariyer-rehberi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 10.2
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/post/youtube-clips-seo-kullanimi"
+      ],
+      "page": "https://www.blakfy.com/post/youtube-clips-seo-kullanimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 8.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/pricing-plans/list"
+      ],
+      "page": "https://www.blakfy.com/pricing-plans/list",
+      "query": null,
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/dijital-gorunurluk-baslangic"
+      ],
+      "page": "https://www.blakfy.com/product-page/dijital-gorunurluk-baslangic",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.7
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/dijital-gorunurluk-gelismis"
+      ],
+      "page": "https://www.blakfy.com/product-page/dijital-gorunurluk-gelismis",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 22.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/eticaret-web-sitesi"
+      ],
+      "page": "https://www.blakfy.com/product-page/eticaret-web-sitesi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 13.9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/isletme-web-sitesi-paketi"
+      ],
+      "page": "https://www.blakfy.com/product-page/isletme-web-sitesi-paketi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 20.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/kurumsal-web-sitesi-paketi"
+      ],
+      "page": "https://www.blakfy.com/product-page/kurumsal-web-sitesi-paketi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 18.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/product-page/profesyonel-web-sitesi-paketi"
+      ],
+      "page": "https://www.blakfy.com/product-page/profesyonel-web-sitesi-paketi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/referral"
+      ],
+      "page": "https://www.blakfy.com/referral",
+      "query": null,
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/seo-hizmetleri/teknik-seo"
+      ],
+      "page": "https://www.blakfy.com/seo-hizmetleri/teknik-seo",
+      "query": null,
+      "clicks": 0,
+      "impressions": 104,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/aydinlatma-metni"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/aydinlatma-metni",
+      "query": null,
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/cerez-politikasi"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/cerez-politikasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/gizlilik-politikasi"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/gizlilik-politikasi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.4
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/hizmet-kosullari"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/hizmet-kosullari",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/kisisel-veri-paylasimi-ve-iletisim-izni"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/kisisel-veri-paylasimi-ve-iletisim-izni",
+      "query": null,
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/on-bilgilendirme-formu"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/on-bilgilendirme-formu",
+      "query": null,
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sozlesmeler/uyelik-sozlesmesi"
+      ],
+      "page": "https://www.blakfy.com/sozlesmeler/uyelik-sozlesmesi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/sss"
+      ],
+      "page": "https://www.blakfy.com/sss",
+      "query": null,
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/teknoloji-haberleri"
+      ],
+      "page": "https://www.blakfy.com/teknoloji-haberleri",
+      "query": null,
+      "clicks": 0,
+      "impressions": 77,
+      "ctr": 0,
+      "position": 10.3
+    },
+    {
+      "keys": [
+        "https://www.blakfy.com/yandex-reklam-yonetimi"
+      ],
+      "page": "https://www.blakfy.com/yandex-reklam-yonetimi",
+      "query": null,
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 33.2
+    }
+  ],
+  "queries": [
+    {
+      "keys": [
+        "blakfy"
+      ],
+      "page": null,
+      "query": "blakfy",
+      "clicks": 29,
+      "impressions": 138,
+      "ctr": 21.01,
+      "position": 1.9
+    },
+    {
+      "keys": [
+        "nasıl içerik üretebilirim"
+      ],
+      "page": null,
+      "query": "nasıl içerik üretebilirim",
+      "clicks": 28,
+      "impressions": 77,
+      "ctr": 36.36,
+      "position": 8
+    },
+    {
+      "keys": [
+        "wix nedir"
+      ],
+      "page": null,
+      "query": "wix nedir",
+      "clicks": 4,
+      "impressions": 449,
+      "ctr": 0.89,
+      "position": 10.7
+    },
+    {
+      "keys": [
+        "backlink paketleri"
+      ],
+      "page": null,
+      "query": "backlink paketleri",
+      "clicks": 1,
+      "impressions": 381,
+      "ctr": 0.26,
+      "position": 14.7
+    },
+    {
+      "keys": [
+        "blafy"
+      ],
+      "page": null,
+      "query": "blafy",
+      "clicks": 1,
+      "impressions": 23,
+      "ctr": 4.35,
+      "position": 1.8
+    },
+    {
+      "keys": [
+        "blog nasıl açılır"
+      ],
+      "page": null,
+      "query": "blog nasıl açılır",
+      "clicks": 1,
+      "impressions": 29,
+      "ctr": 3.45,
+      "position": 18
+    },
+    {
+      "keys": [
+        "google van nedir"
+      ],
+      "page": null,
+      "query": "google van nedir",
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 2.22,
+      "position": 6.9
+    },
+    {
+      "keys": [
+        "hakkımızda yazısı örneği"
+      ],
+      "page": null,
+      "query": "hakkımızda yazısı örneği",
+      "clicks": 1,
+      "impressions": 37,
+      "ctr": 2.7,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "hazır hakkımızda yazısı"
+      ],
+      "page": null,
+      "query": "hazır hakkımızda yazısı",
+      "clicks": 1,
+      "impressions": 46,
+      "ctr": 2.17,
+      "position": 9
+    },
+    {
+      "keys": [
+        "ikas mağaza açma"
+      ],
+      "page": null,
+      "query": "ikas mağaza açma",
+      "clicks": 1,
+      "impressions": 38,
+      "ctr": 2.63,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "sanal pos entegrasyonu"
+      ],
+      "page": null,
+      "query": "sanal pos entegrasyonu",
+      "clicks": 1,
+      "impressions": 30,
+      "ctr": 3.33,
+      "position": 56.6
+    },
+    {
+      "keys": [
+        "yaratıcı hakkımızda yazıları"
+      ],
+      "page": null,
+      "query": "yaratıcı hakkımızda yazıları",
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 25,
+      "position": 7
+    },
+    {
+      "keys": [
+        "\"alper tunga burak\" or \"alper tungaburak\" or \"alpertunga burak\" or \"alpertungaburak*\" or \"amazon türkiye\" or \"amazontürkiye*\" or \"btk*\" or \"bilgi teknolojileri ve iletişim kurumu\" or \"bilgiteknolojileri ve iletişim kurumu\" or \"bilgiteknolojileri veiletişim kurumu\" or \"bilgiteknolojileri veiletişimkurumu\" or \"bilgiteknolojileriveiletişimkurumu*\" or \"bulutistan*\" or \"etiya*\" or \"google türkiye\" or \"googletürkiye*\" or \"htk*\" or \"haber teknolojileri kümelenmesi\" or \"haberteknolojileri kümelenmesi\" or \"haberteknolojilerikümelenmesi*\" or \"huawei*\" or \"i2i systems\" or \"i2isystems*\" or \"kron*\" or \"kron teknoloji\" or \"kron tech\" or \"krontech*\" or \"kronteknoloji*\" or \"microsoft türkiye\" or \"netaş*\" or \"odine*\" or \"sabancıdx*\" or \"telenity*\" or \"türk telekom\" or \"türktelekom*\" or \"turkcell*\" or \"ümit önal\" or \"ümitönal*\" or \"ali taha koç\" or \"alitaha koç\" or \"ali tahakoç\" or \"alitahakoç*\" or \"vodafone*\" or \"engin aksoy\" or \"enginaksoy*\" or \"zapsu*\" or \"zte*\""
+      ],
+      "page": null,
+      "query": "\"alper tunga burak\" or \"alper tungaburak\" or \"alpertunga burak\" or \"alpertungaburak*\" or \"amazon türkiye\" or \"amazontürkiye*\" or \"btk*\" or \"bilgi teknolojileri ve iletişim kurumu\" or \"bilgiteknolojileri ve iletişim kurumu\" or \"bilgiteknolojileri veiletişim kurumu\" or \"bilgiteknolojileri veiletişimkurumu\" or \"bilgiteknolojileriveiletişimkurumu*\" or \"bulutistan*\" or \"etiya*\" or \"google türkiye\" or \"googletürkiye*\" or \"htk*\" or \"haber teknolojileri kümelenmesi\" or \"haberteknolojileri kümelenmesi\" or \"haberteknolojilerikümelenmesi*\" or \"huawei*\" or \"i2i systems\" or \"i2isystems*\" or \"kron*\" or \"kron teknoloji\" or \"kron tech\" or \"krontech*\" or \"kronteknoloji*\" or \"microsoft türkiye\" or \"netaş*\" or \"odine*\" or \"sabancıdx*\" or \"telenity*\" or \"türk telekom\" or \"türktelekom*\" or \"turkcell*\" or \"ümit önal\" or \"ümitönal*\" or \"ali taha koç\" or \"alitaha koç\" or \"ali tahakoç\" or \"alitahakoç*\" or \"vodafone*\" or \"engin aksoy\" or \"enginaksoy*\" or \"zapsu*\" or \"zte*\"",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "\"denizbank\" technology news"
+      ],
+      "page": null,
+      "query": "\"denizbank\" technology news",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "keys": [
+        "\"doğru tanım tüm anahtar kelimelere sahip veya dolaylı yolda\""
+      ],
+      "page": null,
+      "query": "\"doğru tanım tüm anahtar kelimelere sahip veya dolaylı yolda\"",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "\"ikas.com\" \"e-ticaret\" and (\"satın al\" or \"sepete ekle\" or \"sepet\" or \"ödeme\" or \"kargo\")"
+      ],
+      "page": null,
+      "query": "\"ikas.com\" \"e-ticaret\" and (\"satın al\" or \"sepete ekle\" or \"sepet\" or \"ödeme\" or \"kargo\")",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 51.5
+    },
+    {
+      "keys": [
+        "\"import { getsecret } from 'wix-secrets-backend'\""
+      ],
+      "page": null,
+      "query": "\"import { getsecret } from 'wix-secrets-backend'\"",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "\"seo ai\""
+      ],
+      "page": null,
+      "query": "\"seo ai\"",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "\"wix-secrets-backend\" getsecret"
+      ],
+      "page": null,
+      "query": "\"wix-secrets-backend\" getsecret",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "-site:facebook.com -site:fb.me -site:youtube.com -site:youtu.be -site:youtube.be -site:twitter.com -site:instagram.com -site:tiktok.com -site:vm.tiktok.com -site:t.co -site:x.com -site:reddit.com ( \"online reputation\" and ( \"tool\" or \"tools\" or \"platform\" or \"app\" or \"solution\" or \"management\" or \"platforms\" or \"apps\" ) ) or ( \"brand reputation\" and ( \"tool\" or \"tools\" or \"platform\" or \"app\" or \"solution\" or \"management\" or \"platforms\" or \"apps\" ) ) -\"mentionlytics\" -\"ice\" -\"police\" -\"trump\" -\"hiring\" -\"hire\" -\"role\" -\"job\" -\"military\" -\"free speech\" -\"mentionlytics\" -\"ice\" -\"police\" -\"trump\" -\"hiring\" -\"hire\" -\"role\" -\"job\" -\"military\" -\"free speech\""
+      ],
+      "page": null,
+      "query": "-site:facebook.com -site:fb.me -site:youtube.com -site:youtu.be -site:youtube.be -site:twitter.com -site:instagram.com -site:tiktok.com -site:vm.tiktok.com -site:t.co -site:x.com -site:reddit.com ( \"online reputation\" and ( \"tool\" or \"tools\" or \"platform\" or \"app\" or \"solution\" or \"management\" or \"platforms\" or \"apps\" ) ) or ( \"brand reputation\" and ( \"tool\" or \"tools\" or \"platform\" or \"app\" or \"solution\" or \"management\" or \"platforms\" or \"apps\" ) ) -\"mentionlytics\" -\"ice\" -\"police\" -\"trump\" -\"hiring\" -\"hire\" -\"role\" -\"job\" -\"military\" -\"free speech\" -\"mentionlytics\" -\"ice\" -\"police\" -\"trump\" -\"hiring\" -\"hire\" -\"role\" -\"job\" -\"military\" -\"free speech\"",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "keys": [
+        "301 yönlendirme"
+      ],
+      "page": null,
+      "query": "301 yönlendirme",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "keys": [
+        "301 yönlendirme nedir"
+      ],
+      "page": null,
+      "query": "301 yönlendirme nedir",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 32.5
+    },
+    {
+      "keys": [
+        "301 yönlendirmesi"
+      ],
+      "page": null,
+      "query": "301 yönlendirmesi",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 51.5
+    },
+    {
+      "keys": [
+        "3d secure iş bankası"
+      ],
+      "page": null,
+      "query": "3d secure iş bankası",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "keys": [
+        "3d secure vakıfbank"
+      ],
+      "page": null,
+      "query": "3d secure vakıfbank",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "ads klinik"
+      ],
+      "page": null,
+      "query": "ads klinik",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "keys": [
+        "ads van"
+      ],
+      "page": null,
+      "query": "ads van",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "ahrefs nedir ne işe yarar"
+      ],
+      "page": null,
+      "query": "ahrefs nedir ne işe yarar",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 95.7
+    },
+    {
+      "keys": [
+        "ahrefs zararlı linkler"
+      ],
+      "page": null,
+      "query": "ahrefs zararlı linkler",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 85.5
+    },
+    {
+      "keys": [
+        "ajans ödeme entegrasyonu nasıl yapılır"
+      ],
+      "page": null,
+      "query": "ajans ödeme entegrasyonu nasıl yapılır",
+      "clicks": 0,
+      "impressions": 52,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "alt sayfalar seo services"
+      ],
+      "page": null,
+      "query": "alt sayfalar seo services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.7
+    },
+    {
+      "keys": [
+        "alt sayfalar seo tools"
+      ],
+      "page": null,
+      "query": "alt sayfalar seo tools",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "amp reklam"
+      ],
+      "page": null,
+      "query": "amp reklam",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 14.8
+    },
+    {
+      "keys": [
+        "anahtar kelime"
+      ],
+      "page": null,
+      "query": "anahtar kelime",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "keys": [
+        "anahtar kelime keşfi"
+      ],
+      "page": null,
+      "query": "anahtar kelime keşfi",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 74.7
+    },
+    {
+      "keys": [
+        "ankara da dijital pazarlama ajansı"
+      ],
+      "page": null,
+      "query": "ankara da dijital pazarlama ajansı",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "ankara dijital pazarlama"
+      ],
+      "page": null,
+      "query": "ankara dijital pazarlama",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 28.7
+    },
+    {
+      "keys": [
+        "ankara dijital pazarlama ajansları"
+      ],
+      "page": null,
+      "query": "ankara dijital pazarlama ajansları",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "ankara dijital pazarlama ajansı"
+      ],
+      "page": null,
+      "query": "ankara dijital pazarlama ajansı",
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 20.9
+    },
+    {
+      "keys": [
+        "ankara pazarlama ajansı"
+      ],
+      "page": null,
+      "query": "ankara pazarlama ajansı",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 29.5
+    },
+    {
+      "keys": [
+        "ankara seo ajansı fy tasarım"
+      ],
+      "page": null,
+      "query": "ankara seo ajansı fy tasarım",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "antalya medikal turizm reklam ajansı"
+      ],
+      "page": null,
+      "query": "antalya medikal turizm reklam ajansı",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "keys": [
+        "antalya sağlık reklam"
+      ],
+      "page": null,
+      "query": "antalya sağlık reklam",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "keys": [
+        "antalya sağlık reklam ajansı"
+      ],
+      "page": null,
+      "query": "antalya sağlık reklam ajansı",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 18.3
+    },
+    {
+      "keys": [
+        "antalya sağlık turizm reklam"
+      ],
+      "page": null,
+      "query": "antalya sağlık turizm reklam",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 18.6
+    },
+    {
+      "keys": [
+        "antalya sağlık turizmi reklam"
+      ],
+      "page": null,
+      "query": "antalya sağlık turizmi reklam",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 18.9
+    },
+    {
+      "keys": [
+        "antalya sağlık turizmi reklam ajansı"
+      ],
+      "page": null,
+      "query": "antalya sağlık turizmi reklam ajansı",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 23.1
+    },
+    {
+      "keys": [
+        "antalya sağlık turizmi reklamları"
+      ],
+      "page": null,
+      "query": "antalya sağlık turizmi reklamları",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "apple business maps"
+      ],
+      "page": null,
+      "query": "apple business maps",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "apple connect maps"
+      ],
+      "page": null,
+      "query": "apple connect maps",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "apple haritalara işletme ekleme"
+      ],
+      "page": null,
+      "query": "apple haritalara işletme ekleme",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "keys": [
+        "apple maps business"
+      ],
+      "page": null,
+      "query": "apple maps business",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "apple maps connect"
+      ],
+      "page": null,
+      "query": "apple maps connect",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "keys": [
+        "apple maps connect türkiye"
+      ],
+      "page": null,
+      "query": "apple maps connect türkiye",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.7
+    },
+    {
+      "keys": [
+        "apple maps işletme ekleme"
+      ],
+      "page": null,
+      "query": "apple maps işletme ekleme",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "apple maps işyeri ekleme"
+      ],
+      "page": null,
+      "query": "apple maps işyeri ekleme",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "keys": [
+        "apple maps seo"
+      ],
+      "page": null,
+      "query": "apple maps seo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "aralık google seo güncellemesi"
+      ],
+      "page": null,
+      "query": "aralık google seo güncellemesi",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 11.1
+    },
+    {
+      "keys": [
+        "arama motorları örnek"
+      ],
+      "page": null,
+      "query": "arama motorları örnek",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "arama motoru optimizasyonu (seo) nedir"
+      ],
+      "page": null,
+      "query": "arama motoru optimizasyonu (seo) nedir",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "keys": [
+        "arama motoru pazarlaması fiyatları"
+      ],
+      "page": null,
+      "query": "arama motoru pazarlaması fiyatları",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 8.6
+    },
+    {
+      "keys": [
+        "aylık seo fiyatları"
+      ],
+      "page": null,
+      "query": "aylık seo fiyatları",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "aylık seo hizmeti"
+      ],
+      "page": null,
+      "query": "aylık seo hizmeti",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    },
+    {
+      "keys": [
+        "aylık seo paketleri"
+      ],
+      "page": null,
+      "query": "aylık seo paketleri",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "b2b pazarlama vaka çalışması"
+      ],
+      "page": null,
+      "query": "b2b pazarlama vaka çalışması",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "keys": [
+        "backlink 2025"
+      ],
+      "page": null,
+      "query": "backlink 2025",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 2.3
+    },
+    {
+      "keys": [
+        "backlink fiyat"
+      ],
+      "page": null,
+      "query": "backlink fiyat",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 15.6
+    },
+    {
+      "keys": [
+        "backlink fiyatları"
+      ],
+      "page": null,
+      "query": "backlink fiyatları",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 13.1
+    },
+    {
+      "keys": [
+        "backlink fiyatları 2025"
+      ],
+      "page": null,
+      "query": "backlink fiyatları 2025",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "backlink hizmeti"
+      ],
+      "page": null,
+      "query": "backlink hizmeti",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "keys": [
+        "backlink hizmetleri"
+      ],
+      "page": null,
+      "query": "backlink hizmetleri",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "backlink kodu"
+      ],
+      "page": null,
+      "query": "backlink kodu",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "keys": [
+        "backlink paket"
+      ],
+      "page": null,
+      "query": "backlink paket",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "keys": [
+        "backlink paket ücretleri"
+      ],
+      "page": null,
+      "query": "backlink paket ücretleri",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 12.2
+    },
+    {
+      "keys": [
+        "backlink paketi"
+      ],
+      "page": null,
+      "query": "backlink paketi",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 12.4
+    },
+    {
+      "keys": [
+        "backlink paketi satın al"
+      ],
+      "page": null,
+      "query": "backlink paketi satın al",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "keys": [
+        "backlink paketleri 2025"
+      ],
+      "page": null,
+      "query": "backlink paketleri 2025",
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 6.2
+    },
+    {
+      "keys": [
+        "backlink paketleri nedir"
+      ],
+      "page": null,
+      "query": "backlink paketleri nedir",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 17.5
+    },
+    {
+      "keys": [
+        "backlink siteleri"
+      ],
+      "page": null,
+      "query": "backlink siteleri",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "keys": [
+        "backlink ücretleri"
+      ],
+      "page": null,
+      "query": "backlink ücretleri",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 10.7
+    },
+    {
+      "keys": [
+        "backlinkpaketleri"
+      ],
+      "page": null,
+      "query": "backlinkpaketleri",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 11.4
+    },
+    {
+      "keys": [
+        "bayanlara evde para kazanma fikirleri"
+      ],
+      "page": null,
+      "query": "bayanlara evde para kazanma fikirleri",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 10.9
+    },
+    {
+      "keys": [
+        "başarılı hakkımızda yazısı örnekleri"
+      ],
+      "page": null,
+      "query": "başarılı hakkımızda yazısı örnekleri",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 10.3
+    },
+    {
+      "keys": [
+        "beni işletmem"
+      ],
+      "page": null,
+      "query": "beni işletmem",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "benim dükkanım"
+      ],
+      "page": null,
+      "query": "benim dükkanım",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "keys": [
+        "benim işletmem"
+      ],
+      "page": null,
+      "query": "benim işletmem",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "binti pawa"
+      ],
+      "page": null,
+      "query": "binti pawa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "keys": [
+        "blabify"
+      ],
+      "page": null,
+      "query": "blabify",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "blak label"
+      ],
+      "page": null,
+      "query": "blak label",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "keys": [
+        "blog acma"
+      ],
+      "page": null,
+      "query": "blog acma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "keys": [
+        "blog aç"
+      ],
+      "page": null,
+      "query": "blog aç",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 56.5
+    },
+    {
+      "keys": [
+        "blog açma"
+      ],
+      "page": null,
+      "query": "blog açma",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "keys": [
+        "blog açmak"
+      ],
+      "page": null,
+      "query": "blog açmak",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 36.3
+    },
+    {
+      "keys": [
+        "blog açmak istiyorum"
+      ],
+      "page": null,
+      "query": "blog açmak istiyorum",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 83.5
+    },
+    {
+      "keys": [
+        "blog açılımı"
+      ],
+      "page": null,
+      "query": "blog açılımı",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "blog hesabı nasıl açılır"
+      ],
+      "page": null,
+      "query": "blog hesabı nasıl açılır",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "keys": [
+        "blog kurma"
+      ],
+      "page": null,
+      "query": "blog kurma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "keys": [
+        "blog kurmak"
+      ],
+      "page": null,
+      "query": "blog kurmak",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "keys": [
+        "blog nasil acilir"
+      ],
+      "page": null,
+      "query": "blog nasil acilir",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 16.1
+    },
+    {
+      "keys": [
+        "blog nasıl kurulur"
+      ],
+      "page": null,
+      "query": "blog nasıl kurulur",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "keys": [
+        "blog nasıl oluşturulur"
+      ],
+      "page": null,
+      "query": "blog nasıl oluşturulur",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 41.6
+    },
+    {
+      "keys": [
+        "blog nasıl yapılır"
+      ],
+      "page": null,
+      "query": "blog nasıl yapılır",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "keys": [
+        "blog nasıl yazılır"
+      ],
+      "page": null,
+      "query": "blog nasıl yazılır",
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 29.4
+    },
+    {
+      "keys": [
+        "blog nasıl yazılır örnek"
+      ],
+      "page": null,
+      "query": "blog nasıl yazılır örnek",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 9.2
+    },
+    {
+      "keys": [
+        "blog nedir örnek"
+      ],
+      "page": null,
+      "query": "blog nedir örnek",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "blog oluştur"
+      ],
+      "page": null,
+      "query": "blog oluştur",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "keys": [
+        "blog oluşturma"
+      ],
+      "page": null,
+      "query": "blog oluşturma",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39.5
+    },
+    {
+      "keys": [
+        "blog oluşturma adımları"
+      ],
+      "page": null,
+      "query": "blog oluşturma adımları",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "keys": [
+        "blog sayfası açma"
+      ],
+      "page": null,
+      "query": "blog sayfası açma",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "keys": [
+        "blog sayfası nasıl açılır"
+      ],
+      "page": null,
+      "query": "blog sayfası nasıl açılır",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "keys": [
+        "blog sitesi açmak"
+      ],
+      "page": null,
+      "query": "blog sitesi açmak",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 75.7
+    },
+    {
+      "keys": [
+        "blog sitesi kurma"
+      ],
+      "page": null,
+      "query": "blog sitesi kurma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "keys": [
+        "blog tanıtım yazısı örneği"
+      ],
+      "page": null,
+      "query": "blog tanıtım yazısı örneği",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 10.8
+    },
+    {
+      "keys": [
+        "blog taslağı"
+      ],
+      "page": null,
+      "query": "blog taslağı",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 69.5
+    },
+    {
+      "keys": [
+        "blog yapma"
+      ],
+      "page": null,
+      "query": "blog yapma",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 71.7
+    },
+    {
+      "keys": [
+        "blog yazmak"
+      ],
+      "page": null,
+      "query": "blog yazmak",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 36.5
+    },
+    {
+      "keys": [
+        "blog yazı örnekleri"
+      ],
+      "page": null,
+      "query": "blog yazı örnekleri",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "blog yazıları örnekleri"
+      ],
+      "page": null,
+      "query": "blog yazıları örnekleri",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "keys": [
+        "blog yazısı nasıl yazılır"
+      ],
+      "page": null,
+      "query": "blog yazısı nasıl yazılır",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "keys": [
+        "blog yazısı örnekleri"
+      ],
+      "page": null,
+      "query": "blog yazısı örnekleri",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 27.8
+    },
+    {
+      "keys": [
+        "blog yazısı örnekleri kısa"
+      ],
+      "page": null,
+      "query": "blog yazısı örnekleri kısa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "keys": [
+        "blog yazısı örneği"
+      ],
+      "page": null,
+      "query": "blog yazısı örneği",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 16.2
+    },
+    {
+      "keys": [
+        "blogfy"
+      ],
+      "page": null,
+      "query": "blogfy",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "keys": [
+        "blogger açma"
+      ],
+      "page": null,
+      "query": "blogger açma",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 60.5
+    },
+    {
+      "keys": [
+        "blogger nasıl yazılır"
+      ],
+      "page": null,
+      "query": "blogger nasıl yazılır",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "keys": [
+        "blogu nasıl yazılır"
+      ],
+      "page": null,
+      "query": "blogu nasıl yazılır",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "blok yazı"
+      ],
+      "page": null,
+      "query": "blok yazı",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 84.5
+    },
+    {
+      "keys": [
+        "blänkfyr"
+      ],
+      "page": null,
+      "query": "blänkfyr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "brfy"
+      ],
+      "page": null,
+      "query": "brfy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "bursa adwords reklamları"
+      ],
+      "page": null,
+      "query": "bursa adwords reklamları",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 31.9
+    },
+    {
+      "keys": [
+        "bursa google reklam"
+      ],
+      "page": null,
+      "query": "bursa google reklam",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 29.9
+    },
+    {
+      "keys": [
+        "bursa google reklamları"
+      ],
+      "page": null,
+      "query": "bursa google reklamları",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 34.4
+    },
+    {
+      "keys": [
+        "bursa google reklamı verme"
+      ],
+      "page": null,
+      "query": "bursa google reklamı verme",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "bursa google seo"
+      ],
+      "page": null,
+      "query": "bursa google seo",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "bursa seo"
+      ],
+      "page": null,
+      "query": "bursa seo",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 64.8
+    },
+    {
+      "keys": [
+        "bursa seo ajansı"
+      ],
+      "page": null,
+      "query": "bursa seo ajansı",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "keys": [
+        "bursa seo uzmanı"
+      ],
+      "page": null,
+      "query": "bursa seo uzmanı",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 56.5
+    },
+    {
+      "keys": [
+        "canvas getboundingclientrect"
+      ],
+      "page": null,
+      "query": "canvas getboundingclientrect",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "clf nedir"
+      ],
+      "page": null,
+      "query": "clf nedir",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "keys": [
+        "clinic advertising management"
+      ],
+      "page": null,
+      "query": "clinic advertising management",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "keys": [
+        "clinic digital marketing"
+      ],
+      "page": null,
+      "query": "clinic digital marketing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "clinic reputation management"
+      ],
+      "page": null,
+      "query": "clinic reputation management",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39.5
+    },
+    {
+      "keys": [
+        "clips nasıl kullanılır"
+      ],
+      "page": null,
+      "query": "clips nasıl kullanılır",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.8
+    },
+    {
+      "keys": [
+        "clips nedir"
+      ],
+      "page": null,
+      "query": "clips nedir",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 10.8
+    },
+    {
+      "keys": [
+        "cloudflare noldu"
+      ],
+      "page": null,
+      "query": "cloudflare noldu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "cv portfolyo örnekleri"
+      ],
+      "page": null,
+      "query": "cv portfolyo örnekleri",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "cv web sitesi"
+      ],
+      "page": null,
+      "query": "cv web sitesi",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "declaratif"
+      ],
+      "page": null,
+      "query": "declaratif",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "declarative"
+      ],
+      "page": null,
+      "query": "declarative",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "keys": [
+        "declarative ne demek"
+      ],
+      "page": null,
+      "query": "declarative ne demek",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "keys": [
+        "deklaratif"
+      ],
+      "page": null,
+      "query": "deklaratif",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 7.8
+    },
+    {
+      "keys": [
+        "denizli google ads uzmanı"
+      ],
+      "page": null,
+      "query": "denizli google ads uzmanı",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 23.4
+    },
+    {
+      "keys": [
+        "denizli google adsense"
+      ],
+      "page": null,
+      "query": "denizli google adsense",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 15.3
+    },
+    {
+      "keys": [
+        "denizli google adwords"
+      ],
+      "page": null,
+      "query": "denizli google adwords",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 17.8
+    },
+    {
+      "keys": [
+        "dijital görünürlük"
+      ],
+      "page": null,
+      "query": "dijital görünürlük",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 22.7
+    },
+    {
+      "keys": [
+        "dijital pazarlama ajansı ankara"
+      ],
+      "page": null,
+      "query": "dijital pazarlama ajansı ankara",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 21.4
+    },
+    {
+      "keys": [
+        "dijital pazarlama ankara"
+      ],
+      "page": null,
+      "query": "dijital pazarlama ankara",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 20.4
+    },
+    {
+      "keys": [
+        "dijital pazarlama danışmanlık"
+      ],
+      "page": null,
+      "query": "dijital pazarlama danışmanlık",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 82.6
+    },
+    {
+      "keys": [
+        "dijital pazarlama danışmanlık ajansı"
+      ],
+      "page": null,
+      "query": "dijital pazarlama danışmanlık ajansı",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "dijital pazarlama danışmanlığı"
+      ],
+      "page": null,
+      "query": "dijital pazarlama danışmanlığı",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 81.1
+    },
+    {
+      "keys": [
+        "dijital pazarlama danışmanlığı nedir"
+      ],
+      "page": null,
+      "query": "dijital pazarlama danışmanlığı nedir",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 18.9
+    },
+    {
+      "keys": [
+        "dijital pazarlama firması"
+      ],
+      "page": null,
+      "query": "dijital pazarlama firması",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 46.3
+    },
+    {
+      "keys": [
+        "dijital pazarlama hizmeti"
+      ],
+      "page": null,
+      "query": "dijital pazarlama hizmeti",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 91.1
+    },
+    {
+      "keys": [
+        "dijital pazarlama hizmetleri"
+      ],
+      "page": null,
+      "query": "dijital pazarlama hizmetleri",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 93.6
+    },
+    {
+      "keys": [
+        "dijitalco seo paketleri"
+      ],
+      "page": null,
+      "query": "dijitalco seo paketleri",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 13.2
+    },
+    {
+      "keys": [
+        "discord açılmıyor 2025"
+      ],
+      "page": null,
+      "query": "discord açılmıyor 2025",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "discord coktu"
+      ],
+      "page": null,
+      "query": "discord coktu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "keys": [
+        "discord neden açılmıyor 2025"
+      ],
+      "page": null,
+      "query": "discord neden açılmıyor 2025",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "does getboundingclientrect account for css transform scale"
+      ],
+      "page": null,
+      "query": "does getboundingclientrect account for css transform scale",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.2
+    },
+    {
+      "keys": [
+        "does getboundingclientrect account for css transforms"
+      ],
+      "page": null,
+      "query": "does getboundingclientrect account for css transforms",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "does getboundingclientrect include css transforms"
+      ],
+      "page": null,
+      "query": "does getboundingclientrect include css transforms",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "does getboundingclientrect include css transforms?"
+      ],
+      "page": null,
+      "query": "does getboundingclientrect include css transforms?",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "keys": [
+        "doktor google ads kampanyası"
+      ],
+      "page": null,
+      "query": "doktor google ads kampanyası",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 20.7
+    },
+    {
+      "keys": [
+        "domain adresi nedir"
+      ],
+      "page": null,
+      "query": "domain adresi nedir",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 81.3
+    },
+    {
+      "keys": [
+        "domain adı nedir"
+      ],
+      "page": null,
+      "query": "domain adı nedir",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 42.7
+    },
+    {
+      "keys": [
+        "domain ne demek"
+      ],
+      "page": null,
+      "query": "domain ne demek",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 80.8
+    },
+    {
+      "keys": [
+        "domain ne demektir"
+      ],
+      "page": null,
+      "query": "domain ne demektir",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "keys": [
+        "domain nedir"
+      ],
+      "page": null,
+      "query": "domain nedir",
+      "clicks": 0,
+      "impressions": 57,
+      "ctr": 0,
+      "position": 67.4
+    },
+    {
+      "keys": [
+        "domain nedir ne işe yarar"
+      ],
+      "page": null,
+      "query": "domain nedir ne işe yarar",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "keys": [
+        "domain çeşitleri"
+      ],
+      "page": null,
+      "query": "domain çeşitleri",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "keys": [
+        "domain ücreti nedir"
+      ],
+      "page": null,
+      "query": "domain ücreti nedir",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "domainler nedir"
+      ],
+      "page": null,
+      "query": "domainler nedir",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 64.1
+    },
+    {
+      "keys": [
+        "doğal backlink"
+      ],
+      "page": null,
+      "query": "doğal backlink",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 13.3
+    },
+    {
+      "keys": [
+        "doğal backlink alma yöntemleri"
+      ],
+      "page": null,
+      "query": "doğal backlink alma yöntemleri",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 12.3
+    },
+    {
+      "keys": [
+        "doğal seo"
+      ],
+      "page": null,
+      "query": "doğal seo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "drop shipping"
+      ],
+      "page": null,
+      "query": "drop shipping",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "keys": [
+        "drop shipping nasıl yapılır"
+      ],
+      "page": null,
+      "query": "drop shipping nasıl yapılır",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 80.3
+    },
+    {
+      "keys": [
+        "drop shipping nedir"
+      ],
+      "page": null,
+      "query": "drop shipping nedir",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 78.8
+    },
+    {
+      "keys": [
+        "drop shopping"
+      ],
+      "page": null,
+      "query": "drop shopping",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "keys": [
+        "dropship nedir"
+      ],
+      "page": null,
+      "query": "dropship nedir",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 92.3
+    },
+    {
+      "keys": [
+        "dropshipin"
+      ],
+      "page": null,
+      "query": "dropshipin",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "keys": [
+        "dropshipping"
+      ],
+      "page": null,
+      "query": "dropshipping",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "keys": [
+        "dropshipping e ticaret"
+      ],
+      "page": null,
+      "query": "dropshipping e ticaret",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "keys": [
+        "dropshipping ile ne kadar kazandırır"
+      ],
+      "page": null,
+      "query": "dropshipping ile ne kadar kazandırır",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 36.5
+    },
+    {
+      "keys": [
+        "dropshipping için gerekenler"
+      ],
+      "page": null,
+      "query": "dropshipping için gerekenler",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 76.5
+    },
+    {
+      "keys": [
+        "dropshipping nasıl yapılır"
+      ],
+      "page": null,
+      "query": "dropshipping nasıl yapılır",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 54.8
+    },
+    {
+      "keys": [
+        "dropshipping ne demek"
+      ],
+      "page": null,
+      "query": "dropshipping ne demek",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "keys": [
+        "dropshipping nedir"
+      ],
+      "page": null,
+      "query": "dropshipping nedir",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "keys": [
+        "dropshipping nedir nasıl yapılır"
+      ],
+      "page": null,
+      "query": "dropshipping nedir nasıl yapılır",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 58.2
+    },
+    {
+      "keys": [
+        "dönüşüm odaklı seo"
+      ],
+      "page": null,
+      "query": "dönüşüm odaklı seo",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 73.9
+    }
+  ]
+}

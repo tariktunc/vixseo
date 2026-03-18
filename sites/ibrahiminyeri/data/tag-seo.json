@@ -1,0 +1,205 @@
+{
+  "_meta": {
+    "site": "ibrahiminyeri.com",
+    "not": "Her tag için seoTitle (150-160 karakter) ve metaDescription. update-tag-seo.js bu dosyayı okur.",
+    "format": "slug → { id, seoTitle, metaDescription }"
+  },
+
+  "et-mangal": {
+    "id": "2ad320ad-a2d1-4133-b6bd-469f7a705f74",
+    "seoTitle": "Et Mangal | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Bolu Dağı'nda et mangal severlerin adresi İbrahimin Yeri. Meşe közünde pişen taze kuzu ve dana etiyle unutulmaz mangal keyfi için rezervasyon yapın."
+  },
+
+  "bolu-dagi-et-mangal": {
+    "id": "f663d3d0-eb4b-4e0b-8245-1bab82bba5f4",
+    "seoTitle": "Bolu Dağı Et Mangal | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nın eşsiz doğasında et mangal keyfi. Meşe kömürüyle hazırlanan kuzu ve dana etleriyle Bolu'nun en iyi mangal lezzetleri İbrahimin Yeri'nde."
+  },
+
+  "bolu-dagi": {
+    "id": "00a1119e-d315-4fef-9605-4275810403d8",
+    "seoTitle": "Bolu Dağı Yemek ve Mola | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda yemek, kahvaltı ve mola için en iyi adres İbrahimin Yeri. D-100 üzerinde doğa içinde mangal, serpme kahvaltı ve yöresel lezzetler."
+  },
+
+  "kuzu-mangal": {
+    "id": "e6788b52-bfc4-43ed-b1c4-f9072178b97a",
+    "seoTitle": "Kuzu Mangal Bolu Dağı | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda taze kuzu mangal deneyimi İbrahimin Yeri'nde. Meşe közünde pişen yumuşacık kuzu etinin eşsiz lezzetini Bakacak Mevkii'nde yaşayın."
+  },
+
+  "yemek-tarifleri": {
+    "id": "3ffdc5ca-9bb0-4665-9003-46cf37baa5cb",
+    "seoTitle": "Yöresel Yemek Tarifleri | İbrahimin Yeri",
+    "metaDescription": "İbrahimin Yeri'nde uygulanan yöresel yemek tarifleri. Bolu Dağı mutfağından meşe közü mangal, kuzu pirzola, serpme kahvaltı tariflerini keşfedin."
+  },
+
+  "mese-kozu": {
+    "id": "5ba1b44c-3488-44d4-8af8-8501b812e570",
+    "seoTitle": "Meşe Közü ile Et Mangal | İbrahimin Yeri",
+    "metaDescription": "Gerçek mangal ateşinin sırrı meşe közü. İbrahimin Yeri'nde kuzu ve dana etleri, meşe kömürünün benzersiz aromasıyla Bolu Dağı'nda pişirilir."
+  },
+
+  "boluda-ne-yenir": {
+    "id": "87f2ed55-cde2-4f64-9b17-7577fc471521",
+    "seoTitle": "Bolu'da Ne Yenir? | İbrahimin Yeri",
+    "metaDescription": "Bolu'da ne yenir sorusunun cevabı İbrahimin Yeri'nde. Et mangal, serpme kahvaltı, kuzu pirzola ve yöresel lezzetleriyle Bolu'nun vazgeçilmez adresi."
+  },
+
+  "et-mangal-mola": {
+    "id": "428e6e78-6463-4d65-8fe6-ccd4abdc3f92",
+    "seoTitle": "D-100 Et Mangal Mola | İbrahimin Yeri",
+    "metaDescription": "D-100'de et mangal molası için doğru adres İbrahimin Yeri. Bolu Dağı'nda taze et ve meşe közüyle yolculuğunuzu lezzetli bir molayla taçlandırın."
+  },
+
+  "duzcede-ne-yenir": {
+    "id": "82f02c3f-d004-4208-901c-e685e94d6e21",
+    "seoTitle": "Düzce'de Ne Yenir? | İbrahimin Yeri",
+    "metaDescription": "Düzce'ye yakın Bolu Dağı'nda yemek arıyorsanız İbrahimin Yeri'ne uğrayın. Et mangal, kahvaltı ve yöresel Bolu lezzetleri sizi bekliyor."
+  },
+
+  "bakacak-kofte": {
+    "id": "a5f961c7-4f2e-4345-9deb-67a43c48473f",
+    "seoTitle": "Bakacak Köfte | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Bakacak Mevkii'nde köfte keyfi İbrahimin Yeri'nde. Bolu Dağı'nın eşsiz manzarasında taze köfte ve yöresel lezzetler için rezervasyon yapın."
+  },
+
+  "koy-kahvaltisi": {
+    "id": "d3284900-bfe4-4bfd-8172-9c7dcf94695c",
+    "seoTitle": "Köy Kahvaltısı Bolu Dağı | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda köy kahvaltısı için doğru adres İbrahimin Yeri. Köy yumurtası, taze peynir ve yöresel doğal ürünlerle hazırlanan sofra sizi bekliyor."
+  },
+
+  "yoresel-kahvalti": {
+    "id": "041bd467-c40f-44a1-bbf8-545b68939033",
+    "seoTitle": "Yöresel Kahvaltı Bolu | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nın yöresel kahvaltı lezzetlerini keşfedin. İbrahimin Yeri'nde serpme ve köy kahvaltısı seçenekleriyle doğa içinde unutulmaz bir sabah."
+  },
+
+  "bolu-dagi-kahvalti-mekanlari": {
+    "id": "2a7c7ba3-57b7-44b0-9fe1-b1404d1232fb",
+    "seoTitle": "Bolu Dağı Kahvaltı Mekanları | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nın en iyi kahvaltı mekanı İbrahimin Yeri. Doğa içinde serpme kahvaltı, köy yumurtası ve yöresel ürünlerle dolu zengin bir kahvaltı masası."
+  },
+
+  "abant-kahvalti-mekanlari": {
+    "id": "c42b0519-fe4f-448e-aea7-7c12bf1d336f",
+    "seoTitle": "Abant Kahvaltı Mekanları | İbrahimin Yeri",
+    "metaDescription": "Abant çevresinde kahvaltı arıyorsanız İbrahimin Yeri idealdir. Bolu Dağı'nın doğasında serpme kahvaltı ve yöresel lezzetler için rezervasyon yapın."
+  },
+
+  "yedigoller-kahvalti-mekanlari": {
+    "id": "fdf51d75-8c27-47c0-88a1-2cab95fe186d",
+    "seoTitle": "Yedigöller Kahvaltı Mekanları | İbrahimin Yeri",
+    "metaDescription": "Yedigöller ziyaretinizi İbrahimin Yeri'nde kahvaltıyla taçlandırın. Bolu Dağı'nda doğa içinde serpme kahvaltı ve yöresel lezzetler sizi bekliyor."
+  },
+
+  "serpme-kahvalti": {
+    "id": "c78c473c-c8d2-442e-ad59-de5db964167a",
+    "seoTitle": "Serpme Kahvaltı Bolu Dağı | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda serpme kahvaltı için en iyi adres İbrahimin Yeri. Köy ürünleri, taze peynirler ve yöresel lezzetlerle hazırlanan zengin kahvaltı sofrası."
+  },
+
+  "boluda-kahvalti": {
+    "id": "f44dd888-c866-4e88-ae66-aa9fbeb2188f",
+    "seoTitle": "Bolu'da Kahvaltı | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Bolu'da kahvaltı için en iyi yer İbrahimin Yeri. Doğa içinde serpme kahvaltı, köy yumurtası ve yöresel ürünlerle başlayan harika bir sabah sizi bekliyor."
+  },
+
+  "duzcede-kahvalti": {
+    "id": "aa2be25b-a7a6-4675-b114-9bd9e1b57238",
+    "seoTitle": "Düzce'de Kahvaltı | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Düzce yakınlarında kahvaltı arıyorsanız Bolu Dağı'ndaki İbrahimin Yeri'ni keşfedin. Serpme kahvaltı ve yöresel lezzetlerle dolu masa sizi bekliyor."
+  },
+
+  "kuzu-pirzola": {
+    "id": "362e4b94-53da-4fd3-91af-633985ec31f5",
+    "seoTitle": "Kuzu Pirzola Bolu Dağı | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda meşe közünde pişen kuzu pirzola İbrahimin Yeri'nin en sevilen lezzeti. Taze kıvırcık kuzu etinin eşsiz aromasını Bakacak Mevkii'nde yaşayın."
+  },
+
+  "et-mangal-rehberi": {
+    "id": "a6c2c85c-096b-4019-b489-0e1b07d491d3",
+    "seoTitle": "Et Mangal Rehberi | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda et mangal için bilmeniz gereken her şey. Meşe közü seçimi, doğru et ve pişirme teknikleriyle mangal sanatını İbrahimin Yeri'nde keşfedin."
+  },
+
+  "d100": {
+    "id": "68fc6432-9f76-4c51-8730-a28b0a6a5036",
+    "seoTitle": "D100 Mola Noktası Et Mangal | İbrahimin Yeri",
+    "metaDescription": "D-100 karayolunun en iyi mola noktası İbrahimin Yeri. Bolu Dağı'nda taze et mangal, serpme kahvaltı ve yöresel lezzetler için yolculuğunuzu durdurun."
+  },
+
+  "mola-noktalari": {
+    "id": "8093a07b-e58a-4bae-99a3-52736bd13065",
+    "seoTitle": "Bolu Dağı Mola Noktaları | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda D-100 üzerinde et mangal ve kahvaltı için en iyi mola noktası İbrahimin Yeri. Lezzetli bir molayla yolculuğunuzu taçlandırın."
+  },
+
+  "mangal-tarifleri": {
+    "id": "2e21aa3e-5d53-42a2-8a09-449d660d4602",
+    "seoTitle": "Mangal Tarifleri | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Meşe közünde et pişirmenin sırları İbrahimin Yeri'nden. Kuzu pirzola, et şiş ve mangal tarifleriyle Bolu Dağı lezzetlerini evinize taşıyın."
+  },
+
+  "bolu-gezi": {
+    "id": "f031303b-e5d8-4ed4-929a-620d07896633",
+    "seoTitle": "Bolu Gezi Rehberi | İbrahimin Yeri",
+    "metaDescription": "Bolu gezinizde mutlaka durmanız gereken adres İbrahimin Yeri. Bolu Dağı'nda et mangal, kahvaltı ve yöresel lezzetlerle gezi programınızı zenginleştirin."
+  },
+
+  "kuzu-eti": {
+    "id": "c6b57446-32a3-4751-b535-3a9d393ed7e4",
+    "seoTitle": "Kuzu Eti Bolu Dağı | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nın en taze kuzu eti İbrahimin Yeri'nde. Kıvırcık kuzu pirzola ve meşe közünde mangaldan çıkan lezzetlerle Bolu'nun en iyi et restoranı."
+  },
+
+  "kiviricik-kuzu": {
+    "id": "87d0e46c-0069-4ba0-bda4-37d95949f160",
+    "seoTitle": "Kıvırcık Kuzu Bolu | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nın meşhur kıvırcık kuzu eti İbrahimin Yeri'nde servis edilir. Taze ve yumuşak kuzu etinin eşsiz lezzetini meşe közünde pişmiş haliyle tadın."
+  },
+
+  "kozde-et-mangal": {
+    "id": "4d58cf68-43ca-43fe-810b-78a01eb35e2b",
+    "seoTitle": "Közde Et Mangal Bolu | İbrahimin Yeri",
+    "metaDescription": "Gerçek mangal keyfi közde pişen etle olur. İbrahimin Yeri'nde Bolu Dağı'nın havası ve meşe közünün aromasıyla pişirilen taze etler sizi bekliyor."
+  },
+
+  "bolu-restoran": {
+    "id": "26cf1b15-7e96-472f-b50c-9d33c3f78684",
+    "seoTitle": "Bolu Restoran | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Bolu'nun en iyi restoranı İbrahimin Yeri. Bolu Dağı'nda doğa içinde et mangal, serpme kahvaltı ve yöresel Türk mutfağı lezzetleriyle hizmetinizdeyiz."
+  },
+
+  "bolu-gezilecek-yerler": {
+    "id": "441d700b-d2c8-4b59-8be2-ff33ccaafe8e",
+    "seoTitle": "Bolu Gezilecek Yerler | İbrahimin Yeri",
+    "metaDescription": "Bolu gezilecek yerler listenize İbrahimin Yeri'ni ekleyin. Bolu Dağı'nda et mangal ve yöresel lezzetlerle Bolu'nun en güzel durağını ziyaret edin."
+  },
+
+  "mese-komuru": {
+    "id": "8b0e31e4-6998-4b27-8ca0-2b0346656e8e",
+    "seoTitle": "Meşe Kömürü Mangal | İbrahimin Yeri",
+    "metaDescription": "Et mangalın vazgeçilmezi meşe kömürü. İbrahimin Yeri'nde Bolu Dağı ormanlarının meşe kömürüyle pişen etlerin benzersiz aromasını deneyimleyin."
+  },
+
+  "yol-uzeri-restoran": {
+    "id": "c354edff-4833-495e-8889-52f2b563c6e8",
+    "seoTitle": "Yol Üzeri Restoran D100 | İbrahimin Yeri",
+    "metaDescription": "D-100 yol üzerinin en iyi restoranı İbrahimin Yeri. Bolu Dağı'nda uzun yol yolcuları için et mangal, kahvaltı ve yöresel lezzetlerle güçlü bir mola."
+  },
+
+  "duzce-gezi": {
+    "id": "929cd08b-e573-4f14-a015-66084b98cdf8",
+    "seoTitle": "Düzce Gezi | İbrahimin Yeri Bolu Dağı",
+    "metaDescription": "Düzce'den Bolu'ya uzanın, İbrahimin Yeri'nde yöresel lezzetleri keşfedin. Bolu Dağı'nda et mangal ve kahvaltıyla Düzce-Bolu arasında unutulmaz mola."
+  },
+
+  "gunubirlik-gezi": {
+    "id": "f4e476f8-e69e-4ee2-8cd8-e00f0076fbf2",
+    "seoTitle": "Günübirlik Gezi Bolu | İbrahimin Yeri",
+    "metaDescription": "Bolu Dağı'nda günübirlik gezi için İbrahimin Yeri mükemmel bir durak. Et mangal, serpme kahvaltı ve doğa içinde yemek keyfiyle gününüzü taçlandırın."
+  }
+}

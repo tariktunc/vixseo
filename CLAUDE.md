@@ -83,7 +83,7 @@ xmlBlog/
 │   └── {yeni-site}/                 ← Eklenen her yeni site aynı yapıya uyar
 │
 └── scripts/                         ← Siteden bağımsız paylaşılan scriptler
-    └── (publish.js, convert.js vb. her sitenin kendi scripts/ klasöründe)
+    └── cms.js                       ← Generic CMS sync (--site + --collection argümanları)
 ```
 
 ---
@@ -97,9 +97,11 @@ sites/{site-adi}/
 ├── topics.md          ← İçerik planı (bekleyen / tamamlanan)                ⭐ ZORUNLU
 ├── SITE-MAP-ANALIZ.md ← Site haritası (isteğe bağlı)
 ├── posts/             ← Hazırlanan yazılar (.md)
+├── {collection}-inventory.json  ← CMS koleksiyon verisi (her koleksiyon için ayrı)
 └── scripts/
     ├── publish.js     ← Wix API'ye gönderici
     ├── convert.js     ← Markdown → Wix RichContent dönüştürücü
+    ├── cms.js         ← Thin wrapper → root scripts/cms.js'e yönlendirir
     ├── categories.json ← Wix'teki gerçek kategoriler slug→ID               ⭐ ZORUNLU
     └── tags.json      ← Wix'teki gerçek tag'ler slug→ID                    ⭐ ZORUNLU
 ```
@@ -221,6 +223,78 @@ publish.js otomatik yapar:
 
 ## HATA ÖNLEME KURALLARI
 
+### CMS Koleksiyon İçerik Yönetimi (Generic)
+
+**CMS sync sistemi:** `scripts/cms.js` root script, her site ve koleksiyon için çalışır.
+
+```
+❌ Slug kontrolü için Wix API'ye sorgu yapmak
+✅ {collection}-inventory.json'daki slug listesine bak — local her zaman günceldir
+
+❌ İçerik ekleyip direkt --sync çalıştırmak
+✅ Önce --status ile ne gönderileceğini doğrula, sonra --sync
+
+❌ --pull'u rutin çalıştırmak
+✅ --pull yalnızca Wix panelinden manuel değişiklik yapıldığında çalıştır
+```
+
+**Komutlar (root script — önerilen):**
+```bash
+node scripts/cms.js --site blakfy --collection news --status
+node scripts/cms.js --site blakfy --collection news --sync --dry-run
+node scripts/cms.js --site blakfy --collection news --sync
+node scripts/cms.js --site blakfy --list   # tüm koleksiyonları listele
+```
+
+**Kısayol (wrapper — eski komutlar çalışmaya devam eder):**
+```bash
+node sites/blakfy/scripts/cms.js --status
+node sites/blakfy/scripts/cms.js --sync --dry-run
+node sites/blakfy/scripts/cms.js --sync
+```
+
+**İçerik ekleme akışı:**
+1. `sites/{site}/{collection}-inventory.json`'a yeni item ekle (`_status: "new"`, `id: ""`)
+2. `node scripts/cms.js --site {site} --collection {col} --status` → ne gönderileceğini gör
+3. `node scripts/cms.js --site {site} --collection {col} --sync --dry-run` → önizle
+4. `node scripts/cms.js --site {site} --collection {col} --sync` → Wix'e gönder
+
+**`_status` değerleri:**
+- `"synced"` → Wix ile uyumlu
+- `"new"` → Henüz Wix'te yok, `--sync`'te CREATE edilecek (`id` boş bırak)
+- `"modified"` → Wix'te var ama local'de değişti, `--sync`'te UPDATE edilecek
+
+**Yeni site için koleksiyon kurulumu:**
+1. Wix panelinden koleksiyon ID'sini öğren
+2. `sites/{site}/{collection}-inventory.json` oluştur:
+   ```json
+   {
+     "collection": "{collection-id}",
+     "fieldMap": { "title": "title", "description": "description" },
+     "lastPulledAt": null,
+     "lastSyncedAt": null,
+     "items": []
+   }
+   ```
+3. `node scripts/cms.js --site {site} --collection {collection-id} --pull`
+
+---
+
+### CMS / Koleksiyon Verisi Depolama
+
+```
+❌ Koleksiyon verisini .md veya .txt olarak saklamak
+✅ API'den gelen veriler her zaman .json olarak kaydedilir
+
+❌ Kullanıcı "şunu md'ye yaz" dese bile doğrudan uymak
+✅ Önce uyar: "Bu veri API'den JSON olarak geliyor, JSON formatında saklamalıyız.
+   İnsan tarafından okunması gerekiyorsa news-slugs.txt gibi minimal bir yardımcı
+   dosya eklenebilir, ama kaynak .json kalır."
+```
+
+**Neden:** API JSON döndürür → MD'ye dönüştürme bilgi kaybı riski taşır,
+script'ler JSON'ı parse eder, her güncellemede MD yeniden oluşturmak duplikasyon yaratır.
+
 ### Kategori & Tag
 
 ```
@@ -298,7 +372,10 @@ Kullanıcı yeni bir site eklediğinde:
    POST /blog/v3/tags/query  {"paging": {"limit": 100}}
    ```
 7. `scripts/publish.js` → config yollarını kontrol et
-8. `SITE-MAP-ANALIZ.md` oluştur (isteğe bağlı)
+8. CMS koleksiyonu varsa inventory oluştur:
+   - `sites/{yeni-site}/{collection-id}-inventory.json` → `fieldMap` dahil
+   - `node scripts/cms.js --site {yeni-site} --collection {collection-id} --pull`
+9. `SITE-MAP-ANALIZ.md` oluştur (isteğe bağlı)
 
 ---
 

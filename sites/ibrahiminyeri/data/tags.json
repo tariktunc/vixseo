@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "site": "ibrahiminyeri.com",
+    "fetchedAt": null,
+    "totalFetched": 0,
+    "note": "fetch-tags.js çalıştırılınca bu dosya güncellenir."
+  },
+  "tags": []
+}

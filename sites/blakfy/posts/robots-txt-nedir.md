@@ -1,12 +1,13 @@
-wixId: "d6cfd8cd-a0ff-4f7a-b266-88b0b6242d8c"
+wixId: "bfd60617-be88-4a33-b759-dcd1bacde7ba"
+description: "Robots.txt dosyası SEO için neden önemlidir? Doğru kullanım rehberi, örnekler ve uzman görüşleriyle robots.txt’nin arama motorları üzerindeki etkisini keşfedin."
 ---
-title: "Robots.txt Nedir? Nasıl Yapılandırılır? Tam SEO Rehberi 2025"
+title: "robots.txt Nedir? SEO İçin Doğru Kullanım Kılavuzu"
 slug: "robots-txt-nedir"
 focusKeyword: "robots.txt nedir"
-seoTitle: "Robots.txt Nedir? Nasıl Yapılandırılır? SEO Rehberi 2025 | Blakfy"
-metaDesc: "Robots.txt nedir, nasıl yazılır ve doğrulanır? Disallow, Allow, Crawl-delay direktifleri ve yaygın robots.txt hataları için pratik rehber."
+seoTitle: "Robots.txt Nedir? SEO İçin Doğru Kullanım Kılavuzu (2025)"
+
 excerpt: "Robots.txt, arama motoru botlarına sitenizin hangi bölümlerini tarayabileceğini söyleyen metin dosyasıdır. Yanlış yapılandırma tüm sitenizin Google'dan kaybolmasına yol açabilir."
-categories: ["teknik-seo"]
+categories: [seo]
 tags: ["seo", "teknik-seo"]
 imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&h=900&fit=crop"
 imageAlt: "Robots.txt teknik SEO yapılandırma kodu"

@@ -3,5 +3,7 @@
   "domain": "ibrahiminyeri.com",
   "siteId": "a471328e-719b-4aad-b0bb-dd3e5f4f3015",
   "memberId": "51894242-999d-442a-a76b-7848dc97388e",
-  "language": "tr"
+  "language": "tr",
+  "coverGeneration": true,
+  "searchConsoleUrl": "https://www.ibrahiminyeri.com/"
 }

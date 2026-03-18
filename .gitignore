@@ -1,6 +1,7 @@
 # Hassas bilgiler — asla commit edilmez
 .env
 wix-credentials.json
+google-search-console.json
 
 # Node
 node_modules/

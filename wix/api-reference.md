@@ -169,6 +169,42 @@ Yayınlanmış bir postu düzenlemek için draft kopyası oluşturur.
 { "paging": { "limit": 100 } }
 ```
 
+### POST /blog/v3/tags — Tag oluştur
+
+```json
+{ "label": "Etiket Adı" }
+```
+
+**Response:** `{ "tag": { "id": "...", "label": "...", "slug": "..." } }`
+- Slug otomatik üretilir (label'dan)
+- Aynı label tekrar gönderilirse Wix slug'a `-1`, `-2` suffix ekler → duplicate oluşur
+
+### PATCH /blog/v3/tags/{tagId} — Tag güncelle
+
+**ÖNEMLİ:** `fieldMask` zorunlu.
+
+```json
+{
+  "tag": {
+    "seoData": {
+      "tags": [
+        { "type": "title", "children": "SEO Başlık | Marka", "custom": false, "disabled": false },
+        { "type": "meta", "props": { "name": "description", "content": "150-160 karakter meta açıklama" }, "children": "", "custom": false, "disabled": false }
+      ]
+    }
+  },
+  "fieldMask": { "paths": ["seoData"] }
+}
+```
+
+**Güncellenebilir fieldMask path'leri:**
+- `seoData` ✅
+- `label` ✅
+
+**Pattern notu:** Kategori güncellemesiyle birebir aynı yapı:
+- Kategori → `PATCH /blog/v3/categories/{id}` + body wrapper: `"category": {}`
+- Etiket   → `PATCH /blog/v3/tags/{id}`        + body wrapper: `"tag": {}`
+
 ### DELETE /blog/v3/tags/{tagId}
 
 - Silince tüm postlardan kaldırılır
