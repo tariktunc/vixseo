@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BarChart3, Settings, Menu, X } from 'lucide-react'
+import Image from 'next/image'
+import { Settings, Menu, X } from 'lucide-react'
 import { Show, UserButton, SignInButton } from '@clerk/nextjs'
 import { ThemeToggle } from './theme-toggle'
 import { BusinessSwitcher } from './business-switcher'
@@ -19,11 +20,23 @@ export function Navbar() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-              <BarChart3 className="h-4 w-4" />
-            </div>
-            <span className="hidden sm:inline">VixSEO</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.svg"
+              alt="VixSEO"
+              width={140}
+              height={32}
+              className="dark:hidden"
+              priority
+            />
+            <Image
+              src="/logo-dark.svg"
+              alt="VixSEO"
+              width={140}
+              height={32}
+              className="hidden dark:block"
+              priority
+            />
           </Link>
 
           <Show when="signed-in">
