@@ -1,5 +1,5 @@
 # 🚀 blakfy-content-hub
-
+Sezer
 > Multi-site Wix blog content management system with AI-assisted writing and automated publishing pipeline.
 
 ![Wix](https://img.shields.io/badge/Platform-Wix-0C6EFC?style=flat-square&logo=wix&logoColor=white)
