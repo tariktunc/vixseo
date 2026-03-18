@@ -2,6 +2,7 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { type Role, ROLE_HIERARCHY } from '@/types/auth'
 
 const isPublicRoute = createRouteMatcher([
+  '/',
   '/sign-in(.*)',
   '/sign-up(.*)',
   '/api/health(.*)',
@@ -31,7 +32,14 @@ function hasMinRole(role: Role, minRole: Role): boolean {
 
 export default clerkMiddleware(async (auth, request) => {
   // Public route'lar herkese açık
-  if (isPublicRoute(request)) return
+  if (isPublicRoute(request)) {
+    // Giriş yapmış kullanıcı ana sayfaya gelirse dashboard'a yönlendir
+    const session = await auth()
+    if (session.userId && request.nextUrl.pathname === '/') {
+      return Response.redirect(new URL('/dashboard', request.url))
+    }
+    return
+  }
 
   // Giriş yapılmamışsa → sign-in'e yönlendir
   const session = await auth()
@@ -50,7 +58,7 @@ export default clerkMiddleware(async (auth, request) => {
   // Admin-only sayfalar (settings, users)
   if (isAdminPage(request)) {
     if (!hasMinRole(role, 'admin')) {
-      return Response.redirect(new URL('/', request.url))
+      return Response.redirect(new URL('/dashboard', request.url))
     }
     return
   }
@@ -58,7 +66,7 @@ export default clerkMiddleware(async (auth, request) => {
   // Editor+ sayfalar (keywords, sitemap, redirects)
   if (isEditorPage(request)) {
     if (!hasMinRole(role, 'editor')) {
-      return Response.redirect(new URL('/', request.url))
+      return Response.redirect(new URL('/dashboard', request.url))
     }
     return
   }
@@ -70,7 +78,7 @@ export default clerkMiddleware(async (auth, request) => {
     const businessName = businessMatch[1]
     const businessIds = (session.sessionClaims as any)?.metadata?.businessIds as string[] | undefined
     if (businessIds && !businessIds.includes(businessName)) {
-      return Response.redirect(new URL('/', request.url))
+      return Response.redirect(new URL('/dashboard', request.url))
     }
   }
 })

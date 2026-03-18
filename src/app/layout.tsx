@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Providers } from '@/components/providers'
-import { Navbar } from '@/components/layout/navbar'
 import { Toaster } from '@/components/ui/sonner'
 import './globals.css'
 
@@ -35,8 +34,7 @@ export default function RootLayout({
       >
         <body className="min-h-full flex flex-col">
           <Providers>
-            <Navbar />
-            <main className="flex-1 pt-14">{children}</main>
+            <main className="flex-1">{children}</main>
             <Toaster />
           </Providers>
         </body>

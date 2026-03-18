@@ -44,7 +44,7 @@ export function BusinessSwitcher() {
         <ChevronsUpDown className="ml-1 h-3 w-3 shrink-0 opacity-50" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" className="w-48">
-        <DropdownMenuItem onClick={() => router.push('/')}>
+        <DropdownMenuItem onClick={() => router.push('/dashboard')}>
           <Building2 className="mr-2 h-4 w-4" />
           Tüm İşletmeler
         </DropdownMenuItem>

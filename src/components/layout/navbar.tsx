@@ -50,10 +50,10 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-2">
           <Show when="signed-in">
             <Link
-              href="/"
+              href="/dashboard"
               className={cn(
                 'rounded-md px-3 py-1.5 text-sm transition-colors',
-                pathname === '/'
+                pathname === '/dashboard'
                   ? 'bg-secondary text-foreground font-medium'
                   : 'text-muted-foreground hover:text-foreground'
               )}
@@ -102,7 +102,7 @@ export function Navbar() {
       {mobileOpen && (
         <div className="md:hidden border-t border-border bg-background px-4 pb-4 pt-2">
           <Link
-            href="/"
+            href="/dashboard"
             onClick={() => setMobileOpen(false)}
             className="block rounded-md px-3 py-2 text-sm hover:bg-secondary"
           >
