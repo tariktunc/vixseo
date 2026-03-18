@@ -1,36 +1,214 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VixSEO
 
-## Getting Started
+Wix sitelerini tek panelden yöneten SEO yönetim panosu.
 
-First, run the development server:
+## Nedir?
+
+VixSEO, birden fazla Wix sitesinin SEO performansını izlemek ve yönetmek için geliştirilmiş bir dashboard uygulamasıdır.
+
+**Temel Özellikler:**
+
+- Çoklu işletme yönetimi (blakfy, ibrahiminyeri, ...)
+- Wix Blog & CMS entegrasyonu (yazılar, kategoriler, tag'ler)
+- Google Search Console entegrasyonu (trafik, sorgular, pozisyon)
+- Google Ads entegrasyonu (anahtar kelime hacmi)
+- SEO eksik tespiti (title, description, kategori kontrolü)
+- Sitemap analizi ve slug çakışma kontrolü
+- Redirect yönetimi
+- Dark mode + responsive tasarım
+
+## Tech Stack
+
+| Katman | Teknoloji |
+|--------|-----------|
+| Framework | Next.js 16 + TypeScript |
+| UI | shadcn/ui + Tailwind CSS + Lucide React |
+| Grafik | Recharts (shadcn/ui chart) |
+| State | TanStack Query + TanStack Table + Zustand |
+| Form | React Hook Form + Zod |
+| Auth | Clerk |
+| Database | Neon Postgres + Drizzle ORM |
+| Animasyon | Framer Motion |
+| Deploy | Vercel (web) + Electron (desktop) |
+
+## Kurulum
+
+### 1. Repo'yu klonla
+
+```bash
+git clone git@github.com:Blakfy/vixseo.git
+cd vixseo
+```
+
+### 2. Bağımlılıkları kur
+
+```bash
+npm install
+```
+
+### 3. Environment variables
+
+`.env.example` dosyasını `.env.local` olarak kopyala ve doldur:
+
+```bash
+cp .env.example .env.local
+```
+
+**Zorunlu:**
+
+```env
+# Clerk Auth
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_xxx
+CLERK_SECRET_KEY=sk_test_xxx
+
+# Neon Postgres
+DATABASE_URL=postgresql://user:pass@host/db?sslmode=require
+
+# Wix API
+WIX_API_KEY=IST.xxx
+```
+
+**İşletme bazlı (her site için):**
+
+```env
+WIX_SITE_ID_BLAKFY=xxx-xxx-xxx
+WIX_SITE_ID_IBRAHIMINYERI=xxx-xxx-xxx
+```
+
+**Opsiyonel:**
+
+```env
+# Google Search Console (service account JSON)
+GOOGLE_SERVICE_ACCOUNT_JSON={"type":"service_account",...}
+
+# Google Ads
+GOOGLE_ADS_CLIENT_ID=xxx
+GOOGLE_ADS_CLIENT_SECRET=xxx
+GOOGLE_ADS_DEVELOPER_TOKEN=xxx
+GOOGLE_ADS_CUSTOMER_ID=xxx
+GOOGLE_ADS_REFRESH_TOKEN=xxx
+```
+
+### 4. Database oluştur
+
+Vercel Dashboard > Storage > Neon Postgres oluştur. Ya da [neon.tech](https://neon.tech) üzerinden.
+
+Tabloları oluştur:
+
+```bash
+npx drizzle-kit push
+```
+
+### 5. Çalıştır
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 adresinde açılır.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Proje Yapısı
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                        # Next.js App Router
+│   ├── page.tsx                # Ana dashboard
+│   ├── settings/page.tsx       # İşletme yönetimi
+│   ├── [business]/             # İşletme detay sayfaları
+│   │   ├── page.tsx            # Özet (SC metrikleri + yazı durumu)
+│   │   ├── posts/page.tsx      # Yazı meta listesi
+│   │   ├── analytics/page.tsx  # Search Console detay
+│   │   ├── keywords/page.tsx   # Anahtar kelime araştırma
+│   │   ├── sitemap/page.tsx    # Sitemap analiz
+│   │   └── redirects/page.tsx  # Redirect yönetimi
+│   └── api/                    # API routes (Wix/SC/Ads proxy)
+│       ├── businesses/         # İşletme CRUD
+│       ├── [business]/posts/   # Wix yazıları
+│       ├── [business]/analytics/sc/  # SC verileri
+│       └── health/             # Env key durum kontrolü
+├── lib/                        # Portlanmış modüller
+│   ├── wix.ts                  # Wix API client
+│   ├── blog.ts                 # Wix Blog query
+│   ├── db.ts                   # Drizzle client
+│   └── constants.ts            # Tema, sabitler
+├── components/
+│   ├── ui/                     # shadcn/ui bileşenleri
+│   ├── layout/                 # Navbar, business switcher, theme toggle
+│   ├── dashboard/              # İşletme kartları, stats
+│   └── posts/                  # Yazı tablosu, SEO badge
+├── hooks/                      # TanStack Query hooks
+├── db/schema.ts                # Drizzle tablo tanımları
+└── types/                      # TypeScript + Zod şemaları
+```
 
-## Learn More
+## API Routes
 
-To learn more about Next.js, take a look at the following resources:
+| Method | Route | Açıklama |
+|--------|-------|----------|
+| GET | `/api/businesses` | İşletmeleri listele |
+| POST | `/api/businesses` | Yeni işletme ekle |
+| DELETE | `/api/businesses?id=x` | İşletme sil |
+| GET | `/api/[business]/posts` | Wix yazıları |
+| GET | `/api/[business]/categories` | Kategoriler + tag'ler |
+| GET | `/api/[business]/analytics/sc` | SC verileri (cache) |
+| GET | `/api/health` | Env key durumu |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database Tabloları
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Tablo | Açıklama |
+|-------|----------|
+| businesses | İşletme bilgileri |
+| sc_pages | Search Console sayfa cache |
+| sc_queries | Search Console sorgu cache |
+| sitemap_entries | Sitemap URL cache |
+| redirects | Redirect kuralları |
+| keyword_searches | Keyword araştırma geçmişi |
+| audit_results | SEO audit sonuçları |
 
-## Deploy on Vercel
+## Tema
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+VixSEO özel renk paleti:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Token | Light | Dark |
+|-------|-------|------|
+| Primary | `#0F2447` (lacivert) | `#E2E8F0` |
+| Accent | `#10B981` (zümrüt) | `#10B981` |
+| Background | `#FFFFFF` | `#0B1120` |
+| Muted | `#F4F6F9` | `#1E293B` |
+
+## Deploy
+
+### Vercel (Web)
+
+1. [vercel.com/new](https://vercel.com/new) > GitHub repo'yu import et
+2. Environment variables ekle
+3. Storage > Neon Postgres oluştur
+4. Deploy
+
+### Electron (Desktop)
+
+Electron, Vercel URL'ini saran bir thin shell olarak çalışır:
+
+```bash
+npm run electron:dev    # geliştirme
+npm run electron:build  # paketleme (.exe / .dmg)
+```
+
+## Yol Haritası
+
+- [x] Proje scaffold + tema
+- [x] Auth (Clerk) + dark mode
+- [x] Wix API port + işletme CRUD
+- [x] Ana dashboard + işletme kartları
+- [x] Yazılar tablosu (TanStack Table)
+- [x] Analytics sayfası (SC)
+- [ ] SC API refresh + DB cache (cron)
+- [ ] Google Ads keyword volume
+- [ ] Sitemap çekme + analiz
+- [ ] Redirect CRUD
+- [ ] SEO audit
+- [ ] Electron wrapper
+
+## Lisans
+
+Private repository. Blakfy &copy; 2026
