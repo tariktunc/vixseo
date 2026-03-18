@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Signal bars icon only -->
+  <rect x="4" y="30" width="7" height="14" rx="2.5" fill="#10B981" opacity="0.4"/>
+  <rect x="15" y="22" width="7" height="22" rx="2.5" fill="#10B981" opacity="0.6"/>
+  <rect x="26" y="14" width="7" height="30" rx="2.5" fill="#10B981" opacity="0.8"/>
+  <rect x="37" y="4" width="7" height="40" rx="2.5" fill="#10B981"/>
+</svg>

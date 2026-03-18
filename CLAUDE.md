@@ -1,4 +1,4 @@
-# xmlBlog — Çok Siteli İçerik Yönetim Sistemi
+# VixSEO — Çok Siteli SEO & İçerik Yönetim Sistemi
 
 ---
 
@@ -51,23 +51,36 @@ Sadece şu durumlarda kullanıcıya sor (gereksiz soru sorma):
 
 ## GENEL BAKIŞ
 
-Bu sistem, Wix platformundaki **birden fazla işletme sitesi** için blog ve CMS içeriği üretir.
-Siteler `sites/` klasörüne eklenerek sisteme dahil edilir. Sabit bir site listesi yoktur.
+Bu sistem, Wix platformundaki **birden fazla işletme sitesi** için SEO yönetimi, blog üretimi ve CMS içeriği sağlar. Next.js dashboard (src/) üzerinden Google Search Console, Google Ads, Wix Blog CRUD, sitemap, redirect ve audit işlevleri web arayüzünden yönetilir. Siteler `sites/` klasörüne eklenerek sisteme dahil edilir.
+
+**Repo:** `git@github.com:tariktunc/vixseo.git` (private)
 
 ---
 
 ## PROJE HİYERARŞİSİ
 
 ```
-xmlBlog/
-├── CLAUDE.md                        ← Bu dosya — global sistem kuralları
-├── WIX-BLOG-FORMAT-REHBERI.md       ← Wix RichContent format referansı
-├── wix-credentials.json             ← API anahtarı (tüm siteler ortak kullanır)
-│
-├── wix/                             ← Wix API bilgi tabanı (global)
-│   ├── README.md
-│   ├── api-reference.md
-│   └── publish-checklist.md
+vixseo/                              ← Repo root
+├── src/                             ← Next.js app (TypeScript)
+│   ├── app/                         ← App Router (pages + API routes)
+│   │   ├── (dashboard)/[business]/  ← İşletme sayfaları (analytics, posts, audit...)
+│   │   └── api/[business]/          ← Backend API endpoint'leri
+│   ├── lib/                         ← İş mantığı modülleri
+│   │   ├── wix.ts                   ← Wix API client
+│   │   ├── blog.ts                  ← Wix Blog CRUD
+│   │   ├── publisher.ts             ← Wix'e post yayınlama pipeline
+│   │   ├── search-console.ts        ← Google Search Console API
+│   │   ├── keywords.ts              ← Google Ads Keyword Planner
+│   │   ├── sitemap.ts               ← Sitemap fetch/parse/cache
+│   │   ├── redirects.ts             ← 301 redirect yönetimi
+│   │   ├── audit.ts                 ← SEO audit (Wix vs kontrol)
+│   │   ├── sync.ts                  ← Wix → DB senkronizasyon
+│   │   ├── markdown-to-wix.ts       ← Markdown → Wix RichContent
+│   │   └── auth.ts                  ← Clerk auth + RBAC
+│   ├── components/                  ← UI bileşenleri (shadcn/ui)
+│   ├── hooks/                       ← React Query hook'ları
+│   ├── db/                          ← Drizzle ORM schema + seed
+│   └── types/                       ← TypeScript tip tanımları
 │
 ├── sites/                           ← Her işletme buraya eklenir
 │   ├── _template/                   ← Yeni site şablonu
@@ -82,8 +95,15 @@ xmlBlog/
 │   ├── ibrahiminyeri/               ← ibrahiminyeri.com
 │   └── {yeni-site}/                 ← Eklenen her yeni site aynı yapıya uyar
 │
-└── scripts/                         ← Siteden bağımsız paylaşılan scriptler
-    └── cms.js                       ← Generic CMS sync (--site + --collection argümanları)
+├── wix/                             ← Wix API bilgi tabanı (global)
+│   ├── README.md
+│   ├── api-reference.md
+│   └── publish-checklist.md
+│
+├── CLAUDE.md                        ← Bu dosya — global sistem kuralları
+├── WIX-BLOG-FORMAT-REHBERI.md       ← Wix RichContent format referansı
+├── package.json                     ← Next.js + bağımlılıklar
+└── .env.local                       ← API credentials (gitignore'da)
 ```
 
 ---
@@ -222,61 +242,6 @@ publish.js otomatik yapar:
 ---
 
 ## HATA ÖNLEME KURALLARI
-
-### CMS Koleksiyon İçerik Yönetimi (Generic)
-
-**CMS sync sistemi:** `scripts/cms.js` root script, her site ve koleksiyon için çalışır.
-
-```
-❌ Slug kontrolü için Wix API'ye sorgu yapmak
-✅ {collection}-inventory.json'daki slug listesine bak — local her zaman günceldir
-
-❌ İçerik ekleyip direkt --sync çalıştırmak
-✅ Önce --status ile ne gönderileceğini doğrula, sonra --sync
-
-❌ --pull'u rutin çalıştırmak
-✅ --pull yalnızca Wix panelinden manuel değişiklik yapıldığında çalıştır
-```
-
-**Komutlar (root script — önerilen):**
-```bash
-node scripts/cms.js --site blakfy --collection news --status
-node scripts/cms.js --site blakfy --collection news --sync --dry-run
-node scripts/cms.js --site blakfy --collection news --sync
-node scripts/cms.js --site blakfy --list   # tüm koleksiyonları listele
-```
-
-**Kısayol (wrapper — eski komutlar çalışmaya devam eder):**
-```bash
-node sites/blakfy/scripts/cms.js --status
-node sites/blakfy/scripts/cms.js --sync --dry-run
-node sites/blakfy/scripts/cms.js --sync
-```
-
-**İçerik ekleme akışı:**
-1. `sites/{site}/{collection}-inventory.json`'a yeni item ekle (`_status: "new"`, `id: ""`)
-2. `node scripts/cms.js --site {site} --collection {col} --status` → ne gönderileceğini gör
-3. `node scripts/cms.js --site {site} --collection {col} --sync --dry-run` → önizle
-4. `node scripts/cms.js --site {site} --collection {col} --sync` → Wix'e gönder
-
-**`_status` değerleri:**
-- `"synced"` → Wix ile uyumlu
-- `"new"` → Henüz Wix'te yok, `--sync`'te CREATE edilecek (`id` boş bırak)
-- `"modified"` → Wix'te var ama local'de değişti, `--sync`'te UPDATE edilecek
-
-**Yeni site için koleksiyon kurulumu:**
-1. Wix panelinden koleksiyon ID'sini öğren
-2. `sites/{site}/{collection}-inventory.json` oluştur:
-   ```json
-   {
-     "collection": "{collection-id}",
-     "fieldMap": { "title": "title", "description": "description" },
-     "lastPulledAt": null,
-     "lastSyncedAt": null,
-     "items": []
-   }
-   ```
-3. `node scripts/cms.js --site {site} --collection {collection-id} --pull`
 
 ---
 
