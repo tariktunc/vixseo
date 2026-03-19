@@ -95,7 +95,7 @@ export function PostsTable({ posts }: PostsTableProps) {
       },
       {
         accessorKey: 'seoTitle',
-        header: 'SEO Title',
+        header: 'SEO Başlığı',
         cell: ({ row }) => (
           <p className="max-w-[200px] truncate text-xs">
             {row.original.seoTitle || <span className="text-destructive">Eksik</span>}
@@ -104,7 +104,7 @@ export function PostsTable({ posts }: PostsTableProps) {
       },
       {
         accessorKey: 'description',
-        header: 'Description',
+        header: 'Açıklama',
         cell: ({ row }) => {
           const desc = row.original.description
           if (!desc) return <span className="text-xs text-destructive">Eksik</span>

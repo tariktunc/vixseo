@@ -49,12 +49,12 @@ const features = [
   },
 ]
 
-const fadeUp = {
+const fadeUp = () => ({
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
   transition: { duration: 0.5 },
-}
+})
 
 export function LandingPage() {
   return (
@@ -92,7 +92,7 @@ export function LandingPage() {
         <div className="mx-auto max-w-4xl py-24 text-center md:py-32">
           <motion.h1
             className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
-            {...fadeUp}
+            {...fadeUp()}
           >
             Wix Sitelerinizin SEO&apos;sunu
             <br />
@@ -100,14 +100,14 @@ export function LandingPage() {
           </motion.h1>
           <motion.p
             className="mx-auto mt-6 max-w-2xl text-lg text-slate-300"
-            {...fadeUp}
+            {...fadeUp()}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             Blog yönetimi, Search Console analizi, anahtar kelime araştırma ve SEO audit — tüm araçlar tek bir yerde.
           </motion.p>
           <motion.div
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-            {...fadeUp}
+            {...fadeUp()}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <SignUpButton mode="modal">
@@ -127,7 +127,7 @@ export function LandingPage() {
       {/* Features */}
       <section className="bg-background py-20 px-4">
         <div className="mx-auto max-w-7xl">
-          <motion.div className="text-center mb-16" {...fadeUp}>
+          <motion.div className="text-center mb-16" {...fadeUp()}>
             <h2 className="text-3xl font-bold">Neler Yapabilirsiniz?</h2>
             <p className="mt-4 text-muted-foreground text-lg">
               VixSEO ile Wix sitelerinizi profesyonelce yönetin
@@ -137,7 +137,7 @@ export function LandingPage() {
             {features.map((feature, i) => (
               <motion.div
                 key={feature.title}
-                {...fadeUp}
+                {...fadeUp()}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
                 <Card className="h-full">
@@ -155,7 +155,7 @@ export function LandingPage() {
 
       {/* CTA */}
       <section className="bg-gradient-to-br from-[#0F2447] to-[#193157] py-20 px-4 dark:from-[#0B1120] dark:to-[#131C2E]">
-        <motion.div className="mx-auto max-w-3xl text-center" {...fadeUp}>
+        <motion.div className="mx-auto max-w-3xl text-center" {...fadeUp()}>
           <h2 className="text-3xl font-bold text-white">Hemen Başlayın</h2>
           <p className="mt-4 text-slate-300 text-lg">
             Ücretsiz hesap oluşturun ve Wix sitelerinizin SEO performansını artırın.

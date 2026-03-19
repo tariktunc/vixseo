@@ -1,4 +1,4 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { clerkMiddleware, clerkClient, createRouteMatcher } from '@clerk/nextjs/server'
 import { type Role, ROLE_HIERARCHY } from '@/types/auth'
 
 const isPublicRoute = createRouteMatcher([
@@ -22,8 +22,14 @@ const isEditorPage = createRouteMatcher([
   '/:business/redirects(.*)',
 ])
 
-function getRole(sessionClaims: any): Role {
-  return sessionClaims?.metadata?.role || 'viewer'
+async function getRoleFromMetadata(userId: string): Promise<Role> {
+  try {
+    const client = await clerkClient()
+    const user = await client.users.getUser(userId)
+    return (user.publicMetadata as any)?.role || 'viewer'
+  } catch {
+    return 'viewer'
+  }
 }
 
 function hasMinRole(role: Role, minRole: Role): boolean {
@@ -48,12 +54,13 @@ export default clerkMiddleware(async (auth, request) => {
     return session.redirectToSignIn()
   }
 
-  const role = getRole(session.sessionClaims)
-
   // API route'ları → endpoint bazlı kontrol auth.ts'de yapılacak, temel auth yeterli
   if (isApiRoute(request)) {
     return
   }
+
+  // Sayfa route'ları için publicMetadata'dan rol oku
+  const role = await getRoleFromMetadata(session.userId)
 
   // Admin-only sayfalar (settings, users)
   if (isAdminPage(request)) {
@@ -75,10 +82,15 @@ export default clerkMiddleware(async (auth, request) => {
   const pathname = new URL(request.url).pathname
   const businessMatch = pathname.match(/^\/([a-z0-9-]+)/)
   if (businessMatch && role === 'viewer') {
-    const businessName = businessMatch[1]
-    const businessIds = (session.sessionClaims as any)?.metadata?.businessIds as string[] | undefined
-    if (businessIds && !businessIds.includes(businessName)) {
-      return Response.redirect(new URL('/dashboard', request.url))
+    try {
+      const client = await clerkClient()
+      const user = await client.users.getUser(session.userId)
+      const businessIds = (user.publicMetadata as any)?.businessIds as string[] | undefined
+      if (businessIds && !businessIds.includes(businessMatch[1])) {
+        return Response.redirect(new URL('/dashboard', request.url))
+      }
+    } catch {
+      // metadata okunamazsa erişime izin ver
     }
   }
 })

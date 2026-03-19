@@ -3,10 +3,24 @@ import { db } from '@/lib/db'
 import { businesses } from '@/db/schema'
 import { eq } from 'drizzle-orm'
 import { requirePermission, getSessionAuth, canAccessBusiness } from '@/lib/auth'
+import { DEFAULT_BUSINESSES } from '@/db/default-businesses'
+
+async function ensureDefaultBusinesses() {
+  const existing = await db.select({ name: businesses.name }).from(businesses)
+  const existingNames = new Set(existing.map((b) => b.name))
+
+  const missing = DEFAULT_BUSINESSES.filter((b) => !existingNames.has(b.name))
+  if (missing.length === 0) return
+
+  await db.insert(businesses).values([...missing]).onConflictDoNothing()
+}
 
 export async function GET() {
   try {
     const { role, metadata } = await getSessionAuth()
+
+    // Varsayılan işletmeleri kontrol et ve yoksa oluştur
+    await ensureDefaultBusinesses()
 
     const all = await db.select().from(businesses).orderBy(businesses.name)
 

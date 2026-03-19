@@ -1,4 +1,4 @@
-import { auth } from '@clerk/nextjs/server'
+import { auth, clerkClient } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 import { type Role, type Permission, ROLE_PERMISSIONS } from '@/types/auth'
 
@@ -7,8 +7,18 @@ interface SessionMetadata {
   businessIds?: string[]
 }
 
-export function getUserRole(sessionClaims: { metadata?: SessionMetadata } | null | undefined): Role {
-  return sessionClaims?.metadata?.role || 'viewer'
+async function getPublicMetadata(userId: string): Promise<SessionMetadata> {
+  try {
+    const client = await clerkClient()
+    const user = await client.users.getUser(userId)
+    return (user.publicMetadata as SessionMetadata) || {}
+  } catch {
+    return {}
+  }
+}
+
+export function getUserRole(metadata: SessionMetadata | undefined): Role {
+  return metadata?.role || 'viewer'
 }
 
 export function hasPermission(role: Role, permission: Permission): boolean {
@@ -26,7 +36,6 @@ export function canAccessBusiness(
 
 /**
  * API route guard — izin yoksa 403 döndürür.
- * Kullanım: const guard = await requirePermission(permission); if (guard) return guard;
  */
 export async function requirePermission(permission: Permission): Promise<NextResponse | null> {
   const session = await auth()
@@ -34,7 +43,8 @@ export async function requirePermission(permission: Permission): Promise<NextRes
     return NextResponse.json({ error: 'Giriş yapılmamış' }, { status: 401 })
   }
 
-  const role = getUserRole(session.sessionClaims as { metadata?: SessionMetadata })
+  const metadata = await getPublicMetadata(session.userId)
+  const role = getUserRole(metadata)
   if (!hasPermission(role, permission)) {
     return NextResponse.json({ error: 'Yetkisiz erişim' }, { status: 403 })
   }
@@ -44,7 +54,6 @@ export async function requirePermission(permission: Permission): Promise<NextRes
 
 /**
  * API route guard — business erişim kontrolü.
- * viewer sadece kendi businessIds'indeki işletmelere erişebilir.
  */
 export async function requireBusinessAccess(businessName: string): Promise<NextResponse | null> {
   const session = await auth()
@@ -52,7 +61,7 @@ export async function requireBusinessAccess(businessName: string): Promise<NextR
     return NextResponse.json({ error: 'Giriş yapılmamış' }, { status: 401 })
   }
 
-  const metadata = (session.sessionClaims as { metadata?: SessionMetadata })?.metadata
+  const metadata = await getPublicMetadata(session.userId)
   if (!canAccessBusiness(metadata, businessName)) {
     return NextResponse.json({ error: 'Bu işletmeye erişim yetkiniz yok' }, { status: 403 })
   }
@@ -65,7 +74,7 @@ export async function requireBusinessAccess(businessName: string): Promise<NextR
  */
 export async function getSessionAuth() {
   const session = await auth()
-  const metadata = (session.sessionClaims as { metadata?: SessionMetadata })?.metadata
-  const role = getUserRole(session.sessionClaims as { metadata?: SessionMetadata })
+  const metadata = session.userId ? await getPublicMetadata(session.userId) : undefined
+  const role = getUserRole(metadata)
   return { session, metadata, role }
 }
