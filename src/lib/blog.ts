@@ -6,6 +6,8 @@ interface WixPost {
   slug: string
   title: string
   seoData?: {
+    title?: string
+    description?: string
     tags?: Array<{
       type: string
       children?: string
@@ -24,12 +26,19 @@ interface WixPost {
 
 function extractSeo(post: WixPost) {
   const tags = post.seoData?.tags || []
-  return {
-    seoTitle: tags.find((t) => t.type === 'title')?.children?.trim() || null,
-    description:
-      tags.find((t) => t.type === 'meta' && t.props?.name === 'description')
-        ?.props?.content?.trim() || null,
-  }
+
+  const seoTitle =
+    tags.find((t) => t.type === 'title')?.children?.trim() ||
+    post.seoData?.title?.trim() ||
+    null
+
+  const description =
+    tags.find((t) => t.type === 'meta' && t.props?.name === 'description')
+      ?.props?.content?.trim() ||
+    post.seoData?.description?.trim() ||
+    null
+
+  return { seoTitle, description }
 }
 
 function toPostMeta(post: WixPost): PostMeta {
