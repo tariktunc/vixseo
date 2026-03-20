@@ -25,7 +25,7 @@ export async function PATCH(
 
     // Mevcut metadata'yı al
     const user = await client.users.getUser(userId)
-    const currentMetadata = (user.publicMetadata as any) || {}
+    const currentMetadata = (user.publicMetadata as Record<string, unknown>) || {}
 
     const newMetadata = {
       ...currentMetadata,

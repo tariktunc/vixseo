@@ -1,21 +1,27 @@
 'use client'
 
 import { useParams } from 'next/navigation'
+
 import { useAnalytics, useRefreshAnalytics } from '@/hooks/use-analytics'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Skeleton } from '@/components/ui/skeleton'
 import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table'
-import { RefreshCw, MousePointerClick, Eye, TrendingUp, Target } from 'lucide-react'
+  RefreshCw,
+  BarChart3,
+  FileText,
+  Search,
+  Link2,
+  Globe,
+  Map,
+} from 'lucide-react'
 import { toast } from 'sonner'
+import { AnalyticsOverview } from '@/components/analytics/analytics-overview'
+import { AnalyticsPages } from '@/components/analytics/analytics-pages'
+import { AnalyticsQueries } from '@/components/analytics/analytics-queries'
+import { AnalyticsPageQueries } from '@/components/analytics/analytics-page-queries'
+import { AnalyticsCountries } from '@/components/analytics/analytics-countries'
+import { AnalyticsSitemaps } from '@/components/analytics/analytics-sitemaps'
 
 export default function AnalyticsPage() {
   const params = useParams()
@@ -26,49 +32,37 @@ export default function AnalyticsPage() {
   const handleRefresh = async () => {
     try {
       await refreshMutation.mutateAsync()
-      toast.success('Analytics güncellendi')
+      toast.success('Analytics guncellendi')
     } catch {
-      toast.error('Analytics güncellenemedi')
+      toast.error('Analytics guncellenemedi')
     }
-  }
-
-  if (isLoading) {
-    return (
-      <div className="space-y-6">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {[...Array(4)].map((_, i) => (
-            <Skeleton key={i} className="h-28 rounded-xl" />
-          ))}
-        </div>
-        <Skeleton className="h-96 rounded-xl" />
-      </div>
-    )
   }
 
   if (!data) {
     return (
       <div className="flex flex-col items-center justify-center py-16">
-        <p className="mb-4 text-muted-foreground">Analytics verisi bulunamadı</p>
-        <Button onClick={handleRefresh} disabled={refreshMutation.isPending}>
-          <RefreshCw className="mr-2 h-4 w-4" />
-          Veri Çek
+        <p className="mb-4 text-muted-foreground">
+          {isLoading ? 'Yukleniyor...' : 'Analytics verisi bulunamadi'}
+        </p>
+        <Button onClick={handleRefresh} disabled={isLoading || refreshMutation.isPending}>
+          <RefreshCw className={`mr-2 h-4 w-4 ${(isLoading || refreshMutation.isPending) ? 'animate-spin' : ''}`} />
+          {refreshMutation.isPending ? 'Cekiliyor...' : 'Veri Cek'}
         </Button>
       </div>
     )
   }
 
-  const metrics = [
-    { label: 'Tıklama', value: data.totals.clicks.toLocaleString('tr-TR'), icon: MousePointerClick },
-    { label: 'Gösterim', value: data.totals.impressions.toLocaleString('tr-TR'), icon: Eye },
-    { label: 'CTR', value: `%${data.totals.ctr.toFixed(1)}`, icon: TrendingUp },
-    { label: 'Ort. Pozisyon', value: data.totals.position.toFixed(1), icon: Target },
-  ]
-
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">Search Console Analitik</h2>
+      {/* Baslik + Donem + Yenile */}
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <h2 className="text-xl font-bold">Google Search Console</h2>
         <div className="flex items-center gap-2">
+          {data.isStale && (
+            <Badge variant="destructive" className="text-[10px]">
+              Eski veri
+            </Badge>
+          )}
           <Badge variant="outline" className="text-xs">
             {data.period.start} — {data.period.end}
           </Badge>
@@ -79,81 +73,59 @@ export default function AnalyticsPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        {metrics.map((m) => (
-          <Card key={m.label}>
-            <CardContent className="flex items-center gap-3 p-4">
-              <m.icon className="h-5 w-5 text-accent" />
-              <div>
-                <p className="text-2xl font-bold">{m.value}</p>
-                <p className="text-xs text-muted-foreground">{m.label}</p>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+      {/* Tabs */}
+      <Tabs defaultValue="overview">
+        <TabsList className="w-full overflow-x-auto" variant="line">
+          <TabsTrigger value="overview">
+            <BarChart3 className="h-4 w-4" />
+            <span className="hidden sm:inline">Genel Bakis</span>
+          </TabsTrigger>
+          <TabsTrigger value="pages">
+            <FileText className="h-4 w-4" />
+            <span className="hidden sm:inline">Sayfalar</span>
+          </TabsTrigger>
+          <TabsTrigger value="queries">
+            <Search className="h-4 w-4" />
+            <span className="hidden sm:inline">Sorgular</span>
+          </TabsTrigger>
+          <TabsTrigger value="page-queries">
+            <Link2 className="h-4 w-4" />
+            <span className="hidden sm:inline">Sayfa & Sorgu</span>
+          </TabsTrigger>
+          <TabsTrigger value="countries">
+            <Globe className="h-4 w-4" />
+            <span className="hidden sm:inline">Ulkeler</span>
+          </TabsTrigger>
+          <TabsTrigger value="sitemaps">
+            <Map className="h-4 w-4" />
+            <span className="hidden sm:inline">Sitemaps</span>
+          </TabsTrigger>
+        </TabsList>
 
-      {/* Top Sayfalar */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-base">En Çok Trafik Alan Sayfalar</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Sayfa</TableHead>
-                <TableHead className="text-right">Tıklama</TableHead>
-                <TableHead className="text-right">Gösterim</TableHead>
-                <TableHead className="text-right">CTR</TableHead>
-                <TableHead className="text-right">Pozisyon</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {data.pages.slice(0, 20).map((p, i) => (
-                <TableRow key={i}>
-                  <TableCell className="max-w-[300px] truncate text-xs">{p.url}</TableCell>
-                  <TableCell className="text-right">{p.clicks}</TableCell>
-                  <TableCell className="text-right">{p.impressions}</TableCell>
-                  <TableCell className="text-right">%{p.ctr}</TableCell>
-                  <TableCell className="text-right">{p.position}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </CardContent>
-      </Card>
+        <TabsContent value="overview" className="mt-6">
+          <AnalyticsOverview data={data} />
+        </TabsContent>
 
-      {/* Top Sorgular */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-base">En Çok Trafik Getiren Sorgular</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Sorgu</TableHead>
-                <TableHead className="text-right">Tıklama</TableHead>
-                <TableHead className="text-right">Gösterim</TableHead>
-                <TableHead className="text-right">CTR</TableHead>
-                <TableHead className="text-right">Pozisyon</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {data.queries.slice(0, 20).map((q, i) => (
-                <TableRow key={i}>
-                  <TableCell className="max-w-[300px] truncate text-xs">{q.query}</TableCell>
-                  <TableCell className="text-right">{q.clicks}</TableCell>
-                  <TableCell className="text-right">{q.impressions}</TableCell>
-                  <TableCell className="text-right">%{q.ctr}</TableCell>
-                  <TableCell className="text-right">{q.position}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </CardContent>
-      </Card>
+        <TabsContent value="pages" className="mt-6">
+          <AnalyticsPages pages={data.pages} business={business} />
+        </TabsContent>
+
+        <TabsContent value="queries" className="mt-6">
+          <AnalyticsQueries queries={data.queries} />
+        </TabsContent>
+
+        <TabsContent value="page-queries" className="mt-6">
+          <AnalyticsPageQueries business={business} />
+        </TabsContent>
+
+        <TabsContent value="countries" className="mt-6">
+          <AnalyticsCountries countries={data.countries} />
+        </TabsContent>
+
+        <TabsContent value="sitemaps" className="mt-6">
+          <AnalyticsSitemaps business={business} />
+        </TabsContent>
+      </Tabs>
     </div>
   )
 }

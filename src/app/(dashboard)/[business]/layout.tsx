@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname, useParams } from 'next/navigation'
-import { FileText, BarChart3, Search, Map, ArrowLeftRight } from 'lucide-react'
+import { FileText, BarChart3, Search, Map, ArrowLeftRight, Globe } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useHasPermission } from '@/hooks/use-permissions'
 import type { Permission } from '@/types/auth'
@@ -17,7 +17,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: 'Özet', href: '', icon: BarChart3 },
   { label: 'Yazılar', href: '/posts', icon: FileText },
-  { label: 'Analitik', href: '/analytics', icon: BarChart3 },
+  { label: 'Search Console', href: '/analytics', icon: Globe },
   { label: 'Anahtar Kelimeler', href: '/keywords', icon: Search, permission: 'read:keywords' },
   { label: 'Sitemap', href: '/sitemap', icon: Map, permission: 'read:sitemap' },
   { label: 'Redirects', href: '/redirects', icon: ArrowLeftRight, permission: 'read:redirects' },

@@ -42,9 +42,11 @@ export function BusinessCard({ business }: BusinessCardProps) {
         <div className="mb-4 flex flex-wrap gap-1.5">
           <Tooltip>
             <TooltipTrigger>
-              <Badge variant={business.wixKeyConfigured ? 'default' : 'destructive'} className="text-xs">
-                Wix {business.wixKeyConfigured ? '✓' : '✗'}
-              </Badge>
+              <span tabIndex={0} className="inline-flex">
+                <Badge variant={business.wixKeyConfigured ? 'default' : 'destructive'} className="text-xs">
+                  Wix {business.wixKeyConfigured ? '✓' : '✗'}
+                </Badge>
+              </span>
             </TooltipTrigger>
             <TooltipContent>
               {business.wixKeyConfigured
@@ -55,9 +57,11 @@ export function BusinessCard({ business }: BusinessCardProps) {
 
           <Tooltip>
             <TooltipTrigger>
-              <Badge variant={business.scKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
-                SC {business.scKeyConfigured ? '✓' : '✗'}
-              </Badge>
+              <span tabIndex={0} className="inline-flex">
+                <Badge variant={business.scKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
+                  SC {business.scKeyConfigured ? '✓' : '✗'}
+                </Badge>
+              </span>
             </TooltipTrigger>
             <TooltipContent>
               {business.scKeyConfigured
@@ -68,9 +72,11 @@ export function BusinessCard({ business }: BusinessCardProps) {
 
           <Tooltip>
             <TooltipTrigger>
-              <Badge variant={business.adsKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
-                Ads {business.adsKeyConfigured ? '✓' : '✗'}
-              </Badge>
+              <span tabIndex={0} className="inline-flex">
+                <Badge variant={business.adsKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
+                  Ads {business.adsKeyConfigured ? '✓' : '✗'}
+                </Badge>
+              </span>
             </TooltipTrigger>
             <TooltipContent>
               {business.adsKeyConfigured

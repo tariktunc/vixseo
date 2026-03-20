@@ -1,9 +1,9 @@
-import { pgTable, uuid, text, varchar, integer, real, timestamp, boolean } from 'drizzle-orm/pg-core'
+import { pgTable, uuid, text, varchar, integer, real, timestamp, boolean, json } from 'drizzle-orm/pg-core'
 
 // ── İşletmeler ──────────────────────────────────────────────
 export const businesses = pgTable('businesses', {
   id: uuid('id').defaultRandom().primaryKey(),
-  name: varchar('name', { length: 100 }).notNull(),
+  name: varchar('name', { length: 100 }).notNull().unique(),
   domain: varchar('domain', { length: 255 }).notNull(),
   siteId: varchar('site_id', { length: 100 }).notNull(),
   memberId: varchar('member_id', { length: 100 }),
@@ -45,6 +45,63 @@ export const scQueries = pgTable('sc_queries', {
   fetchedAt: timestamp('fetched_at').defaultNow(),
 })
 
+// ── SC Günlük Metrikler Cache ────────────────────────────────
+export const scDailyMetrics = pgTable('sc_daily_metrics', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  businessId: uuid('business_id').references(() => businesses.id, { onDelete: 'cascade' }).notNull(),
+  date: varchar('date', { length: 10 }).notNull(),
+  clicks: integer('clicks').default(0),
+  impressions: integer('impressions').default(0),
+  ctr: real('ctr').default(0),
+  position: real('position').default(0),
+  searchType: varchar('search_type', { length: 20 }).default('web'),
+  periodStart: varchar('period_start', { length: 10 }),
+  periodEnd: varchar('period_end', { length: 10 }),
+  fetchedAt: timestamp('fetched_at').defaultNow(),
+})
+
+// ── SC Cihaz Kırılımı Cache ─────────────────────────────────
+export const scDevices = pgTable('sc_devices', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  businessId: uuid('business_id').references(() => businesses.id, { onDelete: 'cascade' }).notNull(),
+  device: varchar('device', { length: 20 }).notNull(),
+  clicks: integer('clicks').default(0),
+  impressions: integer('impressions').default(0),
+  ctr: real('ctr').default(0),
+  position: real('position').default(0),
+  periodStart: varchar('period_start', { length: 10 }),
+  periodEnd: varchar('period_end', { length: 10 }),
+  fetchedAt: timestamp('fetched_at').defaultNow(),
+})
+
+// ── SC Ülke Kırılımı Cache ──────────────────────────────────
+export const scCountries = pgTable('sc_countries', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  businessId: uuid('business_id').references(() => businesses.id, { onDelete: 'cascade' }).notNull(),
+  country: varchar('country', { length: 10 }).notNull(),
+  clicks: integer('clicks').default(0),
+  impressions: integer('impressions').default(0),
+  ctr: real('ctr').default(0),
+  position: real('position').default(0),
+  periodStart: varchar('period_start', { length: 10 }),
+  periodEnd: varchar('period_end', { length: 10 }),
+  fetchedAt: timestamp('fetched_at').defaultNow(),
+})
+
+// ── SC Arama Türü Kırılımı Cache ────────────────────────────
+export const scSearchTypes = pgTable('sc_search_types', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  businessId: uuid('business_id').references(() => businesses.id, { onDelete: 'cascade' }).notNull(),
+  searchType: varchar('search_type', { length: 20 }).notNull(),
+  clicks: integer('clicks').default(0),
+  impressions: integer('impressions').default(0),
+  ctr: real('ctr').default(0),
+  position: real('position').default(0),
+  periodStart: varchar('period_start', { length: 10 }),
+  periodEnd: varchar('period_end', { length: 10 }),
+  fetchedAt: timestamp('fetched_at').defaultNow(),
+})
+
 // ── Sitemap Cache ───────────────────────────────────────────
 export const sitemapEntries = pgTable('sitemap_entries', {
   id: uuid('id').defaultRandom().primaryKey(),
@@ -54,6 +111,21 @@ export const sitemapEntries = pgTable('sitemap_entries', {
   lastmod: varchar('lastmod', { length: 30 }),
   priority: real('priority'),
   section: varchar('section', { length: 100 }),
+  status: varchar('status', { length: 20 }).default('unchanged'),
+  previousLastmod: varchar('previous_lastmod', { length: 30 }),
+  firstSeenAt: timestamp('first_seen_at').defaultNow(),
+  fetchedAt: timestamp('fetched_at').defaultNow(),
+})
+
+// ── Sitemap Snapshot'ları ───────────────────────────────────
+export const sitemapSnapshots = pgTable('sitemap_snapshots', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  businessId: uuid('business_id').references(() => businesses.id, { onDelete: 'cascade' }).notNull(),
+  totalUrls: integer('total_urls').default(0),
+  newUrls: integer('new_urls').default(0),
+  removedUrls: integer('removed_urls').default(0),
+  changedUrls: integer('changed_urls').default(0),
+  sections: json('sections').$type<Record<string, number>>(),
   fetchedAt: timestamp('fetched_at').defaultNow(),
 })
 

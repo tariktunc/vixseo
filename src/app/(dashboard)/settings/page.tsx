@@ -159,9 +159,11 @@ export default function SettingsPage() {
                 <div className="flex gap-1.5">
                   <Tooltip>
                     <TooltipTrigger>
-                      <Badge variant={b.wixKeyConfigured ? 'default' : 'destructive'} className="text-xs">
-                        Wix {b.wixKeyConfigured ? '✓' : '✗'}
-                      </Badge>
+                      <span tabIndex={0} className="inline-flex">
+                        <Badge variant={b.wixKeyConfigured ? 'default' : 'destructive'} className="text-xs">
+                          Wix {b.wixKeyConfigured ? '✓' : '✗'}
+                        </Badge>
+                      </span>
                     </TooltipTrigger>
                     <TooltipContent>
                       {b.wixKeyConfigured
@@ -171,9 +173,11 @@ export default function SettingsPage() {
                   </Tooltip>
                   <Tooltip>
                     <TooltipTrigger>
-                      <Badge variant={b.scKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
-                        SC {b.scKeyConfigured ? '✓' : '✗'}
-                      </Badge>
+                      <span tabIndex={0} className="inline-flex">
+                        <Badge variant={b.scKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
+                          SC {b.scKeyConfigured ? '✓' : '✗'}
+                        </Badge>
+                      </span>
                     </TooltipTrigger>
                     <TooltipContent>
                       {b.scKeyConfigured ? 'Bağlı' : 'GOOGLE_SERVICE_ACCOUNT_JSON eksik'}
@@ -181,9 +185,11 @@ export default function SettingsPage() {
                   </Tooltip>
                   <Tooltip>
                     <TooltipTrigger>
-                      <Badge variant={b.adsKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
-                        Ads {b.adsKeyConfigured ? '✓' : '✗'}
-                      </Badge>
+                      <span tabIndex={0} className="inline-flex">
+                        <Badge variant={b.adsKeyConfigured ? 'secondary' : 'outline'} className="text-xs">
+                          Ads {b.adsKeyConfigured ? '✓' : '✗'}
+                        </Badge>
+                      </span>
                     </TooltipTrigger>
                     <TooltipContent>
                       {b.adsKeyConfigured ? 'Bağlı' : 'GOOGLE_ADS_DEVELOPER_TOKEN eksik'}

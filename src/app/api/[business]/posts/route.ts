@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server'
-import { queryPosts } from '@/lib/blog'
+import { queryPosts, queryCategories } from '@/lib/blog'
 import { requireBusinessAccess } from '@/lib/auth'
 
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ business: string }> }
 ) {
   try {
@@ -11,6 +11,15 @@ export async function GET(
 
     const guard = await requireBusinessAccess(business)
     if (guard) return guard
+
+    const { searchParams } = new URL(request.url)
+    const type = searchParams.get('type')
+
+    // Kategori listesi
+    if (type === 'categories') {
+      const categories = await queryCategories(business)
+      return NextResponse.json({ categories })
+    }
 
     const posts = await queryPosts(business)
 

@@ -6,6 +6,7 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
+  getFilteredRowModel,
   flexRender,
   type ColumnDef,
   type SortingState,
@@ -21,44 +22,20 @@ import {
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from '@/components/ui/tooltip'
-import { AlertTriangle, Search, ArrowUpDown } from 'lucide-react'
+import { Search, ArrowUpDown, Info } from 'lucide-react'
 import { useKeywords } from '@/hooks/use-keywords'
 import { Skeleton } from '@/components/ui/skeleton'
-import type { KeywordResult } from '@/types/keyword'
-
-function competitionBadge(competition: string | null) {
-  if (!competition) return <span className="text-xs text-muted-foreground">-</span>
-  const variants: Record<string, 'default' | 'secondary' | 'destructive' | 'outline'> = {
-    LOW: 'secondary',
-    MEDIUM: 'default',
-    HIGH: 'destructive',
-  }
-  const labels: Record<string, string> = {
-    LOW: 'Düşük',
-    MEDIUM: 'Orta',
-    HIGH: 'Yüksek',
-  }
-  return (
-    <Badge variant={variants[competition] || 'outline'} className="text-xs">
-      {labels[competition] || competition}
-    </Badge>
-  )
-}
+import type { SCKeyword } from '@/types/keyword'
 
 export function KeywordsContent({ business }: { business: string }) {
-  const { data: keywords, isLoading } = useKeywords(business)
+  const { data, isLoading } = useKeywords(business)
   const [sorting, setSorting] = useState<SortingState>([])
+  const [globalFilter, setGlobalFilter] = useState('')
 
-  const columns = useMemo<ColumnDef<KeywordResult>[]>(
+  const columns = useMemo<ColumnDef<SCKeyword>[]>(
     () => [
       {
-        accessorKey: 'keyword',
+        accessorKey: 'query',
         header: ({ column }) => (
           <Button
             variant="ghost"
@@ -70,73 +47,94 @@ export function KeywordsContent({ business }: { business: string }) {
           </Button>
         ),
         cell: ({ row }) => (
-          <p className="font-medium text-sm">{row.original.keyword}</p>
+          <p className="font-medium text-sm">{row.original.query}</p>
         ),
       },
       {
-        accessorKey: 'avgMonthly',
+        accessorKey: 'clicks',
         header: ({ column }) => (
           <Button
             variant="ghost"
             size="sm"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
-            Aylık Ort. Hacim
+            Tıklama
             <ArrowUpDown className="ml-1 h-3 w-3" />
           </Button>
         ),
         cell: ({ row }) => (
-          <p className="text-sm">
-            {row.original.avgMonthly != null
-              ? row.original.avgMonthly.toLocaleString('tr-TR')
-              : '-'}
+          <p className="text-sm text-right">
+            {row.original.clicks?.toLocaleString('tr-TR') ?? '-'}
           </p>
         ),
       },
       {
-        accessorKey: 'competition',
-        header: 'Rekabet',
-        cell: ({ row }) => competitionBadge(row.original.competition),
-      },
-      {
-        accessorKey: 'searchedAt',
+        accessorKey: 'impressions',
         header: ({ column }) => (
           <Button
             variant="ghost"
             size="sm"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
-            Tarih
+            Gösterim
             <ArrowUpDown className="ml-1 h-3 w-3" />
           </Button>
         ),
-        cell: ({ row }) => {
-          const date = row.original.searchedAt
-          if (!date) return <span className="text-xs text-muted-foreground">-</span>
-          return (
-            <p className="text-xs text-muted-foreground">
-              {new Date(date).toLocaleDateString('tr-TR', {
-                day: '2-digit',
-                month: '2-digit',
-                year: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-              })}
-            </p>
-          )
-        },
+        cell: ({ row }) => (
+          <p className="text-sm text-right">
+            {row.original.impressions?.toLocaleString('tr-TR') ?? '-'}
+          </p>
+        ),
+      },
+      {
+        accessorKey: 'ctr',
+        header: ({ column }) => (
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+          >
+            CTR
+            <ArrowUpDown className="ml-1 h-3 w-3" />
+          </Button>
+        ),
+        cell: ({ row }) => (
+          <p className="text-sm text-right">
+            {row.original.ctr != null ? `%${(row.original.ctr * 100).toFixed(1)}` : '-'}
+          </p>
+        ),
+      },
+      {
+        accessorKey: 'position',
+        header: ({ column }) => (
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+          >
+            Pozisyon
+            <ArrowUpDown className="ml-1 h-3 w-3" />
+          </Button>
+        ),
+        cell: ({ row }) => (
+          <p className="text-sm text-right">
+            {row.original.position != null ? row.original.position.toFixed(1) : '-'}
+          </p>
+        ),
       },
     ],
     []
   )
 
   const table = useReactTable({
-    data: keywords || [],
+    data: data?.keywords || [],
     columns,
-    state: { sorting },
+    state: { sorting, globalFilter },
     onSortingChange: setSorting,
+    onGlobalFilterChange: setGlobalFilter,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     initialState: { pagination: { pageSize: 25 } },
   })
@@ -150,35 +148,36 @@ export function KeywordsContent({ business }: { business: string }) {
     )
   }
 
+  if (!data?.hasScData) {
+    return (
+      <Card>
+        <CardContent className="flex flex-col items-center justify-center py-16">
+          <Info className="mb-4 h-10 w-10 text-muted-foreground" />
+          <p className="text-muted-foreground">Henüz anahtar kelime verisi yok</p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Önce Search Console sayfasından veri çekin
+          </p>
+        </CardContent>
+      </Card>
+    )
+  }
+
   return (
     <div className="space-y-4">
-      {/* API Onay Uyarısı */}
-      <div className="flex items-center gap-2 rounded-lg border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-800 dark:border-yellow-700 dark:bg-yellow-950 dark:text-yellow-200">
-        <AlertTriangle className="h-4 w-4 shrink-0" />
-        <p>Google Ads API onayı bekleniyor. Onay sonrası aktif olacak.</p>
-      </div>
-
       {/* Arama Bölümü */}
       <div className="flex items-center gap-2">
-        <Input
-          placeholder="Anahtar kelime ara..."
-          disabled
-          className="max-w-sm opacity-50 cursor-not-allowed"
-        />
-        <Tooltip>
-          <TooltipTrigger>
-            <span tabIndex={0} className="inline-flex">
-              <Button disabled className="pointer-events-none">
-                <Search className="mr-1 h-4 w-4" />
-                Ara
-              </Button>
-            </span>
-          </TooltipTrigger>
-          <TooltipContent>API onayı bekleniyor</TooltipContent>
-        </Tooltip>
+        <div className="relative max-w-sm">
+          <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+          <Input
+            placeholder="Anahtar kelime filtrele..."
+            value={globalFilter}
+            onChange={(e) => setGlobalFilter(e.target.value)}
+            className="pl-8"
+          />
+        </div>
       </div>
 
-      {/* Geçmiş Aramalar Tablosu */}
+      {/* GSC Sorgu Tablosu */}
       <div className="rounded-xl border">
         <Table>
           <TableHeader>
@@ -208,7 +207,7 @@ export function KeywordsContent({ business }: { business: string }) {
             ) : (
               <TableRow>
                 <TableCell colSpan={columns.length} className="h-24 text-center">
-                  Henüz arama yapılmadı
+                  Sonuç bulunamadı
                 </TableCell>
               </TableRow>
             )}
@@ -219,7 +218,7 @@ export function KeywordsContent({ business }: { business: string }) {
       {/* Pagination */}
       <div className="flex items-center justify-between">
         <p className="text-sm text-muted-foreground">
-          {keywords?.length || 0} anahtar kelime
+          {table.getFilteredRowModel().rows.length} / {data.total} anahtar kelime
         </p>
         <div className="flex items-center gap-2">
           <Button

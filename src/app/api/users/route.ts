@@ -16,8 +16,8 @@ export async function GET() {
       firstName: u.firstName,
       lastName: u.lastName,
       imageUrl: u.imageUrl,
-      role: (u.publicMetadata as any)?.role || 'viewer',
-      businessIds: (u.publicMetadata as any)?.businessIds || [],
+      role: (u.publicMetadata as Record<string, unknown>)?.role || 'viewer',
+      businessIds: (u.publicMetadata as Record<string, unknown>)?.businessIds || [],
       createdAt: u.createdAt,
       lastSignInAt: u.lastSignInAt,
     }))

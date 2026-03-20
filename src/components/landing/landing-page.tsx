@@ -116,7 +116,7 @@ export function LandingPage() {
               </Button>
             </SignUpButton>
             <SignInButton mode="modal">
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 text-base">
+              <Button size="lg" variant="outline" className="border-white/60 bg-white/10 text-white hover:bg-white/20 px-8 text-base">
                 Giriş Yap
               </Button>
             </SignInButton>

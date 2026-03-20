@@ -148,57 +148,79 @@ export const SITEMAP_CACHE_HOURS = 24
 - Clerk auth + RBAC sistemi (`src/lib/auth.ts`, `src/proxy.ts`)
 - Route groups: `(public)` / `(dashboard)`
 - Dashboard + Business Overview
-- Posts sayfası (Wix blog sync)
+- Posts sayfası (Wix blog sync — excerpt fallback ile SEO alanları)
 - Settings (business yönetimi)
 - Users (kullanıcı yönetimi, rol atama)
 - Keywords UI (tablo + uyarı banner — API onayı bekleniyor)
+- Analytics sayfası (GSC refresh + SC overview + sayfalar/sorgular tablosu)
+- Loading.tsx skeleton'ları (tüm sayfalar)
+- Proxy optimizasyonu (sessionClaims ile hızlı yönlendirme)
 
 ### Stub / Eksik ⏳
-- **Analytics** — GSC API **implement edilmedi**: route dizini var ama `route.ts` yok, DB boş, `googleapis` paketi kurulu değil
 - `/:business/redirects` — 301 redirect yönetimi (stub)
 - `/:business/sitemap` — Sitemap çekme ve analiz (stub)
-- Google Ads Keywords API — Basic Access onayı bekleniyor (1-5 iş günü)
+- Google Ads Keywords API — Basic Access onayı bekleniyor
+- Analytics — dönem seçici, günlük trend, cihaz/ülke kırılımı
 
 ### Bilinen Eksikler 🔧
-- Server-side pagination yok (posts client-side, analytics hardcoded `.slice(0, 20)`)
+- Server-side pagination yok (posts client-side, analytics `.slice(0, 20)`)
 - `nuqs` kurulu ama kullanılmıyor
-- Eksik route.ts: `audit/`, `posts/sync/`, `cron/refresh/`, `analytics/refresh/`
-- Posts tablosu tooltip metinleri İngilizce kaldı
+- GSC credential: GOOGLE_SC_CLIENT_EMAIL + GOOGLE_SC_PRIVATE_KEY .env.local'e eklenmeli
 
 ---
 
-## Agent Team Yapısı
+## Agent Team Yapısı — 5 Agent, 3 Katman
 
-Bu proje `vixseo-dev` takımıyla yönetilir.
+Bu proje `vixseo` takımıyla yönetilir. Tüm agent'lar **Opus** modunda çalışır.
 
-### Team-Lead (Sen — Prompt Mühendisi)
-1. Kullanıcı isteğini analiz et
-2. Verimli, net bir prompt'a dönüştür
-3. Developer'a TaskCreate + SendMessage ile ilet
-4. Sonucu değerlendir, kullanıcıya sun
+### Akış
+```
+Kullanıcı → prompt-engineer → lead-manager → [frontend-dev, backend-dev] → test-engineer → lead-manager → prompt-engineer → Kullanıcı
+```
 
-### Aktif Üyeler
-
+### Katman 1: Arayüz & Görev Üretimi
 | Agent | Rol |
 |-------|-----|
-| `developer` | Full-stack uygulayıcı — görevi alır, dosyaları okur, uygular, bildirir |
+| `prompt-engineer` (team-lead) | Kullanıcı ile konuşur, isteği JSON task'a dönüştürür, sonucu sunar |
 
-### Developer'a Görev Formatı
+### Katman 2: Koordinasyon
+| Agent | Rol |
+|-------|-----|
+| `lead-manager` | Görevleri parçalar, agent'lara atar, sonuçları toplar, çakışmaları çözer |
+
+### Katman 3: Uygulama & Kalite
+| Agent | Rol |
+|-------|-----|
+| `frontend-dev` | Sayfalar, bileşenler, hook'lar, UI/UX, responsive tasarım |
+| `backend-dev` | API route, DB, auth, Wix/GSC/Ads entegrasyonu, script, migration |
+| `test-engineer` | Build, TypeScript, kod kuralları denetimi, doğrulama (kalite kapısı) |
+
+### Agent Arası İletişim
 ```
-## Görev: [Başlık]
+                  prompt  lead   front  back   test
+prompt-engineer     -      ✅     -      -      -
+lead-manager       ✅      -     ✅     ✅     ✅
+frontend-dev        -     ✅      -     ✅     ✅
+backend-dev         -     ✅     ✅      -     ✅
+test-engineer       -     ✅     ✅     ✅      -
+```
 
-**Dosyalar:**
-- Oku: `src/...` (referans)
-- Değiştir: `src/...`
-
-**Yapılacak:**
-1. [Adım 1]
-2. [Adım 2]
-
-**Kural:**
-- [Varsa özel kural]
-
-**Tamamlayınca:** team-lead'e SendMessage ile bildir.
+### Task JSON Formatı (prompt-engineer → lead-manager)
+```json
+{
+  "id": "task-XXX",
+  "title": "Görev başlığı",
+  "priority": "high|medium|low",
+  "agents": ["frontend-dev", "backend-dev"],
+  "files": {
+    "read": ["src/path/to/file.ts"],
+    "modify": ["src/path/to/file.ts"]
+  },
+  "steps": ["Adım 1", "Adım 2"],
+  "rules": ["Özel kural"],
+  "test": "Kabul kriteri",
+  "depends_on": ["task-YYY"]
+}
 ```
 
 ### Prompt Mühendisliği İlkeleri
@@ -206,8 +228,8 @@ Bu proje `vixseo-dev` takımıyla yönetilir.
 - Dosya adı + satır referansı + referans dosya ver
 - Paralel çalışabilecek görevleri aynı anda başlat
 - Belirsizlik bırakma — beklenen çıktıyı açıkça tanımla
-
-Team config: `~/.claude/teams/vixseo-dev/config.json`
+- JSON formatında task oluştur — serbest metin verme
+- depends_on ile görev bağımlılıkları belirt
 
 ---
 

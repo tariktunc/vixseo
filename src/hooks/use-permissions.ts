@@ -1,5 +1,3 @@
-'use client'
-
 import { useUser } from '@clerk/nextjs'
 import { type Role, type Permission, ROLE_PERMISSIONS, ROLE_HIERARCHY } from '@/types/auth'
 

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
-import { keywordSearches } from '@/db/schema'
+import { keywordSearches, scQueries } from '@/db/schema'
 import { businesses } from '@/db/schema'
 import { eq, desc } from 'drizzle-orm'
 import { requirePermission, requireBusinessAccess } from '@/lib/auth'
@@ -29,7 +29,16 @@ export async function GET(
       return NextResponse.json({ error: 'İşletme bulunamadı' }, { status: 404 })
     }
 
-    const keywords = await db
+    // GSC sorgu verilerini çek
+    const queries = await db
+      .select()
+      .from(scQueries)
+      .where(eq(scQueries.businessId, biz.id))
+      .orderBy(desc(scQueries.clicks))
+      .limit(200)
+
+    // Google Ads keyword araştırma geçmişi
+    const adKeywords = await db
       .select()
       .from(keywordSearches)
       .where(eq(keywordSearches.businessId, biz.id))
@@ -37,17 +46,25 @@ export async function GET(
       .limit(50)
 
     return NextResponse.json({
-      keywords: keywords.map((k) => ({
+      keywords: queries.map((q) => ({
+        query: q.query,
+        clicks: q.clicks,
+        impressions: q.impressions,
+        ctr: q.ctr,
+        position: q.position,
+        fetchedAt: q.fetchedAt?.toISOString(),
+      })),
+      adKeywords: adKeywords.map((k) => ({
         keyword: k.keyword,
         avgMonthly: k.avgMonthly,
         competition: k.competition,
         searchedAt: k.searchedAt?.toISOString(),
       })),
-      total: keywords.length,
+      total: queries.length,
+      hasScData: queries.length > 0,
     })
-  } catch (err) {
-    const message = err instanceof Error ? err.message : 'Anahtar kelimeler yüklenemedi'
-    return NextResponse.json({ error: message }, { status: 500 })
+  } catch {
+    return NextResponse.json({ error: 'Anahtar kelimeler yüklenemedi' }, { status: 500 })
   }
 }
 
