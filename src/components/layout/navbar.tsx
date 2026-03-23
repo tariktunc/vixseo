@@ -28,16 +28,15 @@ export function Navbar() {
               alt="VixSEO"
               width={140}
               height={32}
-              className="dark:hidden"
-              priority
+              className="h-8 w-auto block dark:hidden"
             />
-            <Image
-              src="/logo-dark.svg"
-              alt="VixSEO"
-              width={140}
-              height={32}
-              className="hidden dark:block"
+            <Image 
+              src="/logo-dark.svg" 
+              alt="VixSEO" 
+              width={140} 
+              height={36}
               priority
+              className="h-8 w-auto hidden dark:block"
             />
           </Link>
 

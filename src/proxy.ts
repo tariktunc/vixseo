@@ -3,8 +3,18 @@ import { type Role, ROLE_HIERARCHY } from '@/types/auth'
 
 const isPublicRoute = createRouteMatcher([
   '/',
+  '/features(.*)',
+  '/how-it-works(.*)',
+  '/faq(.*)',
+  '/pricing(.*)',
   '/sign-in(.*)',
   '/sign-up(.*)',
+  '/docs(.*)',
+  '/support(.*)',
+  '/privacy-policy(.*)',
+  '/terms-of-use(.*)',
+  '/kvkk(.*)',
+  '/blog(.*)',
   '/api/health(.*)',
 ])
 
