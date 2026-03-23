@@ -30,7 +30,7 @@ export function LandingNavbar() {
   }, [])
 
   const pathname = usePathname()
-  const forceDarkBg = pathname.startsWith('/docs') || pathname.startsWith('/privacy-policy') || pathname.startsWith('/terms-of-use') || pathname.startsWith('/kvkk')
+  const forceDarkBg = pathname.startsWith('/docs') || pathname.startsWith('/privacy-policy') || pathname.startsWith('/terms-of-use') || pathname.startsWith('/kvkk') || pathname.startsWith('/dashboard') || pathname.startsWith('/settings')
 
   return (
     <header
@@ -84,21 +84,22 @@ export function LandingNavbar() {
           ) : (
             <>
               <SignInButton mode="modal">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="text-slate-300 hover:text-white hover:bg-white/10"
+                <span
+                  role="button"
+                  tabIndex={0}
+                  className="inline-flex h-9 items-center justify-center rounded-md px-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
                 >
                   Giriş Yap
-                </Button>
+                </span>
               </SignInButton>
               <SignUpButton mode="modal">
-                <Button
-                  size="sm"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/25"
+                <span
+                  role="button"
+                  tabIndex={0}
+                  className="inline-flex h-9 items-center justify-center rounded-md bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/25 px-3 text-sm font-medium transition-colors cursor-pointer"
                 >
                   Ücretsiz Başla
-                </Button>
+                </span>
               </SignUpButton>
             </>
           )}
@@ -147,17 +148,22 @@ export function LandingNavbar() {
                 ) : (
                   <>
                     <SignInButton mode="modal">
-                      <Button
-                        variant="ghost"
-                        className="text-slate-300 hover:text-white hover:bg-white/10 justify-start"
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        className="inline-flex h-10 w-full items-center justify-start rounded-md px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
                       >
                         Giriş Yap
-                      </Button>
+                      </span>
                     </SignInButton>
                     <SignUpButton mode="modal">
-                      <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        className="inline-flex h-10 w-full items-center justify-center rounded-md bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 text-sm font-medium transition-colors cursor-pointer"
+                      >
                         Ücretsiz Başla
-                      </Button>
+                      </span>
                     </SignUpButton>
                   </>
                 )}

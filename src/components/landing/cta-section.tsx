@@ -49,13 +49,14 @@ export function CtaSection() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <SignUpButton mode="modal">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                size="lg"
-                className="bg-emerald-500 hover:bg-emerald-600 text-white px-10 h-13 text-base font-semibold shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all duration-300 group"
+              <span
+                role="button"
+                tabIndex={0}
+                className="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white px-10 h-14 rounded-md text-base font-semibold shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all duration-300 group cursor-pointer"
               >
                 Ücretsiz Kayıt Ol
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </span>
             </motion.div>
           </SignUpButton>
         </div>

@@ -49,6 +49,12 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-2">
           <Show when="signed-in">
             <Link
+              href="/"
+              className="rounded-md px-3 py-1.5 text-sm transition-colors text-muted-foreground hover:text-foreground"
+            >
+              Ana Sayfa
+            </Link>
+            <Link
               href="/dashboard"
               className={cn(
                 'rounded-md px-3 py-1.5 text-sm transition-colors',
@@ -100,6 +106,13 @@ export function Navbar() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden border-t border-border bg-background px-4 pb-4 pt-2">
+          <Link
+            href="/"
+            onClick={() => setMobileOpen(false)}
+            className="block rounded-md px-3 py-2 text-sm hover:bg-secondary"
+          >
+            Ana Sayfa
+          </Link>
           <Link
             href="/dashboard"
             onClick={() => setMobileOpen(false)}
