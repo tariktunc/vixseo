@@ -1,3 +1,7 @@
+import { batch1 } from './blog-batch-1'
+import { batch2 } from './blog-batch-2'
+import { batch3 } from './blog-batch-3'
+
 export type BlogPost = {
   slug: string
   title: string
@@ -9,7 +13,7 @@ export type BlogPost = {
   content: string // HTML format for long-form detailed articles
 }
 
-export const blogPosts: BlogPost[] = [
+const originalPosts: BlogPost[] = [
   {
     slug: 'wix-seo-nasil-yapilir',
     title: 'Wix SEO Nasıl Yapılır? 2026 Güncel Algoritma ve Optimizasyon Rehberi',
@@ -1489,4 +1493,11 @@ Disallow: /*?sort=*</code></pre>
       <p>Siz de manuel bir koda (Custom Snippet) girmek üzere olduğunuzda, eklediğiniz kod site hızınızı kaç saniye etkileyecek merak ediyor musunuz? VixSEO'nun Page Performance modülü her yeni entegrasyonda Total Blocking Time (TBT) verisini anında grafikler üzerinden size göstererek felaketleri önler.</p>
     `
   }
+]
+
+export const blogPosts: BlogPost[] = [
+  ...originalPosts,
+  ...batch1,
+  ...batch2,
+  ...batch3,
 ]
