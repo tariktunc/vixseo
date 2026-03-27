@@ -10,25 +10,27 @@ import {
   Monitor,
   Smartphone,
   ArrowRight,
-  Clock,
   Globe,
   BarChart3,
   FileSearch,
-  Bell,
   CheckCircle2,
+  XCircle,
   TrendingUp,
   Calendar,
+  Clock,
   Layers,
+  Loader2,
+  AlertTriangle,
+  Target,
+  Type,
+  FileText,
+  Link2,
+  Gauge,
 } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip'
+import { Skeleton } from '@/components/ui/skeleton'
 import { PageFaq } from '@/components/landing/page-faq'
 
 // ---------------------------------------------------------------------------
@@ -37,80 +39,155 @@ import { PageFaq } from '@/components/landing/page-faq'
 
 type DeviceType = 'desktop' | 'mobile'
 
+type KeywordCheck = {
+  inTitle: boolean
+  inH1: boolean
+  inDescription: boolean
+  inUrl: boolean
+  density: number
+  titlePosition: 'beginning' | 'middle' | 'end' | 'not-found'
+}
+
+type SiraBulucuResult = {
+  url: string
+  keyword: string
+  device: DeviceType
+  checks: KeywordCheck
+  relevanceScore: number
+  suggestions: string[]
+}
+
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
 
 const FAQ_ITEMS = [
   {
-    question: 'Sıra bulucu ne zaman aktif olacak?',
+    question: 'Sira Bulucu ne ise yarar?',
     answer:
-      'Sıra Bulucu aracımız şu anda geliştirme aşamasındadır. Yakın zamanda kullanıma sunulacaktır. Sayfanın alt kısmındaki bildirim formunu doldurarak aktif olduğunda haberdar olabilirsiniz.',
+      'Sira Bulucu araci, web sayfanizin belirli bir anahtar kelime icin ne kadar optimize edildigini analiz eder. Title, H1, meta description, URL ve icerik yogunlugu kontrolu yaparak bir uygunluk puani hesaplar.',
   },
   {
-    question: 'Şu an sıralama verilerimi nasıl görebilirim?',
+    question: 'Bu arac Google siralamamizi mi gosteriyor?',
     answer:
-      'VixSEO\'nun Google Search Console entegrasyonunu kullanarak tüm anahtar kelimelerinizin sıralamasını, tıklama ve gösterim verilerini detaylı olarak görebilirsiniz. Ücretsiz hesap oluşturup GSC bağlantınızı yapmanız yeterlidir.',
+      'Hayir, bu arac Google siralama pozisyonunuzu gostermez. Bunun yerine, sayfanizin belirli bir anahtar kelime icin ne kadar iyi optimize edildigini analiz eder ve iyilestirme onerileri sunar.',
   },
   {
-    question: 'Google Search Console entegrasyonu nasıl çalışıyor?',
+    question: 'Uygunluk puani nasil hesaplaniyor?',
     answer:
-      'VixSEO hesabınızı oluşturduktan sonra Google Search Console hesabınızı bağlayabilirsiniz. Bu sayede tüm arama verileri otomatik olarak VixSEO paneline aktarılır ve detaylı analizler sunulur.',
+      'Uygunluk puani, anahtar kelimenin sayfa basliginda, H1 etiketinde, meta descriptionda, URL yapisinda bulunup bulunmadigina ve icerik yogunluguna gore hesaplanir. Her kriter farkli agirlikta puanlanir.',
   },
   {
-    question: 'Hangi arama motorlarını destekliyorsunuz?',
+    question: 'Ideal anahtar kelime yogunlugu nedir?',
     answer:
-      'Şu anda Google arama motoru desteklenmektedir. Sıra Bulucu aracı aktif olduğunda da öncelikli olarak Google sonuçları üzerinden çalışacaktır. İlerleyen dönemlerde farklı arama motorları da eklenebilir.',
+      'Ideal anahtar kelime yogunlugu %0.5 ile %2.5 arasindadir. Cok dusuk yogunluk arama motorlarina yeterli sinyal vermez, cok yuksek yogunluk ise keyword stuffing olarak degerlendirilir.',
   },
   {
-    question: 'Mobil ve masaüstü sıralamaları farklı mı?',
+    question: 'Mobil ve masaustu sonuclari farkli mi?',
     answer:
-      'Evet, Google mobil ve masaüstü aramalarında farklı sıralamalar gösterebilir. Mobil uyumluluk, sayfa hızı ve kullanıcı deneyimi gibi faktörler mobil sıralamaları doğrudan etkiler. Sıra Bulucu her iki cihaz türü için ayrı sorgulama yapabilecektir.',
+      'Evet, bazi siteler mobil ve masaustu kullanicilarina farkli icerik sunabilir. Aracimiz sectiginiz cihaz turune gore uygun User-Agent ile sayfa icerigini ceker ve analiz eder.',
   },
   {
-    question: 'Sıralama verileri ne sıklıkla güncellenir?',
+    question: 'Bu arac ucretsiz mi?',
     answer:
-      'Google Search Console verileri genellikle 2-3 gün gecikmeyle güncellenir. Sıra Bulucu aracı ise anlık sorgu yaparak güncel sıralama bilgisini sunacaktır.',
+      'Evet, Sira Bulucu araci tamamen ucretsizdir. Herhangi bir hesap olusturmaniza gerek yoktur.',
   },
   {
-    question: 'Rakip analizi yapabilir miyim?',
+    question: 'Gercek Google siralama verilerimi nasil gorebilirim?',
     answer:
-      'Sıra Bulucu aktif olduğunda, aynı anahtar kelime için rakiplerinizin sıralamalarını da görebileceksiniz. Bu sayede rekabet ortamını daha iyi analiz edebilirsiniz.',
-  },
-  {
-    question: 'Ücretsiz mi?',
-    answer:
-      'Evet, Sıra Bulucu aracı da diğer SEO araçlarımız gibi ücretsiz olarak sunulacaktır. Günlük sorgu limiti olabilir ancak temel kullanım tamamen ücretsizdir.',
+      'Gercek siralama verileriniz icin VixSEO\'nun Google Search Console entegrasyonunu kullanabilirsiniz. Ucretsiz hesap olusturup GSC baglantinizi yapmaniz yeterlidir.',
   },
 ]
 
 const HOW_IT_WORKS_STEPS = [
   {
     icon: Globe,
-    title: 'Domain ve anahtar kelimenizi girin',
+    title: 'URL ve anahtar kelimenizi girin',
     description:
-      'Sıralamasını öğrenmek istediğiniz domain adresini ve hedef anahtar kelimenizi yazın.',
+      'Analiz etmek istediginiz sayfa URL\'sini ve hedef anahtar kelimenizi yazin.',
   },
   {
     icon: Search,
-    title: 'Google arama sonuçlarında sıralamanızı görün',
+    title: 'Sayfa icerigini analiz edin',
     description:
-      'Aracımız Google arama sonuçlarını tarayarak sitenizin kaçıncı sırada olduğunu gösterir.',
+      'Aracimiz sayfanizi tarayarak anahtar kelimenin kritik alanlarda bulunup bulunmadigini kontrol eder.',
   },
   {
     icon: BarChart3,
-    title: 'Rakiplerinizle karşılaştırın',
+    title: 'Optimizasyon onerilerini uygulayin',
     description:
-      'Aynı anahtar kelimede hangi sitelerin sizden önce sıralandığını görün ve stratejinizi buna göre belirleyin.',
+      'Detayli analiz sonuclarina gore sayfanizi optimize edin ve arama motorlarindaki gorunurlugunuzu artirin.',
   },
 ]
 
 const ALTERNATIVE_FEATURES = [
-  { icon: TrendingUp, text: 'Tüm anahtar kelimeler' },
-  { icon: Calendar, text: '16 aylık veri' },
-  { icon: Clock, text: 'Günlük güncelleme' },
-  { icon: Layers, text: 'Sayfa bazlı analiz' },
+  { icon: TrendingUp, text: 'Tum anahtar kelimeler' },
+  { icon: Calendar, text: '16 aylik veri' },
+  { icon: Clock, text: 'Gunluk guncelleme' },
+  { icon: Layers, text: 'Sayfa bazli analiz' },
 ]
+
+// ---------------------------------------------------------------------------
+// Score Helpers
+// ---------------------------------------------------------------------------
+
+function getScoreColor(score: number): string {
+  if (score >= 80) return 'text-emerald-400'
+  if (score >= 60) return 'text-amber-400'
+  return 'text-red-400'
+}
+
+function getScoreGradient(score: number): string {
+  if (score >= 80) return 'from-emerald-500 to-emerald-600'
+  if (score >= 60) return 'from-amber-500 to-amber-600'
+  return 'from-red-500 to-red-600'
+}
+
+function getScoreLabel(score: number): string {
+  if (score >= 80) return 'Cok Iyi'
+  if (score >= 60) return 'Orta'
+  if (score >= 40) return 'Dusuk'
+  return 'Cok Dusuk'
+}
+
+function getTitlePositionLabel(position: string): string {
+  switch (position) {
+    case 'beginning':
+      return 'Baslangic (Ideal)'
+    case 'middle':
+      return 'Orta'
+    case 'end':
+      return 'Son'
+    case 'not-found':
+      return 'Bulunamadi'
+    default:
+      return '-'
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Loading Skeleton
+// ---------------------------------------------------------------------------
+
+function ResultsSkeleton() {
+  return (
+    <div className="space-y-6 mt-8">
+      <div className="flex items-center gap-4">
+        <Skeleton className="w-28 h-28 rounded-full bg-white/5" />
+        <div className="space-y-2 flex-1">
+          <Skeleton className="h-6 w-48 bg-white/5" />
+          <Skeleton className="h-4 w-32 bg-white/5" />
+        </div>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <Skeleton key={i} className="h-24 bg-white/5" />
+        ))}
+      </div>
+      <Skeleton className="h-32 bg-white/5" />
+    </div>
+  )
+}
 
 // ---------------------------------------------------------------------------
 // Sub-components
@@ -119,7 +196,6 @@ const ALTERNATIVE_FEATURES = [
 function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0F2447] via-[#132d54] to-[#0a1a35] pt-28 pb-16 md:pt-36 md:pb-24 px-4 lg:px-8">
-      {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-amber-500/8 blur-[120px]"
@@ -142,18 +218,16 @@ function HeroSection() {
       </div>
 
       <div className="relative mx-auto max-w-4xl text-center">
-        {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-sm font-medium mb-8"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-sm font-medium mb-8"
         >
-          <Clock className="h-4 w-4" />
-          Yakında
+          <CheckCircle2 className="h-4 w-4" />
+          Aktif
         </motion.div>
 
-        {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -161,165 +235,205 @@ function HeroSection() {
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
         >
           <Trophy className="inline-block h-10 w-10 md:h-12 md:w-12 text-amber-400 mr-3 -mt-2" />
-          Sıra Bulucu
+          Sira Bulucu
         </motion.h1>
 
-        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto"
         >
-          Google arama sonuçlarında anahtar kelime sıralamanızı anında öğrenin.
-          Masaüstü ve mobil sonuçları ayrı ayrı sorgulayın, rakiplerinizle
-          karşılaştırın.
+          Sayfanizin belirli bir anahtar kelime icin ne kadar optimize edildigini
+          analiz edin. Eksikleri tespit edin ve iyilestirme onerileri alin.
         </motion.p>
       </div>
     </section>
   )
 }
 
-function DemoFormSection() {
-  const [device, setDevice] = useState<DeviceType>('desktop')
+function CheckCard({
+  icon: Icon,
+  label,
+  passed,
+  detail,
+}: {
+  icon: React.ComponentType<{ className?: string }>
+  label: string
+  passed: boolean
+  detail?: string
+}) {
+  return (
+    <div
+      className={`flex items-start gap-3 p-4 rounded-xl border transition-colors ${
+        passed
+          ? 'border-emerald-500/20 bg-emerald-500/5'
+          : 'border-red-500/20 bg-red-500/5'
+      }`}
+    >
+      <div
+        className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${
+          passed ? 'bg-emerald-500/15' : 'bg-red-500/15'
+        }`}
+      >
+        <Icon
+          className={`h-4 w-4 ${passed ? 'text-emerald-400' : 'text-red-400'}`}
+        />
+      </div>
+      <div>
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-medium text-white">{label}</span>
+          {passed ? (
+            <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+          ) : (
+            <XCircle className="h-4 w-4 text-red-400" />
+          )}
+        </div>
+        {detail && (
+          <span className="text-xs text-slate-400 mt-0.5 block">{detail}</span>
+        )}
+      </div>
+    </div>
+  )
+}
 
-  const handleSubmitAttempt = () => {
-    toast.info(
-      'Bu özellik yakında aktif olacak. Sıralama verilerinizi görmek için ücretsiz hesap oluşturun ve Google Search Console entegrasyonunu kullanın.',
-      { duration: 6000 }
-    )
-  }
+function ResultsSection({ result }: { result: SiraBulucuResult }) {
+  const { checks, relevanceScore, suggestions } = result
 
   return (
-    <section className="bg-[#0B1528] py-16 md:py-24 px-4 lg:px-8 border-y border-white/5">
-      <div className="mx-auto max-w-2xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-10"
-        >
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-            Sıralama Sorgula
-          </h2>
-          <p className="text-slate-400">
-            Domain ve anahtar kelimenizi girerek Google sıralamanızı öğrenin.
-          </p>
-        </motion.div>
-
-        {/* Demo Form */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="relative"
-        >
-          {/* Coming-soon overlay */}
-          <div className="absolute inset-0 z-10 rounded-2xl bg-[#0B1528]/40 backdrop-blur-[1px] flex items-center justify-center cursor-not-allowed" />
-
-          <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8 opacity-60">
-            {/* Domain input */}
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-slate-300 mb-2">
-                Domain
-              </label>
-              <Input
-                placeholder="ornek.com"
-                disabled
-                className="bg-white/5 border-white/10 text-slate-400 placeholder:text-slate-500"
-              />
-            </div>
-
-            {/* Keyword input */}
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-slate-300 mb-2">
-                Anahtar Kelime
-              </label>
-              <Input
-                placeholder="anahtar kelime"
-                disabled
-                className="bg-white/5 border-white/10 text-slate-400 placeholder:text-slate-500"
-              />
-            </div>
-
-            {/* Device toggle */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-slate-300 mb-2">
-                Cihaz
-              </label>
-              <div className="flex gap-2">
-                <button
-                  disabled
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
-                    device === 'desktop'
-                      ? 'border-amber-500/40 bg-amber-500/10 text-amber-400'
-                      : 'border-white/10 bg-white/5 text-slate-400'
-                  }`}
-                  onClick={() => setDevice('desktop')}
-                >
-                  <Monitor className="h-4 w-4" />
-                  Masaüstü
-                </button>
-                <button
-                  disabled
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
-                    device === 'mobile'
-                      ? 'border-amber-500/40 bg-amber-500/10 text-amber-400'
-                      : 'border-white/10 bg-white/5 text-slate-400'
-                  }`}
-                  onClick={() => setDevice('mobile')}
-                >
-                  <Smartphone className="h-4 w-4" />
-                  Mobil
-                </button>
-              </div>
-            </div>
-
-            {/* Submit button with tooltip */}
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <span tabIndex={0} className="inline-flex w-full">
-                    <Button
-                      disabled
-                      className="w-full bg-amber-500/50 text-white cursor-not-allowed"
-                      onClick={handleSubmitAttempt}
-                    >
-                      <Search className="h-4 w-4 mr-2" />
-                      Sıralama Sorgula
-                    </Button>
-                  </span>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Yakında aktif olacak</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="mt-8 space-y-6"
+    >
+      {/* Score */}
+      <div className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-xl border border-white/10 bg-white/[0.02]">
+        <div className="relative w-32 h-32 shrink-0">
+          {/* Background circle */}
+          <svg className="w-32 h-32 -rotate-90" viewBox="0 0 120 120">
+            <circle
+              cx="60"
+              cy="60"
+              r="52"
+              fill="none"
+              stroke="rgba(255,255,255,0.05)"
+              strokeWidth="8"
+            />
+            <circle
+              cx="60"
+              cy="60"
+              r="52"
+              fill="none"
+              className={`${relevanceScore >= 80 ? 'stroke-emerald-500' : relevanceScore >= 60 ? 'stroke-amber-500' : 'stroke-red-500'}`}
+              strokeWidth="8"
+              strokeLinecap="round"
+              strokeDasharray={`${(relevanceScore / 100) * 327} 327`}
+            />
+          </svg>
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <span className={`text-3xl font-bold ${getScoreColor(relevanceScore)}`}>
+              {relevanceScore}
+            </span>
+            <span className="text-xs text-slate-400">/ 100</span>
           </div>
-
-          {/* Click handler on overlay */}
-          <button
-            className="absolute inset-0 z-20 rounded-2xl cursor-pointer"
-            onClick={handleSubmitAttempt}
-            aria-label="Bu özellik yakında aktif olacak"
-          />
-        </motion.div>
-
-        {/* Inline message */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-4 text-center text-sm text-amber-400/80"
-        >
-          Bu araç geliştirme aşamasındadır. Sıralama verilerinize hemen erişmek
-          için aşağıdaki GSC entegrasyonunu inceleyin.
-        </motion.p>
+        </div>
+        <div className="text-center sm:text-left">
+          <h3 className="text-xl font-bold text-white mb-1">
+            Anahtar Kelime Uygunluk Puani:{' '}
+            <span className={getScoreColor(relevanceScore)}>
+              {getScoreLabel(relevanceScore)}
+            </span>
+          </h3>
+          <p className="text-sm text-slate-400">
+            <span className="font-medium text-slate-300">&quot;{result.keyword}&quot;</span>
+            {' '}icin{' '}
+            <span className="text-slate-300">{result.url}</span>
+          </p>
+          <p className="text-xs text-slate-500 mt-1">
+            Cihaz: {result.device === 'desktop' ? 'Masaustu' : 'Mobil'}
+          </p>
+        </div>
       </div>
-    </section>
+
+      {/* Check Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <CheckCard
+          icon={Type}
+          label="Title'da Anahtar Kelime"
+          passed={checks.inTitle}
+          detail={
+            checks.inTitle
+              ? `Pozisyon: ${getTitlePositionLabel(checks.titlePosition)}`
+              : 'Anahtar kelime baslikta bulunamadi'
+          }
+        />
+        <CheckCard
+          icon={Target}
+          label="H1'de Anahtar Kelime"
+          passed={checks.inH1}
+        />
+        <CheckCard
+          icon={FileText}
+          label="Description'da Anahtar Kelime"
+          passed={checks.inDescription}
+        />
+        <CheckCard
+          icon={Link2}
+          label="URL'de Anahtar Kelime"
+          passed={checks.inUrl}
+        />
+        <CheckCard
+          icon={Gauge}
+          label="Anahtar Kelime Yogunlugu"
+          passed={checks.density >= 0.5 && checks.density <= 2.5}
+          detail={`%${checks.density} (ideal: %0.5 - %2.5)`}
+        />
+        <CheckCard
+          icon={Trophy}
+          label="Baslik Pozisyonu"
+          passed={checks.titlePosition === 'beginning'}
+          detail={getTitlePositionLabel(checks.titlePosition)}
+        />
+      </div>
+
+      {/* Suggestions */}
+      {suggestions.length > 0 && (
+        <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
+          <h4 className="flex items-center gap-2 text-lg font-semibold text-white mb-4">
+            <AlertTriangle className="h-5 w-5 text-amber-400" />
+            Optimizasyon Onerileri
+          </h4>
+          <ul className="space-y-3">
+            {suggestions.map((suggestion, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-3 text-sm text-slate-300"
+              >
+                <span className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-gradient-to-br ${getScoreGradient(relevanceScore)} text-white`}>
+                  {i + 1}
+                </span>
+                {suggestion}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* CTA */}
+      <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-6 text-center">
+        <p className="text-sm text-slate-300 mb-4">
+          Bu anahtar kelime icin sayfanizi optimize etmek ister misiniz?
+          VixSEO paneli ile detayli analiz ve takip yapin.
+        </p>
+        <Link href="/sign-up">
+          <Button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold">
+            Ucretsiz Hesap Olustur
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </Link>
+      </div>
+    </motion.div>
   )
 }
 
@@ -334,11 +448,11 @@ function HowItWorksSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="inline-block text-sm font-semibold text-amber-400 tracking-wider uppercase mb-3">
-            Nasıl Çalışır
+          <span className="inline-block text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3">
+            Nasil Calisir
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Nasıl Çalışacak?
+            3 Adimda Analiz Edin
           </h2>
         </motion.div>
 
@@ -352,14 +466,12 @@ function HowItWorksSection() {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="relative text-center"
             >
-              {/* Step number */}
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/20 mb-6">
-                <step.icon className="h-7 w-7 text-amber-400" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 mb-6">
+                <step.icon className="h-7 w-7 text-emerald-400" />
               </div>
 
-              {/* Connector line (between cards) */}
               {i < HOW_IT_WORKS_STEPS.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-gradient-to-r from-amber-500/30 to-transparent" />
+                <div className="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-gradient-to-r from-emerald-500/30 to-transparent" />
               )}
 
               <h3 className="text-lg font-semibold text-white mb-3">
@@ -379,7 +491,6 @@ function HowItWorksSection() {
 function AlternativeCtaSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0a1a35] via-[#0F2447] to-[#132d54] py-20 md:py-28 px-4 lg:px-8 border-y border-white/5">
-      {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-emerald-500/8 blur-[120px]"
@@ -398,23 +509,22 @@ function AlternativeCtaSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-sm font-medium mb-6">
             <CheckCircle2 className="h-4 w-4" />
-            Şu An Kullanılabilir
+            Su An Kullanilabilir
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-            Şu An Sıralama Verilerinizi{' '}
+            Gercek Siralama Verilerinizi{' '}
             <span className="bg-gradient-to-r from-emerald-400 to-emerald-300 bg-clip-text text-transparent">
-              Görebilirsiniz
+              Gorun
             </span>
           </h2>
 
           <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-12">
-            VixSEO&apos;nun Google Search Console entegrasyonu ile tüm anahtar
-            kelimelerinizin sıralamasını, tıklama ve gösterim verilerini detaylı
+            VixSEO&apos;nun Google Search Console entegrasyonu ile tum anahtar
+            kelimelerinizin siralamasini, tiklama ve gosterim verilerini detayli
             analiz edin.
           </p>
 
-          {/* Features grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-2xl mx-auto">
             {ALTERNATIVE_FEATURES.map((feature, i) => (
               <motion.div
@@ -433,30 +543,23 @@ function AlternativeCtaSection() {
             ))}
           </div>
 
-          {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/sign-up">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 h-12 text-base font-semibold shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all duration-300 group">
-                  Ücretsiz Hesap Oluştur
+                  Ucretsiz Hesap Olustur
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </motion.div>
             </Link>
             <Link href="/docs/features">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   variant="outline"
                   className="border-white/20 text-white hover:bg-white/10 px-8 h-12 text-base font-semibold"
                 >
                   <FileSearch className="mr-2 h-4 w-4" />
-                  GSC Entegrasyonu Hakkında
+                  GSC Entegrasyonu Hakkinda
                 </Button>
               </motion.div>
             </Link>
@@ -467,86 +570,189 @@ function AlternativeCtaSection() {
   )
 }
 
-function NotifySection() {
-  const [email, setEmail] = useState('')
-
-  const handleNotify = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!email.trim()) {
-      toast.error('Lütfen geçerli bir e-posta adresi girin.')
-      return
-    }
-    toast.success(
-      'Teşekkürler! Sıra Bulucu aktif olduğunda size bildirim göndereceğiz.',
-      { duration: 5000 }
-    )
-    setEmail('')
-  }
-
-  return (
-    <section className="bg-[#0F2447] py-16 md:py-20 px-4 lg:px-8">
-      <motion.div
-        className="mx-auto max-w-xl text-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 mb-6">
-          <Bell className="h-6 w-6 text-amber-400" />
-        </div>
-
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-          Haberdar Olun
-        </h2>
-        <p className="text-slate-400 mb-8">
-          Sıra Bulucu aracı aktif olduğunda size bildirim gönderelim.
-        </p>
-
-        <form
-          onSubmit={handleNotify}
-          className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-        >
-          <Input
-            type="email"
-            placeholder="E-posta adresiniz"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 bg-white/5 border-white/10 text-white placeholder:text-slate-500"
-          />
-          <Button
-            type="submit"
-            className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 whitespace-nowrap"
-          >
-            Beni Bilgilendir
-          </Button>
-        </form>
-
-        <p className="mt-4 text-xs text-slate-500">
-          Spam göndermiyoruz. Yalnızca araç aktif olduğunda bildirim alırsınız.
-        </p>
-      </motion.div>
-    </section>
-  )
-}
-
 // ---------------------------------------------------------------------------
 // Main Component
 // ---------------------------------------------------------------------------
 
 export function SiraBulucuClient() {
+  const [urlInput, setUrlInput] = useState('')
+  const [keyword, setKeyword] = useState('')
+  const [device, setDevice] = useState<DeviceType>('desktop')
+  const [loading, setLoading] = useState(false)
+  const [result, setResult] = useState<SiraBulucuResult | null>(null)
+
+  const handleAnalyze = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    const trimmedUrl = urlInput.trim()
+    const trimmedKeyword = keyword.trim()
+
+    if (!trimmedUrl) {
+      toast.error('Lutfen bir URL girin.')
+      return
+    }
+
+    if (!trimmedKeyword) {
+      toast.error('Lutfen bir anahtar kelime girin.')
+      return
+    }
+
+    setLoading(true)
+    setResult(null)
+
+    try {
+      const response = await fetch('/api/tools/sira-bulucu', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          url: trimmedUrl,
+          keyword: trimmedKeyword,
+          device,
+        }),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        toast.error(data.error || 'Analiz sirasinda bir hata olustu.')
+        return
+      }
+
+      setResult(data as SiraBulucuResult)
+      toast.success('Analiz tamamlandi!')
+    } catch {
+      toast.error('Baglanti hatasi. Lutfen tekrar deneyin.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <main className="min-h-screen bg-[#0F2447]">
       <HeroSection />
-      <DemoFormSection />
+
+      {/* Form Section */}
+      <section className="bg-[#0B1528] py-16 md:py-24 px-4 lg:px-8 border-y border-white/5">
+        <div className="mx-auto max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              Anahtar Kelime Analizi
+            </h2>
+            <p className="text-slate-400">
+              URL ve anahtar kelimenizi girerek optimizasyon analizinizi yapin.
+            </p>
+          </motion.div>
+
+          <motion.form
+            onSubmit={handleAnalyze}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8"
+          >
+            {/* URL input */}
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-slate-300 mb-2">
+                URL
+              </label>
+              <Input
+                placeholder="https://ornek.com/sayfa"
+                value={urlInput}
+                onChange={(e) => setUrlInput(e.target.value)}
+                className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
+                disabled={loading}
+              />
+            </div>
+
+            {/* Keyword input */}
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-slate-300 mb-2">
+                Anahtar Kelime
+              </label>
+              <Input
+                placeholder="ornek anahtar kelime"
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
+                className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
+                disabled={loading}
+              />
+            </div>
+
+            {/* Device toggle */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-slate-300 mb-2">
+                Cihaz
+              </label>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  disabled={loading}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                    device === 'desktop'
+                      ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-400'
+                      : 'border-white/10 bg-white/5 text-slate-400 hover:text-white'
+                  }`}
+                  onClick={() => setDevice('desktop')}
+                >
+                  <Monitor className="h-4 w-4" />
+                  Masaustu
+                </button>
+                <button
+                  type="button"
+                  disabled={loading}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                    device === 'mobile'
+                      ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-400'
+                      : 'border-white/10 bg-white/5 text-slate-400 hover:text-white'
+                  }`}
+                  onClick={() => setDevice('mobile')}
+                >
+                  <Smartphone className="h-4 w-4" />
+                  Mobil
+                </button>
+              </div>
+            </div>
+
+            {/* Submit */}
+            <Button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold"
+            >
+              {loading ? (
+                <>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Analiz Ediliyor...
+                </>
+              ) : (
+                <>
+                  <Search className="h-4 w-4 mr-2" />
+                  Analiz Et
+                </>
+              )}
+            </Button>
+          </motion.form>
+
+          {/* Results */}
+          {loading && <ResultsSkeleton />}
+          {result && !loading && <ResultsSection result={result} />}
+        </div>
+      </section>
+
       <HowItWorksSection />
       <AlternativeCtaSection />
       <PageFaq
         items={FAQ_ITEMS}
-        title="Sıkça Sorulan Sorular"
-        subtitle="Sıra Bulucu aracı hakkında merak edilenler"
+        title="Sikca Sorulan Sorular"
+        subtitle="Sira Bulucu araci hakkinda merak edilenler"
       />
-      <NotifySection />
     </main>
   )
 }

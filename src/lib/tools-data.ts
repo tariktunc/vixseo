@@ -52,11 +52,11 @@ export const TOOLS: ToolItem[] = [
     slug: 'sira-bulucu',
     title: 'Sıra Bulucu',
     shortDescription:
-      'Google\'da anahtar kelime sıralamanızı öğrenin. Yakında aktif olacak.',
+      'Sayfanızın anahtar kelime optimizasyonunu analiz edin. Title, H1, description ve içerik yoğunluğunu kontrol edin.',
     longDescription:
-      'Sıra Bulucu aracı ile hedeflediğiniz anahtar kelimelerde Google\'daki sıralamanızı anında öğrenin. Rakiplerinizle karşılaştırmalı analiz yapın ve sıralama değişikliklerini takip edin. Bu araç şu anda geliştirme aşamasındadır ve çok yakında kullanıma açılacaktır.',
+      'Sıra Bulucu aracı ile hedeflediğiniz anahtar kelimelerde sayfanızın ne kadar iyi optimize edildiğini öğrenin. Title, H1, meta description, URL yapısı ve anahtar kelime yoğunluğunu analiz ederek iyileştirme önerileri alın.',
     icon: 'trophy',
-    status: 'coming-soon',
+    status: 'active',
     href: '/araclar/sira-bulucu',
   },
   {
@@ -118,11 +118,11 @@ export const TOOLS: ToolItem[] = [
     slug: 'seo-browser',
     title: 'SEO Browser',
     shortDescription:
-      'Web sayfalarını arama motoru gözüyle görüntüleyin. Yakında aktif olacak.',
+      'Web sayfalarını arama motoru gözüyle görüntüleyin. Meta taglar, başlıklar, yapısal veri ve HTTP headerları.',
     longDescription:
-      'SEO Browser aracı ile web sayfalarını arama motorlarının gördüğü şekilde görüntüleyin. JavaScript rendering, meta etiketler, yapılandırılmış veri ve sayfa kaynak kodu gibi teknik detayları tek bir ekrandan inceleyin. Bu araç şu anda geliştirme aşamasındadır ve çok yakında kullanıma açılacaktır.',
+      'SEO Browser aracı ile web sayfalarını arama motorlarının gördüğü şekilde görüntüleyin. Meta etiketler, başlık hiyerarşisi, yapılandırılmış veri, görseller, bağlantılar ve HTTP headerları gibi teknik detayları tek bir ekrandan inceleyin.',
     icon: 'globe',
-    status: 'coming-soon',
+    status: 'active',
     href: '/araclar/seo-browser',
   },
 ]
