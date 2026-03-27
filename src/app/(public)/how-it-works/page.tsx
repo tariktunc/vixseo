@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { CheckCircle2, ArrowRight, Zap, Target, BarChart3 } from 'lucide-react'
+import { PageFaq } from '@/components/landing/page-faq'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
@@ -18,7 +19,7 @@ export default function HowItWorksPage() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } }
   }
 
   return (
@@ -266,6 +267,54 @@ export default function HowItWorksPage() {
           </motion.div>
         </motion.div>
       </section>
+
+      {/* SSS */}
+      <PageFaq
+        title="Kurulum Hakkında Sıkça Sorulan Sorular"
+        subtitle="VixSEO kurulum süreci ve entegrasyonlar hakkında merak edilenler."
+        items={[
+          {
+            question: "VixSEO'ya kayıt olmak ne kadar sürer?",
+            answer: 'VixSEO\'ya kayıt olmak 30 saniyeden kısa sürer. E-posta adresiniz veya Google hesabınızla hızlıca giriş yapabilirsiniz. Kredi kartı bilgisi gerekmez ve kayıt sonrasında tüm özelliklere anında erişim sağlarsınız. Hesabınız oluşturulduğu anda size özel bir çalışma alanı otomatik olarak hazırlanır.',
+          },
+          {
+            question: 'Google Search Console bağlantısı güvenli mi?',
+            answer: 'Evet, tamamen güvenlidir. Google Search Console bağlantısı, Google\'ın resmi OAuth 2.0 yetkilendirme protokolü üzerinden gerçekleştirilir. VixSEO yalnızca okuma yetkisi talep eder ve verilerinize salt okunur erişim sağlar. Şifreniz veya hassas bilgileriniz hiçbir zaman paylaşılmaz ya da saklanmaz.',
+          },
+          {
+            question: 'Wix sitemi bağlamak için ne gerekiyor?',
+            answer: 'Wix sitenizi bağlamak için Wix hesabınızın API anahtarlarına ihtiyacınız vardır. VixSEO panelinden adım adım kılavuz ile Wix Site ID, Member ID ve API Key bilgilerinizi kolayca ekleyebilirsiniz. Bağlantı kurulduktan sonra blog yazılarınız, sayfa meta verileriniz ve site ayarlarınız otomatik olarak senkronize edilir.',
+          },
+          {
+            question: 'Verilerim ne sıklıkla güncelleniyor?',
+            answer: 'Google Search Console verileri düzenli aralıklarla otomatik olarak güncellenir. Wix blog ve sayfa verileri ise her senkronizasyon işleminde anlık olarak çekilir. İsterseniz panelden manuel olarak da yenileme tetikleyebilirsiniz. Güncel verilere dayanarak en doğru SEO kararlarını almanızı sağlarız.',
+          },
+          {
+            question: 'İlk analiz sonuçlarını ne zaman görebilirim?',
+            answer: 'Wix sitenizi ve Google Search Console hesabınızı bağladıktan hemen sonra ilk veriler panele akmaya başlar. Blog yazılarınız ve sayfa meta verileri anlık olarak görüntülenir. Google Search Console verileri ise Google\'ın API sınırlamalarına bağlı olarak birkaç dakika içinde hazır olur. SEO denetim sonuçları da ilk tarama tamamlandığında raporlanır.',
+          },
+          {
+            question: 'Birden fazla site ekleyebilir miyim?',
+            answer: 'Evet, VixSEO çoklu işletme yönetimini tam olarak destekler. İstediğiniz sayıda Wix sitesi ekleyerek hepsini tek panelden yönetebilirsiniz. Her site için ayrı Google Search Console ve Wix entegrasyonu yapılır. İşletmeler arasında tek tıkla geçiş yaparak tüm sitelerinizin performansını merkezi olarak takip edebilirsiniz.',
+          },
+          {
+            question: 'Mevcut SEO ayarlarımı kaybeder miyim?',
+            answer: 'Hayır, VixSEO mevcut SEO ayarlarınıza müdahale etmez. Sisteme bağlanma işlemi salt okunur olarak başlar ve mevcut verilerinizi korur. Meta etiket veya içerik değişikliklerini yalnızca siz onayladığınızda uygularız. Herhangi bir değişiklik yapmadan önce mevcut durumu görebilir ve karşılaştırma yapabilirsiniz.',
+          },
+          {
+            question: 'Teknik bilgi gerekiyor mu?',
+            answer: 'Hayır, VixSEO teknik bilgi gerektirmeden kullanılabilecek şekilde tasarlanmıştır. Kurulum süreci adım adım kılavuzlarla desteklenmektedir. Tüm SEO analiz sonuçları anlaşılır bir dilde ve görsel grafiklerle sunulur. Kod yazmadan veya teknik ayarlarla uğraşmadan sitenizin SEO performansını profesyonel düzeyde yönetebilirsiniz.',
+          },
+          {
+            question: 'Entegrasyon sırasında sitem etkilenir mi?',
+            answer: 'Hayır, entegrasyon sürecinde siteniz hiçbir şekilde etkilenmez. VixSEO, Wix API ve Google Search Console API üzerinden çalışır ve sitenizin ön yüzüne dokunmaz. Ziyaretçileriniz herhangi bir kesinti veya yavaşlama yaşamaz. Tüm işlemler arka planda sessizce gerçekleştirilir.',
+          },
+          {
+            question: 'Destek ekibine nasıl ulaşabilirim?',
+            answer: 'VixSEO destek ekibine panel içindeki iletişim formu veya e-posta aracılığıyla ulaşabilirsiniz. Teknik sorunlar, entegrasyon problemleri ve genel sorularınız için destek talebiniz en kısa sürede yanıtlanır. Ayrıca kapsamlı dokümantasyon ve SSS sayfamız birçok yaygın soruya anında cevap sağlar.',
+          },
+        ]}
+      />
 
     </div>
   )

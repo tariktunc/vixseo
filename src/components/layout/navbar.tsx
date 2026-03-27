@@ -50,7 +50,12 @@ export function Navbar() {
           <Show when="signed-in">
             <Link
               href="/"
-              className="rounded-md px-3 py-1.5 text-sm transition-colors text-muted-foreground hover:text-foreground"
+              className={cn(
+                'rounded-md px-3 py-1.5 text-sm transition-colors',
+                pathname === '/'
+                  ? 'bg-secondary text-foreground font-medium'
+                  : 'text-muted-foreground hover:text-foreground'
+              )}
             >
               Ana Sayfa
             </Link>

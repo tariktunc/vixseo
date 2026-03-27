@@ -15,6 +15,8 @@ const isPublicRoute = createRouteMatcher([
   '/terms-of-use(.*)',
   '/kvkk(.*)',
   '/blog(.*)',
+  '/hizmetler(.*)',
+  '/araclar(.*)',
   '/api/health(.*)',
 ])
 
@@ -37,13 +39,8 @@ function hasMinRole(role: Role, minRole: Role): boolean {
 }
 
 export default clerkMiddleware(async (auth, request) => {
-  // Public route'lar herkese açık
+  // Public route'lar herkese açık (giriş yapmış kullanıcılar da görebilir)
   if (isPublicRoute(request)) {
-    // Giriş yapmış kullanıcı ana sayfaya gelirse dashboard'a yönlendir
-    const session = await auth()
-    if (session.userId && request.nextUrl.pathname === '/') {
-      return Response.redirect(new URL('/dashboard', request.url))
-    }
     return
   }
 
