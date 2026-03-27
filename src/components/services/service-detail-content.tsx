@@ -23,6 +23,7 @@ import {
 } from 'lucide-react'
 import React from 'react'
 import { Button } from '@/components/ui/button'
+import { PageFaq } from '@/components/landing/page-faq'
 
 // ---------------------------------------------------------------------------
 // Types
@@ -40,6 +41,11 @@ type ServiceMetric = {
   description: string
 }
 
+type ServiceFaqItem = {
+  question: string
+  answer: string
+}
+
 type ServiceItem = {
   id: string
   slug: string
@@ -54,6 +60,7 @@ type ServiceItem = {
   process: ServiceProcess[]
   metrics: ServiceMetric[]
   relatedServices: string[]
+  faq: ServiceFaqItem[]
 }
 
 type ServiceDetailContentProps = {
@@ -225,7 +232,7 @@ export function ServiceDetailContent({
       </section>
 
       {/* ================================================================= */}
-      {/* NE YAPIYORUZ                                                      */}
+      {/* NE YAPIYORUZ — Features Grid                                      */}
       {/* ================================================================= */}
       <section className="relative z-10 py-20 px-4">
         <div className="max-w-5xl mx-auto">
@@ -240,7 +247,6 @@ export function ServiceDetailContent({
               Detaylar
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6">Ne Yapiyoruz?</h2>
-            <p className="text-slate-300 text-lg leading-relaxed max-w-4xl">{service.longDescription}</p>
           </motion.div>
 
           {/* Features grid */}
@@ -264,6 +270,44 @@ export function ServiceDetailContent({
           </motion.div>
         </div>
       </section>
+
+      {/* ================================================================= */}
+      {/* DETAYLI BILGI — longDescription HTML                              */}
+      {/* ================================================================= */}
+      {service.longDescription.includes('<') && (
+        <section className="relative z-10 py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              <span className="inline-block text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3">
+                Rehber
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-10">Detayli Bilgi</h2>
+              <div
+                className="max-w-none
+                  [&>article>h2]:text-2xl [&>article>h2]:md:text-3xl [&>article>h2]:font-extrabold [&>article>h2]:text-white [&>article>h2]:mt-12 [&>article>h2]:mb-4 [&>article>h2]:border-b [&>article>h2]:border-white/10 [&>article>h2]:pb-3
+                  [&>article>h3]:text-xl [&>article>h3]:md:text-2xl [&>article>h3]:font-bold [&>article>h3]:text-white [&>article>h3]:mt-8 [&>article>h3]:mb-3
+                  [&>article>p]:text-slate-300 [&>article>p]:text-lg [&>article>p]:leading-relaxed [&>article>p]:mb-5
+                  [&>article>ul]:list-disc [&>article>ul]:pl-6 [&>article>ul]:mb-6 [&>article>ul]:space-y-2
+                  [&>article>ul>li]:text-slate-300 [&>article>ul>li]:leading-relaxed
+                  [&>article>ol]:list-decimal [&>article>ol]:pl-6 [&>article>ol]:mb-6 [&>article>ol]:space-y-3
+                  [&>article>ol>li]:text-slate-300 [&>article>ol>li]:leading-relaxed
+                  [&>article>ol>li::marker]:text-emerald-500 [&>article>ol>li::marker]:font-bold
+                  [&_strong]:text-white [&_strong]:font-bold
+                  [&_em]:text-emerald-400
+                  [&_code]:text-emerald-400 [&_code]:bg-emerald-500/10 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm [&_code]:font-normal
+                  [&_blockquote]:border-l-2 [&_blockquote]:border-emerald-500/50 [&_blockquote]:bg-[#0B1528] [&_blockquote]:rounded-xl [&_blockquote]:py-4 [&_blockquote]:px-6 [&_blockquote]:mb-6 [&_blockquote]:text-slate-400 [&_blockquote]:text-sm [&_blockquote]:leading-relaxed
+                  [&_a]:text-emerald-400 [&_a]:no-underline hover:[&_a]:text-emerald-300"
+                dangerouslySetInnerHTML={{ __html: service.longDescription }}
+              />
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* ================================================================= */}
       {/* CALISMA SURECIMIZ (Timeline)                                      */}
@@ -457,6 +501,17 @@ export function ServiceDetailContent({
             </motion.div>
           </div>
         </section>
+      )}
+
+      {/* ================================================================= */}
+      {/* FAQ SECTION                                                        */}
+      {/* ================================================================= */}
+      {service.faq && service.faq.length > 0 && (
+        <PageFaq
+          items={service.faq}
+          title={`${service.shortTitle} — Sikca Sorulan Sorular`}
+          subtitle={`Faz ${service.phaseNumber}: ${service.shortTitle} hizmeti hakkinda en cok merak edilen sorular ve yanitlari.`}
+        />
       )}
 
       {/* ================================================================= */}
